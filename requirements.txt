@@ -1,0 +1,8 @@
+argparse
+opencv-python
+tqdm
+numpy
+torch
+segment_anything
+pillow
+torchvision
