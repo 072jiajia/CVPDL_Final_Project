@@ -52,12 +52,12 @@ Zero Shot method
 
 # To Do
 
-1. -[ ] Add Seen/Unseen splits to VOC2012Dataset
+ -[ ] Add Seen/Unseen splits to VOC2012Dataset
     - Train on class -[1~16] ("aeroplane" ~ "pottedplant")
     - Test on class -[17~20] ("sheep", "sofa", "train", "tvmonitor")
-2. -[x]Add checkpoint saver
-3. -[ ]Add logger 
-4. -[ ]Record experimental results
-5. -[ ]Rewrite the code according to your familiar coding style
-6. -[ ]Add explicit data types to the arguments of functions
-7. -[ ]Add MSCOCO
+ -[x]Add checkpoint saver
+ -[ ]Add logger 
+ -[ ]Record experimental results
+ -[ ]Rewrite the code according to your familiar coding style
+ -[ ]Add explicit data types to the arguments of functions
+ -[ ]Add MSCOCO
