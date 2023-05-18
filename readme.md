@@ -35,9 +35,12 @@ I notice that using multiple tokens for one class can boost the performace
 
 # Experimental Results
 Fully supervised method
+
+
+epoch 100
 | number of tokens | 1 | 2 | 3 | ... |
 |-|-|-|-|-|
-|mIoU| TBD| TBD| TBD| ...|
+|mIoU| 0.645413| TBD| TBD| ...|
 
 Zero Shot method
 |classes| aeroplane | bicycle| bird| boat| bottle| bus| car| cat| chair| cow| diningtable | dog| horse| motorbike| person|pottedplant| sheep| sofa| train| tvmonitor |
@@ -49,11 +52,12 @@ Zero Shot method
 
 # To Do
 
-1. Add Seen/Unseen splits to VOC2012Dataset
-    - Train on class [1~16] ("aeroplane" ~ "pottedplant")
-    - Test on class [17~20] ("sheep", "sofa", "train", "tvmonitor")
-2. Add logger and checkpoint saver
-3. Record experimental results
-4. Rewrite the code according to your familiar coding style
-5. Add explicit data types to the arguments of functions
-6. Add MSCOCO
+1. -[ ] Add Seen/Unseen splits to VOC2012Dataset
+    - Train on class -[1~16] ("aeroplane" ~ "pottedplant")
+    - Test on class -[17~20] ("sheep", "sofa", "train", "tvmonitor")
+2. -[x]Add checkpoint saver
+3. -[ ]Add logger 
+4. -[ ]Record experimental results
+5. -[ ]Rewrite the code according to your familiar coding style
+6. -[ ]Add explicit data types to the arguments of functions
+7. -[ ]Add MSCOCO
