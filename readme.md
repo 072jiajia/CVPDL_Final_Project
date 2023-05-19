@@ -38,9 +38,9 @@ Fully supervised method
 
 
 epoch 100
-| number of tokens | 1 | 2 | 3 | ... |
+| number of tokens | 1 | 2 | 3 | 4 | 5 |... |
 |-|-|-|-|-|
-|mIoU| 0.645413| 0.661782| 0.666071| ...|
+|mIoU| 0.645413| 0.694688| 0.709082| | 0.720209|...|
 
 Zero Shot method
 |classes| aeroplane | bicycle| bird| boat| bottle| bus| car| cat| chair| cow| diningtable | dog| horse| motorbike| person|pottedplant| sheep| sofa| train| tvmonitor |
