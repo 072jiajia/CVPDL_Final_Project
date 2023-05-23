@@ -155,9 +155,14 @@ def parse_args():
     parser.add_argument("--n-emb", type=int, required=True)
     parser.add_argument("--lr", type=float, default=5e-3)
 
+
     parser.add_argument("--batch-size", type=int, default=16)
     parser.add_argument("--num-workers", type=int, default=16)
     parser.add_argument("--epoch", type=float, default=100)
+    parser.add_argument("--save_dir", type=str, default='./models')
+    parser.add_argument("--load_model_path", type=str, default='./models/best.pth')
+    parser.add_argument('--resume', action='store_true', default=False)
+    
     args = parser.parse_args()
     return args
 
@@ -199,10 +204,40 @@ def create_models(device, args):
         "prompter": prompter,
     }
 
+def load_checkpoint(model_path, optimizer, models):
+    
+    # load checkopoint
+    print(model_path)
+    state = torch.load(model_path)
 
+
+    # load state dicts
+    models['sam'].load_state_dict(state["sam"])
+    models['prompter'].load_state_dict(state["prompter"])
+    optimizer.load_state_dict(state["optimizer"])
+    
+
+    epoch = state["epoch"]
+    best_miou = state["best_miou"]
+
+
+    return models, optimizer, epoch+1, best_miou
+
+def save_checkpoint(models, optimizer, epoch, best_miou, save_dir):
+
+        state = {
+            "sam":  models['sam'].state_dict(),
+            "prompter":  models['prompter'].state_dict(),
+            "optimizer": optimizer.state_dict(),
+            "epoch": epoch,
+            "best_miou": best_miou,
+        }
+        print(f'saving model: {save_dir}')
+        torch.save(state, save_dir)
 if __name__ == "__main__":
     args = parse_args()
     print(args)
+    os.makedirs(args.save_dir, exist_ok=True)
 
     device = args.device
 
@@ -216,7 +251,14 @@ if __name__ == "__main__":
 
     best_epoch = 0
     best_iou = 0
-    for epoch in range(args.epoch):
+    start_epoch = 0
+    if args.resume:
+        models, opt, start_epoch, best_iou = load_checkpoint(
+            model_path = args.load_model_path, 
+            optimizer = opt, 
+            models = models
+        )
+    for epoch in range(start_epoch, args.epoch):
         print(f"epoch [{epoch}]")
         train_ious = train_one_epoch(train_dl, opt, models)
         val_ious = validate(val_dl, models)
@@ -224,4 +266,9 @@ if __name__ == "__main__":
         if val_ious[1] > best_iou:
             best_iou = val_ious[1]
             best_epoch = epoch
+            save_dir = os.path.join(args.save_dir,'best.pth')
+            save_checkpoint(models, opt, epoch, best_iou, save_dir)
             print(f"epoch [{best_epoch}] has the best iou: {best_iou:.6f}")
+        
+        save_dir = os.path.join(args.save_dir,'last.pth')
+        save_checkpoint(models, opt, epoch, val_ious[1], save_dir)
