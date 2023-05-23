@@ -9,6 +9,8 @@ from os.path import join as opj
 import cv2
 from tqdm import tqdm
 
+from prompter import load_clip_to_cpu
+
 
 VOC_CLASSNAMES = [
     # excluding "background"
@@ -54,6 +56,20 @@ def resize_long_edge(semseg: np.ndarray, size, ignore_index):
     return output
 
 
+def _convert_image_to_rgb(image):
+    return image.convert("RGB")
+
+
+def _transform(n_px):
+    return transforms.Compose([
+        transforms.Resize(n_px, interpolation=transforms.InterpolationMode.BICUBIC),
+        transforms.CenterCrop(n_px),
+        _convert_image_to_rgb,
+        transforms.ToTensor(),
+        transforms.Normalize((0.48145466, 0.4578275, 0.40821073), (0.26862954, 0.26130258, 0.27577711)),
+    ])
+
+
 class VOC2012Dataset(data.Dataset):
     def __init__(self, data_root, split_file, emb_folder, ignore_classes=None) -> None:
         super().__init__()
@@ -74,6 +90,8 @@ class VOC2012Dataset(data.Dataset):
         self.data_root = data_root
         self.pairs = pairs
         self.emb_folder = emb_folder
+
+        self.image_transform = _transform(load_clip_to_cpu("RN50").visual.input_resolution)
 
         print(len(self))
 
@@ -97,7 +115,12 @@ class VOC2012Dataset(data.Dataset):
         SIZE = 256
         semseg = resize_long_edge(semseg, SIZE, ignore_index=255)
 
-        return emb, (class_index-1), torch.from_numpy(semseg).long()
+        image_name = os.path.join(
+            self.data_root, "JPEGImages", name + ".jpg")
+        image = Image.open(image_name)
+        image = self.image_transform(image)
+
+        return emb, (class_index-1), torch.from_numpy(semseg).long(), image
 
     def __len__(self):
         return len(self.pairs)

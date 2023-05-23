@@ -26,12 +26,16 @@ def train_one_epoch(train_dl, opt, models):
     dense_posemb = sam.prompt_encoder.get_dense_pe()
 
     iou_metrics = IoUMetrics(class_names=["background", "foreground"])
-    for emb, class_indices, semseg in tqdm_loader:
+    for emb, class_indices, semseg, image in tqdm_loader:
         emb = emb.cuda()
         class_indices = class_indices.cuda()
         semseg = semseg.cuda()
 
-        text_prompts = prompter(class_indices)
+        if prompter.trainer == "coop":
+            text_prompts = prompter(class_indices)
+        else:
+            image = image.cuda()
+            text_prompts = prompter(class_indices, image)
 
         outputs = []
         output_ious = []
@@ -102,12 +106,16 @@ def validate(val_dl, models):
     dense_posemb = sam.prompt_encoder.get_dense_pe()
 
     iou_metrics = IoUMetrics(class_names=["background", "foreground"])
-    for emb, class_indices, semseg in tqdm_loader:
+    for emb, class_indices, semseg, image in tqdm_loader:
         emb = emb.cuda()
         class_indices = class_indices.cuda()
         semseg = semseg.cuda()
 
-        text_prompts = prompter(class_indices)
+        if prompter.trainer == "coop":
+            text_prompts = prompter(class_indices)
+        else:
+            image = image.cuda()
+            text_prompts = prompter(class_indices, image)
 
         outputs = []
         for bi in range(emb.size(0)):
@@ -155,6 +163,7 @@ def parse_args():
     parser.add_argument("--n-emb", type=int, required=True)
     parser.add_argument("--lr", type=float, default=5e-3)
 
+    parser.add_argument("--trainer", type=str, default="coop")
 
     parser.add_argument("--batch-size", type=int, default=16)
     parser.add_argument("--num-workers", type=int, default=16)
@@ -197,12 +206,13 @@ def create_models(device, args):
     sam.mask_decoder.eval().to(device)
 
     clip_rn50 = load_clip_to_cpu("RN50")
-    prompter = CLIPPrompter(args.n_emb, VOC_CLASSNAMES, clip_rn50).to(device)
+    prompter = CLIPPrompter(args.n_emb, VOC_CLASSNAMES, clip_rn50, trainer=args.trainer).to(device)
 
     return {
         "sam": sam,
         "prompter": prompter,
     }
+
 
 def load_checkpoint(model_path, optimizer, models):
     
@@ -210,30 +220,29 @@ def load_checkpoint(model_path, optimizer, models):
     print(model_path)
     state = torch.load(model_path)
 
-
     # load state dicts
     models['sam'].load_state_dict(state["sam"])
     models['prompter'].load_state_dict(state["prompter"])
     optimizer.load_state_dict(state["optimizer"])
-    
 
     epoch = state["epoch"]
     best_miou = state["best_miou"]
 
-
     return models, optimizer, epoch+1, best_miou
 
-def save_checkpoint(models, optimizer, epoch, best_miou, save_dir):
 
-        state = {
-            "sam":  models['sam'].state_dict(),
-            "prompter":  models['prompter'].state_dict(),
-            "optimizer": optimizer.state_dict(),
-            "epoch": epoch,
-            "best_miou": best_miou,
-        }
-        print(f'saving model: {save_dir}')
-        torch.save(state, save_dir)
+def save_checkpoint(models, optimizer, epoch, best_miou, save_dir):
+    state = {
+        "sam":  models['sam'].state_dict(),
+        "prompter":  models['prompter'].state_dict(),
+        "optimizer": optimizer.state_dict(),
+        "epoch": epoch,
+        "best_miou": best_miou,
+    }
+    print(f'saving model: {save_dir}')
+    torch.save(state, save_dir)
+
+
 if __name__ == "__main__":
     args = parse_args()
     print(args)

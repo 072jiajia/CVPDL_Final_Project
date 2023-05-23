@@ -13,6 +13,8 @@ from dataset import VOC2012Dataset, VOC_CLASSNAMES
 from metrics import IoUMetrics
 from prompter import CLIPPrompter, load_clip_to_cpu
 
+from logger import get_logger
+
 
 def train_one_epoch(train_dl, opt, models):
     sam: Sam = models["sam"]
@@ -27,12 +29,16 @@ def train_one_epoch(train_dl, opt, models):
 
     iou_metrics = IoUMetrics(class_names=["background", "foreground"])
     per_class_iou_metrics = IoUMetrics(num_classes=21, class_names=["background"] + VOC_CLASSNAMES)
-    for emb, class_indices, semseg in tqdm_loader:
+    for emb, class_indices, semseg, image in tqdm_loader:
         emb = emb.cuda()
         class_indices = class_indices.cuda()
         semseg = semseg.cuda()
 
-        text_prompts = prompter(class_indices)
+        if prompter.trainer == "coop":
+            text_prompts = prompter(class_indices)
+        else:
+            image = image.cuda()
+            text_prompts = prompter(class_indices, image)
 
         outputs = []
         output_ious = []
@@ -91,8 +97,8 @@ def train_one_epoch(train_dl, opt, models):
         tqdm_loader.set_description(
             f"{seg_loss:.6f} {iou_loss:.6f} {iou_metrics} {per_class_iou_metrics.miou}")
 
-    print(iou_metrics)
-    print(per_class_iou_metrics)
+    logger.info(iou_metrics)
+    logger.info(per_class_iou_metrics)
     return iou_metrics.ious
 
 
@@ -109,12 +115,16 @@ def validate(val_dl, models):
 
     iou_metrics = IoUMetrics(class_names=["background", "foreground"])
     per_class_iou_metrics = IoUMetrics(num_classes=21, class_names=["background"] + VOC_CLASSNAMES)
-    for emb, class_indices, semseg in tqdm_loader:
+    for emb, class_indices, semseg, image in tqdm_loader:
         emb = emb.cuda()
         class_indices = class_indices.cuda()
         semseg = semseg.cuda()
 
-        text_prompts = prompter(class_indices)
+        if prompter.trainer == "coop":
+            text_prompts = prompter(class_indices)
+        else:
+            image = image.cuda()
+            text_prompts = prompter(class_indices, image)
 
         outputs = []
         for bi in range(emb.size(0)):
@@ -150,9 +160,9 @@ def validate(val_dl, models):
         per_class_iou_metrics.update(pred_label*ci, semseg)
         tqdm_loader.set_description(f"{iou_metrics} {per_class_iou_metrics.miou}")
 
-    print(iou_metrics)
-    print(per_class_iou_metrics)
-    print()
+    logger.info(iou_metrics)
+    logger.info(per_class_iou_metrics)
+    logger.info("\n")
     return iou_metrics.ious
 
 
@@ -166,11 +176,16 @@ def parse_args():
     parser.add_argument("--n-emb", type=int, required=True)
     parser.add_argument("--lr", type=float, default=5e-3)
 
+    parser.add_argument("--trainer", type=str, default="coop")
+
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--num-workers", type=int, default=24)
     parser.add_argument("--epoch", type=float, default=100)
     parser.add_argument("--unseen-classes", nargs='+',
                         type=int, default=[17, 18, 19, 20])
+    
+    parser.add_argument("--save_dir", type=str, default='./ckpt')
+
     args = parser.parse_args()
     return args
 
@@ -213,7 +228,7 @@ def create_models(device, args):
     sam.mask_decoder.eval().to(device)
 
     clip_rn50 = load_clip_to_cpu("RN50")
-    prompter = CLIPPrompter(args.n_emb, VOC_CLASSNAMES, clip_rn50).to(device)
+    prompter = CLIPPrompter(args.n_emb, VOC_CLASSNAMES, clip_rn50, trainer=args.trainer).to(device)
 
     return {
         "sam": sam,
@@ -221,9 +236,25 @@ def create_models(device, args):
     }
 
 
+def save_checkpoint(models, optimizer, epoch, best_miou, ckpt_path):
+    state = {
+        "sam":  models['sam'].state_dict(),
+        "prompter":  models['prompter'].state_dict(),
+        "optimizer": optimizer.state_dict(),
+        "epoch": epoch,
+        "best_miou": best_miou,
+    }
+    logger.info(f'Saving model: {ckpt_path}')
+    torch.save(state, ckpt_path)
+
+
 if __name__ == "__main__":
     args = parse_args()
-    print(args)
+
+    os.makedirs(args.save_dir, exist_ok=True)
+    logger = get_logger(os.path.join(args.save_dir, "log.txt"))
+
+    logger.info(args)
 
     device = args.device
 
@@ -238,11 +269,16 @@ if __name__ == "__main__":
     best_epoch = 0
     best_iou = 0
     for epoch in range(args.epoch):
-        print(f"epoch [{epoch}]")
+        logger.info(f"epoch [{epoch}]")
         train_ious = train_one_epoch(train_dl, opt, models)
         val_ious = validate(val_dl, models)
 
         if val_ious[1] > best_iou:
             best_iou = val_ious[1]
             best_epoch = epoch
-            print(f"epoch [{best_epoch}] has the best iou: {best_iou:.6f}")
+            ckpt_path = os.path.join(args.save_dir, 'best.pth')
+            save_checkpoint(models, opt, epoch, best_iou, ckpt_path)
+            logger.info(f"epoch [{best_epoch}] has the best iou: {best_iou:.6f}")
+    
+    ckpt_path = os.path.join(args.save_dir, 'last.pth')
+    save_checkpoint(models, opt, args.epoch - 1, val_ious[1], ckpt_path)
