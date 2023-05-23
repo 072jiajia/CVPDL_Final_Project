@@ -37,7 +37,12 @@ class IoUMetrics:
 
     def __repr__(self) -> str:
         ious = self.ious
-        output = f"mean IoU: {ious.mean():.6f}"
+        output = f"mean IoU: {self.miou:.6f}"
         for i, iou in enumerate(ious):
             output += f"  {self.class_names[i]}: {iou:.6f}"
         return output
+
+    @property
+    def miou(self) -> float:
+        ious = self.ious[~np.isnan(self.ious)]
+        return ious.mean()

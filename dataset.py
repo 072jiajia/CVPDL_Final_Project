@@ -7,6 +7,7 @@ import torchvision.transforms as transforms
 from PIL import Image
 from os.path import join as opj
 import cv2
+from tqdm import tqdm
 
 
 VOC_CLASSNAMES = [
@@ -54,15 +55,18 @@ def resize_long_edge(semseg: np.ndarray, size, ignore_index):
 
 
 class VOC2012Dataset(data.Dataset):
-    def __init__(self, data_root, split_file, emb_folder) -> None:
+    def __init__(self, data_root, split_file, emb_folder, ignore_classes=None) -> None:
         super().__init__()
         pairs = []
-        for file in open(split_file, mode="r").readlines():
+        for file in tqdm(open(split_file, mode="r").readlines()):
             file = file.rstrip()
             label = os.path.join(data_root, "SegmentationClass", file + ".png")
             label = np.array(Image.open(label))
             for class_index in np.unique(label):
                 if class_index == 0 or class_index == 255:
+                    continue
+
+                if ignore_classes is not None and class_index in ignore_classes:
                     continue
 
                 pairs.append((file, class_index))
