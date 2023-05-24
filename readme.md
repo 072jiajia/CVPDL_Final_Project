@@ -33,6 +33,11 @@ I notice that using multiple tokens for one class can boost the performace
     CUDA_VISIBLE_DEVICES={GPU_ID} python prompt_learning.py --n-emb 2
 ```
 
+CoCoOp
+```
+    CUDA_VISIBLE_DEVICES={GPU_ID} python prompt_learning.py --n-emb 5 --trainer cocoop --batch-size 8
+```
+
 # Experimental Results
 Fully supervised method
 
@@ -54,6 +59,12 @@ n-emb = 5| 0.6901 |  0.9206| 0.8757| 0.4020| 0.7563| 0.6608| 0.5710| 0.8662| 0.5
 n-emb = 6| 0.6668 |  0.9203| 0.8741| 0.3664| 0.7279| 0.6711| 0.5304| 0.8498| 0.5276| 0.8527| 0.2912| 0.8310| 0.4178| 0.7725| 0.8260| 0.8106| 0.8030| 0.2332| 0.7840| 0.1972| 0.8412|
 
 
+Zero Shot method (CoCoOp)
+||mIoU| aeroplane | bicycle| bird| boat| bottle| bus| car| cat| chair| cow| diningtable | dog| horse| motorbike| person|pottedplant| sheep| sofa| train| tvmonitor |
+|:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |
+|Training | | v| v| v| v| v| v| v| v| v| v| v| v| v| v| v| v| | | | |
+n-emb = 5| 0.6984 |  0.9019| 0.4401| 0.8611| 0.7298| 0.6798| 0.8854| 0.6727| 0.8817| 0.4084| 0.8567| 0.5396| 0.8614| 0.8370| 0.8583| 0.8328| 0.4093| 0.7218| 0.3297| 0.2027| 0.2045|
+
 
 # To Do
 
@@ -61,7 +72,7 @@ n-emb = 6| 0.6668 |  0.9203| 0.8741| 0.3664| 0.7279| 0.6711| 0.5304| 0.8498| 0.5
     - [ ] Train on class -[1~16] ("aeroplane" ~ "pottedplant")
     - [ ] Test on class -[17~20] ("sheep", "sofa", "train", "tvmonitor")
 - [x] Add checkpoint saver
-- [ ] Add logger 
+- [x] Add logger 
 - [ ] Record experimental results
 - [ ] Rewrite the code according to your familiar coding style
 - [ ] Add explicit data types to the arguments of functions
