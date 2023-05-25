@@ -1,0 +1,724 @@
+[2023-05-24 22:26:01,376] Namespace(checkpoint_path='./pretrain-weights/sam_vit_h_4b8939.pth', model_type='vit_h', device='cuda', voc2012_path='./VOC2012', n_emb=4, lr=0.005, trainer='cocoop', batch_size=8, num_workers=24, epoch=100, unseen_classes=[17, 18, 19, 20], save_dir='ckpt/n_emb_4')
+[2023-05-24 22:26:28,428] epoch [0]
+[2023-05-24 22:29:52,623] mean IoU: 0.572940  background: 0.834877  foreground: 0.311002
+[2023-05-24 22:29:52,623] mean IoU: 0.336474  background: 0.834877  aeroplane: 0.425588  bicycle: 0.173653  bird: 0.379024  boat: 0.318244  bottle: 0.210192  bus: 0.296401  car: 0.356944  cat: 0.493667  chair: 0.095469  cow: 0.398530  diningtable: 0.093010  dog: 0.503672  horse: 0.485206  motorbike: 0.292585  person: 0.249228  pottedplant: 0.113767  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 22:31:17,670] mean IoU: 0.601393  background: 0.857254  foreground: 0.345533
+[2023-05-24 22:31:17,671] mean IoU: 0.358726  background: 0.857254  aeroplane: 0.695887  bicycle: 0.146025  bird: 0.550330  boat: 0.241551  bottle: 0.214894  bus: 0.316193  car: 0.310886  cat: 0.654839  chair: 0.061438  cow: 0.614626  diningtable: 0.102903  dog: 0.600374  horse: 0.570999  motorbike: 0.406513  person: 0.265172  pottedplant: 0.000134  sheep: 0.558293  sofa: 0.066428  train: 0.109097  tvmonitor: 0.189407
+[2023-05-24 22:31:17,671] 
+
+[2023-05-24 22:31:17,680] Saving model: ckpt/n_emb_4/best.pth
+[2023-05-24 22:31:21,678] epoch [0] has the best iou: 0.345533
+[2023-05-24 22:31:21,678] epoch [1]
+[2023-05-24 22:34:45,950] mean IoU: 0.706839  background: 0.887848  foreground: 0.525829
+[2023-05-24 22:34:45,951] mean IoU: 0.535776  background: 0.887848  aeroplane: 0.766087  bicycle: 0.243058  bird: 0.694714  boat: 0.496911  bottle: 0.259654  bus: 0.704489  car: 0.559534  cat: 0.821079  chair: 0.175213  cow: 0.668858  diningtable: 0.176467  dog: 0.718870  horse: 0.752180  motorbike: 0.589553  person: 0.406172  pottedplant: 0.187497  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 22:36:11,291] mean IoU: 0.675989  background: 0.859900  foreground: 0.492079
+[2023-05-24 22:36:11,292] mean IoU: 0.508250  background: 0.859900  aeroplane: 0.792050  bicycle: 0.161942  bird: 0.624773  boat: 0.447542  bottle: 0.372461  bus: 0.821921  car: 0.517846  cat: 0.788870  chair: 0.183468  cow: 0.743054  diningtable: 0.234848  dog: 0.717673  horse: 0.714720  motorbike: 0.629054  person: 0.422373  pottedplant: 0.277647  sheep: 0.739731  sofa: 0.239386  train: 0.119043  tvmonitor: 0.264944
+[2023-05-24 22:36:11,292] 
+
+[2023-05-24 22:36:11,304] Saving model: ckpt/n_emb_4/best.pth
+[2023-05-24 22:36:23,110] epoch [1] has the best iou: 0.492079
+[2023-05-24 22:36:23,110] epoch [2]
+[2023-05-24 22:39:45,637] mean IoU: 0.742232  background: 0.902611  foreground: 0.581853
+[2023-05-24 22:39:45,638] mean IoU: 0.582738  background: 0.902611  aeroplane: 0.804201  bicycle: 0.295963  bird: 0.713663  boat: 0.595618  bottle: 0.295338  bus: 0.752369  car: 0.617603  cat: 0.810385  chair: 0.153656  cow: 0.712713  diningtable: 0.221269  dog: 0.746287  horse: 0.774450  motorbike: 0.729028  person: 0.502159  pottedplant: 0.279241  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 22:41:11,312] mean IoU: 0.711622  background: 0.877951  foreground: 0.545293
+[2023-05-24 22:41:11,313] mean IoU: 0.533214  background: 0.877951  aeroplane: 0.831398  bicycle: 0.193854  bird: 0.703607  boat: 0.547552  bottle: 0.374820  bus: 0.836635  car: 0.463128  cat: 0.794745  chair: 0.149475  cow: 0.795855  diningtable: 0.166437  dog: 0.735884  horse: 0.697939  motorbike: 0.622084  person: 0.693802  pottedplant: 0.239043  sheep: 0.746749  sofa: 0.106386  train: 0.336856  tvmonitor: 0.283298
+[2023-05-24 22:41:11,314] 
+
+[2023-05-24 22:41:11,330] Saving model: ckpt/n_emb_4/best.pth
+[2023-05-24 22:41:20,448] epoch [2] has the best iou: 0.545293
+[2023-05-24 22:41:20,449] epoch [3]
+[2023-05-24 22:44:42,445] mean IoU: 0.790160  background: 0.921472  foreground: 0.658848
+[2023-05-24 22:44:42,446] mean IoU: 0.635792  background: 0.921472  aeroplane: 0.816884  bicycle: 0.381579  bird: 0.756214  boat: 0.635269  bottle: 0.376879  bus: 0.782286  car: 0.712903  cat: 0.842382  chair: 0.258771  cow: 0.719523  diningtable: 0.241697  dog: 0.785027  horse: 0.760342  motorbike: 0.739721  person: 0.685606  pottedplant: 0.391898  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 22:46:08,370] mean IoU: 0.667313  background: 0.886699  foreground: 0.447927
+[2023-05-24 22:46:08,370] mean IoU: 0.399806  background: 0.886699  aeroplane: 0.798529  bicycle: 0.016318  bird: 0.680257  boat: 0.246030  bottle: 0.048274  bus: 0.826902  car: 0.585422  cat: 0.787967  chair: 0.061586  cow: 0.733079  diningtable: 0.163045  dog: 0.714707  horse: 0.566822  motorbike: 0.522082  person: 0.455482  pottedplant: 0.014387  sheep: 0.264761  sofa: 0.020368  train: 0.001191  tvmonitor: 0.002018
+[2023-05-24 22:46:08,371] 
+
+[2023-05-24 22:46:08,371] epoch [4]
+[2023-05-24 22:49:30,224] mean IoU: 0.804595  background: 0.928274  foreground: 0.680917
+[2023-05-24 22:49:30,224] mean IoU: 0.650995  background: 0.928274  aeroplane: 0.853977  bicycle: 0.372955  bird: 0.682298  boat: 0.646207  bottle: 0.358972  bus: 0.802523  car: 0.761131  cat: 0.877053  chair: 0.287431  cow: 0.729279  diningtable: 0.280248  dog: 0.735172  horse: 0.758803  motorbike: 0.787816  person: 0.740802  pottedplant: 0.463976  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 22:50:56,019] mean IoU: 0.747058  background: 0.901995  foreground: 0.592121
+[2023-05-24 22:50:56,020] mean IoU: 0.559482  background: 0.901995  aeroplane: 0.859822  bicycle: 0.321388  bird: 0.336355  boat: 0.528370  bottle: 0.470946  bus: 0.804871  car: 0.609689  cat: 0.793555  chair: 0.281834  cow: 0.791244  diningtable: 0.264672  dog: 0.830243  horse: 0.781788  motorbike: 0.807039  person: 0.798789  pottedplant: 0.406746  sheep: 0.742314  sofa: 0.094330  train: 0.034630  tvmonitor: 0.288494
+[2023-05-24 22:50:56,020] 
+
+[2023-05-24 22:50:56,037] Saving model: ckpt/n_emb_4/best.pth
+[2023-05-24 22:51:16,315] epoch [4] has the best iou: 0.592121
+[2023-05-24 22:51:16,315] epoch [5]
+[2023-05-24 22:54:38,011] mean IoU: 0.829724  background: 0.937606  foreground: 0.721842
+[2023-05-24 22:54:38,011] mean IoU: 0.689413  background: 0.937606  aeroplane: 0.854662  bicycle: 0.455308  bird: 0.684740  boat: 0.684604  bottle: 0.379302  bus: 0.820572  car: 0.772080  cat: 0.906746  chair: 0.323431  cow: 0.753589  diningtable: 0.345227  dog: 0.800357  horse: 0.815934  motorbike: 0.841923  person: 0.801348  pottedplant: 0.542588  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 22:56:04,674] mean IoU: 0.688925  background: 0.893606  foreground: 0.484243
+[2023-05-24 22:56:04,674] mean IoU: 0.422958  background: 0.893606  aeroplane: 0.646310  bicycle: 0.064984  bird: 0.560175  boat: 0.424857  bottle: 0.330572  bus: 0.639893  car: 0.561638  cat: 0.838561  chair: 0.058797  cow: 0.794047  diningtable: 0.113615  dog: 0.734209  horse: 0.571108  motorbike: 0.675691  person: 0.632843  pottedplant: 0.206981  sheep: 0.103022  sofa: 0.015797  train: 0.000396  tvmonitor: 0.015018
+[2023-05-24 22:56:04,675] 
+
+[2023-05-24 22:56:04,675] epoch [6]
+[2023-05-24 22:59:27,835] mean IoU: 0.845579  background: 0.943834  foreground: 0.747324
+[2023-05-24 22:59:27,836] mean IoU: 0.721158  background: 0.943834  aeroplane: 0.894032  bicycle: 0.445660  bird: 0.852379  boat: 0.728883  bottle: 0.512611  bus: 0.815626  car: 0.731355  cat: 0.894556  chair: 0.368862  cow: 0.778381  diningtable: 0.453957  dog: 0.807216  horse: 0.862401  motorbike: 0.855566  person: 0.814584  pottedplant: 0.499786  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 23:00:53,542] mean IoU: 0.792100  background: 0.919327  foreground: 0.664873
+[2023-05-24 23:00:53,543] mean IoU: 0.633261  background: 0.919327  aeroplane: 0.894391  bicycle: 0.285730  bird: 0.832905  boat: 0.680639  bottle: 0.651161  bus: 0.839065  car: 0.619629  cat: 0.874114  chair: 0.348362  cow: 0.865843  diningtable: 0.408689  dog: 0.838786  horse: 0.813299  motorbike: 0.797564  person: 0.809909  pottedplant: 0.378493  sheep: 0.616184  sofa: 0.264766  train: 0.284738  tvmonitor: 0.274893
+[2023-05-24 23:00:53,543] 
+
+[2023-05-24 23:00:53,552] Saving model: ckpt/n_emb_4/best.pth
+[2023-05-24 23:01:04,145] epoch [6] has the best iou: 0.664873
+[2023-05-24 23:01:04,146] epoch [7]
+[2023-05-24 23:04:26,339] mean IoU: 0.862892  background: 0.949858  foreground: 0.775925
+[2023-05-24 23:04:26,340] mean IoU: 0.750434  background: 0.949858  aeroplane: 0.885485  bicycle: 0.495692  bird: 0.846131  boat: 0.721040  bottle: 0.592629  bus: 0.832357  car: 0.805324  cat: 0.908589  chair: 0.428512  cow: 0.801766  diningtable: 0.537279  dog: 0.820702  horse: 0.847930  motorbike: 0.862989  person: 0.843648  pottedplant: 0.577443  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 23:05:51,946] mean IoU: 0.774709  background: 0.914636  foreground: 0.634782
+[2023-05-24 23:05:51,947] mean IoU: 0.595334  background: 0.914636  aeroplane: 0.898058  bicycle: 0.264871  bird: 0.746076  boat: 0.624223  bottle: 0.655097  bus: 0.827778  car: 0.635845  cat: 0.855225  chair: 0.354752  cow: 0.866407  diningtable: 0.418053  dog: 0.825144  horse: 0.808201  motorbike: 0.833357  person: 0.818708  pottedplant: 0.350037  sheep: 0.358502  sofa: 0.208428  train: 0.025786  tvmonitor: 0.212821
+[2023-05-24 23:05:51,948] 
+
+[2023-05-24 23:05:51,948] epoch [8]
+[2023-05-24 23:09:13,257] mean IoU: 0.862704  background: 0.949948  foreground: 0.775460
+[2023-05-24 23:09:13,258] mean IoU: 0.745174  background: 0.949948  aeroplane: 0.828720  bicycle: 0.465627  bird: 0.874098  boat: 0.602421  bottle: 0.614722  bus: 0.840224  car: 0.795157  cat: 0.905283  chair: 0.437500  cow: 0.764659  diningtable: 0.543770  dog: 0.841026  horse: 0.877901  motorbike: 0.889283  person: 0.842705  pottedplant: 0.594918  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 23:10:38,765] mean IoU: 0.794727  background: 0.921000  foreground: 0.668455
+[2023-05-24 23:10:38,778] mean IoU: 0.630546  background: 0.921000  aeroplane: 0.861961  bicycle: 0.338207  bird: 0.813741  boat: 0.684880  bottle: 0.703532  bus: 0.832103  car: 0.643499  cat: 0.876645  chair: 0.327805  cow: 0.889696  diningtable: 0.401096  dog: 0.854157  horse: 0.764053  motorbike: 0.837221  person: 0.830280  pottedplant: 0.451348  sheep: 0.452467  sofa: 0.215348  train: 0.303406  tvmonitor: 0.239022
+[2023-05-24 23:10:38,779] 
+
+[2023-05-24 23:10:38,788] Saving model: ckpt/n_emb_4/best.pth
+[2023-05-24 23:10:57,806] epoch [8] has the best iou: 0.668455
+[2023-05-24 23:10:57,807] epoch [9]
+[2023-05-24 23:14:48,866] mean IoU: 0.864469  background: 0.950488  foreground: 0.778449
+[2023-05-24 23:14:48,867] mean IoU: 0.748954  background: 0.950488  aeroplane: 0.885748  bicycle: 0.500962  bird: 0.849184  boat: 0.589857  bottle: 0.607786  bus: 0.837806  car: 0.779747  cat: 0.926634  chair: 0.472975  cow: 0.805800  diningtable: 0.544404  dog: 0.840165  horse: 0.836935  motorbike: 0.883505  person: 0.844171  pottedplant: 0.576051  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 23:16:14,497] mean IoU: 0.787682  background: 0.920593  foreground: 0.654770
+[2023-05-24 23:16:14,499] mean IoU: 0.609063  background: 0.920593  aeroplane: 0.880339  bicycle: 0.377225  bird: 0.785248  boat: 0.585008  bottle: 0.567851  bus: 0.864839  car: 0.637666  cat: 0.871954  chair: 0.336538  cow: 0.867626  diningtable: 0.311997  dog: 0.858326  horse: 0.793069  motorbike: 0.820156  person: 0.826688  pottedplant: 0.280644  sheep: 0.593977  sofa: 0.183443  train: 0.245130  tvmonitor: 0.182012
+[2023-05-24 23:16:14,500] 
+
+[2023-05-24 23:16:14,500] epoch [10]
+[2023-05-24 23:19:36,120] mean IoU: 0.878441  background: 0.956124  foreground: 0.800758
+[2023-05-24 23:19:36,121] mean IoU: 0.767818  background: 0.956124  aeroplane: 0.881609  bicycle: 0.475093  bird: 0.865590  boat: 0.714058  bottle: 0.579995  bus: 0.855141  car: 0.814303  cat: 0.923841  chair: 0.502924  cow: 0.831932  diningtable: 0.580584  dog: 0.852633  horse: 0.885681  motorbike: 0.898540  person: 0.872289  pottedplant: 0.562565  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 23:21:02,922] mean IoU: 0.799721  background: 0.924313  foreground: 0.675129
+[2023-05-24 23:21:02,922] mean IoU: 0.631576  background: 0.924313  aeroplane: 0.883259  bicycle: 0.233590  bird: 0.803031  boat: 0.677329  bottle: 0.654348  bus: 0.893984  car: 0.655869  cat: 0.840498  chair: 0.384666  cow: 0.842265  diningtable: 0.410497  dog: 0.861950  horse: 0.819172  motorbike: 0.845447  person: 0.835334  pottedplant: 0.454920  sheep: 0.546992  sofa: 0.236193  train: 0.257538  tvmonitor: 0.201906
+[2023-05-24 23:21:02,922] 
+
+[2023-05-24 23:21:02,932] Saving model: ckpt/n_emb_4/best.pth
+[2023-05-24 23:21:14,342] epoch [10] has the best iou: 0.675129
+[2023-05-24 23:21:14,343] epoch [11]
+[2023-05-24 23:24:38,784] mean IoU: 0.877034  background: 0.955501  foreground: 0.798568
+[2023-05-24 23:24:38,785] mean IoU: 0.773608  background: 0.955501  aeroplane: 0.898863  bicycle: 0.496260  bird: 0.869355  boat: 0.731946  bottle: 0.583888  bus: 0.879554  car: 0.824111  cat: 0.891116  chair: 0.515763  cow: 0.816173  diningtable: 0.606087  dog: 0.817894  horse: 0.881884  motorbike: 0.909476  person: 0.854984  pottedplant: 0.618478  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 23:26:05,728] mean IoU: 0.786007  background: 0.918285  foreground: 0.653730
+[2023-05-24 23:26:05,728] mean IoU: 0.619513  background: 0.918285  aeroplane: 0.922776  bicycle: 0.385367  bird: 0.807839  boat: 0.677691  bottle: 0.643611  bus: 0.888094  car: 0.646876  cat: 0.874548  chair: 0.347220  cow: 0.897469  diningtable: 0.457643  dog: 0.794549  horse: 0.686087  motorbike: 0.868028  person: 0.799277  pottedplant: 0.435425  sheep: 0.492179  sofa: 0.265854  train: 0.076794  tvmonitor: 0.124168
+[2023-05-24 23:26:05,729] 
+
+[2023-05-24 23:26:05,729] epoch [12]
+[2023-05-24 23:29:30,097] mean IoU: 0.887923  background: 0.959406  foreground: 0.816439
+[2023-05-24 23:29:30,098] mean IoU: 0.790720  background: 0.959406  aeroplane: 0.900912  bicycle: 0.553517  bird: 0.897304  boat: 0.733566  bottle: 0.663270  bus: 0.879229  car: 0.823347  cat: 0.928548  chair: 0.555469  cow: 0.790518  diningtable: 0.626602  dog: 0.824034  horse: 0.898568  motorbike: 0.908716  person: 0.874080  pottedplant: 0.625151  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 23:30:56,896] mean IoU: 0.788883  background: 0.915973  foreground: 0.661792
+[2023-05-24 23:30:56,897] mean IoU: 0.637841  background: 0.915973  aeroplane: 0.917728  bicycle: 0.408960  bird: 0.857996  boat: 0.650496  bottle: 0.610131  bus: 0.848165  car: 0.640490  cat: 0.880443  chair: 0.366844  cow: 0.875295  diningtable: 0.482716  dog: 0.795880  horse: 0.834015  motorbike: 0.882785  person: 0.806829  pottedplant: 0.350155  sheep: 0.775185  sofa: 0.235037  train: 0.084191  tvmonitor: 0.175341
+[2023-05-24 23:30:56,897] 
+
+[2023-05-24 23:30:56,898] epoch [13]
+[2023-05-24 23:34:21,809] mean IoU: 0.894523  background: 0.962017  foreground: 0.827029
+[2023-05-24 23:34:21,809] mean IoU: 0.803145  background: 0.962017  aeroplane: 0.913993  bicycle: 0.584239  bird: 0.906087  boat: 0.753582  bottle: 0.686057  bus: 0.900677  car: 0.829582  cat: 0.940260  chair: 0.509381  cow: 0.883218  diningtable: 0.633817  dog: 0.841826  horse: 0.911787  motorbike: 0.911704  person: 0.886542  pottedplant: 0.598691  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 23:35:48,421] mean IoU: 0.792095  background: 0.922958  foreground: 0.661232
+[2023-05-24 23:35:48,422] mean IoU: 0.614895  background: 0.922958  aeroplane: 0.920050  bicycle: 0.357088  bird: 0.839219  boat: 0.623487  bottle: 0.694793  bus: 0.894110  car: 0.667741  cat: 0.876848  chair: 0.251209  cow: 0.872763  diningtable: 0.345694  dog: 0.821237  horse: 0.779946  motorbike: 0.853807  person: 0.830448  pottedplant: 0.404845  sheep: 0.439701  sofa: 0.190374  train: 0.166684  tvmonitor: 0.159783
+[2023-05-24 23:35:48,422] 
+
+[2023-05-24 23:35:48,423] epoch [14]
+[2023-05-24 23:39:58,422] mean IoU: 0.893038  background: 0.961615  foreground: 0.824462
+[2023-05-24 23:39:58,422] mean IoU: 0.801210  background: 0.961615  aeroplane: 0.906870  bicycle: 0.531545  bird: 0.921753  boat: 0.803322  bottle: 0.689075  bus: 0.911520  car: 0.852527  cat: 0.914349  chair: 0.513409  cow: 0.871925  diningtable: 0.578685  dog: 0.869373  horse: 0.898647  motorbike: 0.912655  person: 0.878411  pottedplant: 0.604887  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 23:41:24,098] mean IoU: 0.790490  background: 0.920583  foreground: 0.660398
+[2023-05-24 23:41:24,098] mean IoU: 0.625525  background: 0.920583  aeroplane: 0.918003  bicycle: 0.409826  bird: 0.826720  boat: 0.661478  bottle: 0.680625  bus: 0.795918  car: 0.644905  cat: 0.875079  chair: 0.308682  cow: 0.887900  diningtable: 0.483660  dog: 0.827530  horse: 0.828184  motorbike: 0.848855  person: 0.839605  pottedplant: 0.422337  sheep: 0.506924  sofa: 0.176165  train: 0.093665  tvmonitor: 0.179379
+[2023-05-24 23:41:24,099] 
+
+[2023-05-24 23:41:24,099] epoch [15]
+[2023-05-24 23:44:46,831] mean IoU: 0.906093  background: 0.966430  foreground: 0.845756
+[2023-05-24 23:44:46,832] mean IoU: 0.823449  background: 0.966430  aeroplane: 0.921965  bicycle: 0.572488  bird: 0.934976  boat: 0.828297  bottle: 0.683470  bus: 0.915000  car: 0.850977  cat: 0.947202  chair: 0.537821  cow: 0.897662  diningtable: 0.697344  dog: 0.865551  horse: 0.927245  motorbike: 0.916052  person: 0.889397  pottedplant: 0.646763  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 23:46:12,302] mean IoU: 0.808424  background: 0.925361  foreground: 0.691486
+[2023-05-24 23:46:12,303] mean IoU: 0.658614  background: 0.925361  aeroplane: 0.906476  bicycle: 0.408093  bird: 0.853769  boat: 0.633772  bottle: 0.669727  bus: 0.857635  car: 0.679473  cat: 0.865709  chair: 0.395686  cow: 0.879981  diningtable: 0.485093  dog: 0.793608  horse: 0.822552  motorbike: 0.863381  person: 0.853162  pottedplant: 0.428934  sheep: 0.630186  sofa: 0.284258  train: 0.356364  tvmonitor: 0.237664
+[2023-05-24 23:46:12,303] 
+
+[2023-05-24 23:46:12,323] Saving model: ckpt/n_emb_4/best.pth
+[2023-05-24 23:46:39,356] epoch [15] has the best iou: 0.691486
+[2023-05-24 23:46:39,356] epoch [16]
+[2023-05-24 23:50:10,899] mean IoU: 0.917627  background: 0.970619  foreground: 0.864634
+[2023-05-24 23:50:10,901] mean IoU: 0.841198  background: 0.970619  aeroplane: 0.931460  bicycle: 0.564251  bird: 0.932898  boat: 0.853685  bottle: 0.745627  bus: 0.922504  car: 0.866700  cat: 0.954649  chair: 0.617277  cow: 0.905012  diningtable: 0.713395  dog: 0.900790  horse: 0.918270  motorbike: 0.926057  person: 0.906534  pottedplant: 0.670639  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 23:51:56,333] mean IoU: 0.804646  background: 0.925187  foreground: 0.684105
+[2023-05-24 23:51:56,334] mean IoU: 0.653985  background: 0.925187  aeroplane: 0.930023  bicycle: 0.381728  bird: 0.855833  boat: 0.665251  bottle: 0.708314  bus: 0.886367  car: 0.650914  cat: 0.865155  chair: 0.371118  cow: 0.883649  diningtable: 0.525709  dog: 0.800482  horse: 0.844964  motorbike: 0.875022  person: 0.841153  pottedplant: 0.421927  sheep: 0.646233  sofa: 0.183423  train: 0.230752  tvmonitor: 0.240482
+[2023-05-24 23:51:56,334] 
+
+[2023-05-24 23:51:56,335] epoch [17]
+[2023-05-24 23:55:50,618] mean IoU: 0.918912  background: 0.971086  foreground: 0.866739
+[2023-05-24 23:55:50,619] mean IoU: 0.844468  background: 0.971086  aeroplane: 0.954915  bicycle: 0.573186  bird: 0.943230  boat: 0.855377  bottle: 0.707466  bus: 0.923056  car: 0.866939  cat: 0.956404  chair: 0.581842  cow: 0.910850  diningtable: 0.741089  dog: 0.909214  horse: 0.940789  motorbike: 0.916729  person: 0.907519  pottedplant: 0.696271  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-24 23:57:16,221] mean IoU: 0.801258  background: 0.923920  foreground: 0.678595
+[2023-05-24 23:57:16,221] mean IoU: 0.641927  background: 0.923920  aeroplane: 0.933179  bicycle: 0.383484  bird: 0.862214  boat: 0.671567  bottle: 0.705772  bus: 0.859685  car: 0.643080  cat: 0.878153  chair: 0.383158  cow: 0.912739  diningtable: 0.536816  dog: 0.804823  horse: 0.827768  motorbike: 0.850403  person: 0.839444  pottedplant: 0.419547  sheep: 0.392714  sofa: 0.224911  train: 0.227518  tvmonitor: 0.199569
+[2023-05-24 23:57:16,221] 
+
+[2023-05-24 23:57:16,222] epoch [18]
+[2023-05-25 00:00:38,825] mean IoU: 0.913415  background: 0.969000  foreground: 0.857831
+[2023-05-25 00:00:38,826] mean IoU: 0.833370  background: 0.969000  aeroplane: 0.948492  bicycle: 0.587333  bird: 0.866637  boat: 0.802540  bottle: 0.687083  bus: 0.930813  car: 0.866978  cat: 0.947590  chair: 0.606758  cow: 0.916271  diningtable: 0.673194  dog: 0.908557  horse: 0.934369  motorbike: 0.919001  person: 0.910138  pottedplant: 0.692536  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 00:02:24,845] mean IoU: 0.790982  background: 0.919447  foreground: 0.662518
+[2023-05-25 00:02:24,846] mean IoU: 0.627383  background: 0.919447  aeroplane: 0.899266  bicycle: 0.381505  bird: 0.839120  boat: 0.632769  bottle: 0.648068  bus: 0.910621  car: 0.647580  cat: 0.878026  chair: 0.349880  cow: 0.844279  diningtable: 0.427374  dog: 0.829154  horse: 0.812925  motorbike: 0.873391  person: 0.811146  pottedplant: 0.392645  sheep: 0.474808  sofa: 0.224503  train: 0.216382  tvmonitor: 0.162144
+[2023-05-25 00:02:24,846] 
+
+[2023-05-25 00:02:24,847] epoch [19]
+[2023-05-25 00:05:47,521] mean IoU: 0.900610  background: 0.964179  foreground: 0.837042
+[2023-05-25 00:05:47,521] mean IoU: 0.816643  background: 0.964179  aeroplane: 0.947468  bicycle: 0.607167  bird: 0.898941  boat: 0.801082  bottle: 0.660383  bus: 0.896262  car: 0.824843  cat: 0.946195  chair: 0.611030  cow: 0.871507  diningtable: 0.630018  dog: 0.874012  horse: 0.875127  motorbike: 0.904221  person: 0.879833  pottedplant: 0.690662  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 00:07:13,317] mean IoU: 0.802650  background: 0.924361  foreground: 0.680938
+[2023-05-25 00:07:13,318] mean IoU: 0.649668  background: 0.924361  aeroplane: 0.921081  bicycle: 0.406409  bird: 0.817199  boat: 0.641429  bottle: 0.725456  bus: 0.864653  car: 0.646960  cat: 0.881594  chair: 0.387097  cow: 0.878905  diningtable: 0.502982  dog: 0.874677  horse: 0.796234  motorbike: 0.876480  person: 0.832807  pottedplant: 0.438234  sheep: 0.454844  sofa: 0.256054  train: 0.236168  tvmonitor: 0.279409
+[2023-05-25 00:07:13,318] 
+
+[2023-05-25 00:07:13,319] epoch [20]
+[2023-05-25 00:10:35,320] mean IoU: 0.917352  background: 0.970536  foreground: 0.864168
+[2023-05-25 00:10:35,321] mean IoU: 0.842120  background: 0.970536  aeroplane: 0.955676  bicycle: 0.584976  bird: 0.932892  boat: 0.817527  bottle: 0.733706  bus: 0.914197  car: 0.856588  cat: 0.956850  chair: 0.651316  cow: 0.890924  diningtable: 0.694286  dog: 0.916837  horse: 0.927231  motorbike: 0.916462  person: 0.901241  pottedplant: 0.694802  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 00:12:01,157] mean IoU: 0.797046  background: 0.925141  foreground: 0.668950
+[2023-05-25 00:12:01,158] mean IoU: 0.618789  background: 0.925141  aeroplane: 0.927330  bicycle: 0.325756  bird: 0.792152  boat: 0.630370  bottle: 0.721095  bus: 0.869593  car: 0.635735  cat: 0.867355  chair: 0.332358  cow: 0.883047  diningtable: 0.477255  dog: 0.846450  horse: 0.832528  motorbike: 0.835688  person: 0.854770  pottedplant: 0.366612  sheep: 0.409621  sofa: 0.243658  train: 0.079951  tvmonitor: 0.138107
+[2023-05-25 00:12:01,158] 
+
+[2023-05-25 00:12:01,158] epoch [21]
+[2023-05-25 00:15:23,505] mean IoU: 0.925374  background: 0.973508  foreground: 0.877239
+[2023-05-25 00:15:23,506] mean IoU: 0.853784  background: 0.973508  aeroplane: 0.953944  bicycle: 0.579003  bird: 0.936770  boat: 0.850362  bottle: 0.729157  bus: 0.929063  car: 0.869526  cat: 0.957051  chair: 0.660384  cow: 0.903907  diningtable: 0.740049  dog: 0.933036  horse: 0.942226  motorbike: 0.921733  person: 0.912503  pottedplant: 0.722105  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 00:16:49,260] mean IoU: 0.804880  background: 0.925766  foreground: 0.683993
+[2023-05-25 00:16:49,260] mean IoU: 0.646170  background: 0.925766  aeroplane: 0.929270  bicycle: 0.444952  bird: 0.812677  boat: 0.674839  bottle: 0.717342  bus: 0.878484  car: 0.638873  cat: 0.900687  chair: 0.384299  cow: 0.903847  diningtable: 0.525984  dog: 0.852845  horse: 0.836720  motorbike: 0.860141  person: 0.844919  pottedplant: 0.414501  sheep: 0.418950  sofa: 0.281037  train: 0.111577  tvmonitor: 0.211862
+[2023-05-25 00:16:49,261] 
+
+[2023-05-25 00:16:49,261] epoch [22]
+[2023-05-25 00:20:11,610] mean IoU: 0.924326  background: 0.973003  foreground: 0.875649
+[2023-05-25 00:20:11,611] mean IoU: 0.851436  background: 0.973003  aeroplane: 0.951731  bicycle: 0.596976  bird: 0.943815  boat: 0.827899  bottle: 0.750434  bus: 0.933781  car: 0.869265  cat: 0.961697  chair: 0.617351  cow: 0.916562  diningtable: 0.749341  dog: 0.915749  horse: 0.933393  motorbike: 0.925061  person: 0.921435  pottedplant: 0.686926  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 00:21:37,467] mean IoU: 0.801161  background: 0.923238  foreground: 0.679085
+[2023-05-25 00:21:37,468] mean IoU: 0.643406  background: 0.923238  aeroplane: 0.929721  bicycle: 0.420859  bird: 0.817525  boat: 0.673034  bottle: 0.699187  bus: 0.850295  car: 0.607755  cat: 0.883545  chair: 0.421703  cow: 0.901034  diningtable: 0.529523  dog: 0.849082  horse: 0.840717  motorbike: 0.855067  person: 0.852356  pottedplant: 0.425856  sheep: 0.394693  sofa: 0.327794  train: 0.106241  tvmonitor: 0.202302
+[2023-05-25 00:21:37,468] 
+
+[2023-05-25 00:21:37,469] epoch [23]
+[2023-05-25 00:24:59,819] mean IoU: 0.926071  background: 0.973702  foreground: 0.878440
+[2023-05-25 00:24:59,820] mean IoU: 0.858092  background: 0.973702  aeroplane: 0.955343  bicycle: 0.603381  bird: 0.945189  boat: 0.873968  bottle: 0.771613  bus: 0.923648  car: 0.873747  cat: 0.958666  chair: 0.622473  cow: 0.908916  diningtable: 0.767502  dog: 0.914942  horse: 0.943023  motorbike: 0.924742  person: 0.915665  pottedplant: 0.711043  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 00:26:25,775] mean IoU: 0.803401  background: 0.925591  foreground: 0.681210
+[2023-05-25 00:26:25,776] mean IoU: 0.641865  background: 0.925591  aeroplane: 0.934703  bicycle: 0.458195  bird: 0.845204  boat: 0.656258  bottle: 0.724579  bus: 0.884257  car: 0.642763  cat: 0.883050  chair: 0.369982  cow: 0.895088  diningtable: 0.531192  dog: 0.854694  horse: 0.835993  motorbike: 0.866853  person: 0.851855  pottedplant: 0.428326  sheep: 0.371234  sofa: 0.260000  train: 0.073424  tvmonitor: 0.185933
+[2023-05-25 00:26:25,776] 
+
+[2023-05-25 00:26:25,776] epoch [24]
+[2023-05-25 00:29:47,880] mean IoU: 0.927566  background: 0.974259  foreground: 0.880874
+[2023-05-25 00:29:47,880] mean IoU: 0.858639  background: 0.974259  aeroplane: 0.960678  bicycle: 0.614837  bird: 0.945795  boat: 0.878061  bottle: 0.767539  bus: 0.931923  car: 0.844230  cat: 0.960062  chair: 0.653745  cow: 0.867331  diningtable: 0.775411  dog: 0.919765  horse: 0.943620  motorbike: 0.916225  person: 0.922528  pottedplant: 0.720856  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 00:31:14,126] mean IoU: 0.798945  background: 0.925102  foreground: 0.672788
+[2023-05-25 00:31:14,126] mean IoU: 0.629728  background: 0.925102  aeroplane: 0.936795  bicycle: 0.504432  bird: 0.816076  boat: 0.648566  bottle: 0.731358  bus: 0.880008  car: 0.608838  cat: 0.889167  chair: 0.349039  cow: 0.875036  diningtable: 0.511072  dog: 0.860262  horse: 0.840839  motorbike: 0.855919  person: 0.868609  pottedplant: 0.398342  sheep: 0.313860  sofa: 0.259142  train: 0.022333  tvmonitor: 0.129498
+[2023-05-25 00:31:14,126] 
+
+[2023-05-25 00:31:14,127] epoch [25]
+[2023-05-25 00:34:36,216] mean IoU: 0.927212  background: 0.974107  foreground: 0.880317
+[2023-05-25 00:34:36,217] mean IoU: 0.855656  background: 0.974107  aeroplane: 0.944281  bicycle: 0.594432  bird: 0.949407  boat: 0.869736  bottle: 0.730018  bus: 0.932684  car: 0.850479  cat: 0.960272  chair: 0.652059  cow: 0.884109  diningtable: 0.761150  dog: 0.924714  horse: 0.946125  motorbike: 0.920189  person: 0.926033  pottedplant: 0.726364  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 00:36:02,654] mean IoU: 0.807157  background: 0.925484  foreground: 0.688830
+[2023-05-25 00:36:02,655] mean IoU: 0.660728  background: 0.925484  aeroplane: 0.930052  bicycle: 0.437100  bird: 0.837382  boat: 0.659272  bottle: 0.703672  bus: 0.847621  car: 0.632610  cat: 0.893107  chair: 0.411878  cow: 0.886611  diningtable: 0.505065  dog: 0.867000  horse: 0.832455  motorbike: 0.869673  person: 0.837216  pottedplant: 0.435479  sheep: 0.632335  sofa: 0.317738  train: 0.136150  tvmonitor: 0.277381
+[2023-05-25 00:36:02,655] 
+
+[2023-05-25 00:36:02,656] epoch [26]
+[2023-05-25 00:39:24,813] mean IoU: 0.928225  background: 0.974531  foreground: 0.881919
+[2023-05-25 00:39:24,814] mean IoU: 0.861952  background: 0.974531  aeroplane: 0.948982  bicycle: 0.622882  bird: 0.940583  boat: 0.867756  bottle: 0.784456  bus: 0.939831  car: 0.868303  cat: 0.955172  chair: 0.671952  cow: 0.920327  diningtable: 0.765402  dog: 0.913838  horse: 0.932817  motorbike: 0.923621  person: 0.914424  pottedplant: 0.708301  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 00:40:50,713] mean IoU: 0.799687  background: 0.921262  foreground: 0.678112
+[2023-05-25 00:40:50,714] mean IoU: 0.648395  background: 0.921262  aeroplane: 0.904300  bicycle: 0.473849  bird: 0.786815  boat: 0.668268  bottle: 0.711876  bus: 0.888240  car: 0.639541  cat: 0.875537  chair: 0.319835  cow: 0.821104  diningtable: 0.505892  dog: 0.810771  horse: 0.808482  motorbike: 0.859471  person: 0.823729  pottedplant: 0.428627  sheep: 0.563467  sofa: 0.415697  train: 0.129135  tvmonitor: 0.260390
+[2023-05-25 00:40:50,714] 
+
+[2023-05-25 00:40:50,715] epoch [27]
+[2023-05-25 00:44:12,689] mean IoU: 0.923874  background: 0.972874  foreground: 0.874874
+[2023-05-25 00:44:12,689] mean IoU: 0.856362  background: 0.972874  aeroplane: 0.949535  bicycle: 0.607697  bird: 0.935525  boat: 0.865419  bottle: 0.768757  bus: 0.943080  car: 0.874595  cat: 0.953435  chair: 0.644251  cow: 0.905709  diningtable: 0.754563  dog: 0.891079  horse: 0.932040  motorbike: 0.924445  person: 0.905626  pottedplant: 0.729520  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 00:45:38,366] mean IoU: 0.796167  background: 0.919411  foreground: 0.672923
+[2023-05-25 00:45:38,367] mean IoU: 0.640944  background: 0.919411  aeroplane: 0.910851  bicycle: 0.430113  bird: 0.835846  boat: 0.621070  bottle: 0.727009  bus: 0.858589  car: 0.601401  cat: 0.876067  chair: 0.374955  cow: 0.765890  diningtable: 0.537434  dog: 0.813626  horse: 0.788760  motorbike: 0.844243  person: 0.836775  pottedplant: 0.382896  sheep: 0.611286  sofa: 0.346901  train: 0.139802  tvmonitor: 0.236889
+[2023-05-25 00:45:38,367] 
+
+[2023-05-25 00:45:38,368] epoch [28]
+[2023-05-25 00:49:01,646] mean IoU: 0.922687  background: 0.972452  foreground: 0.872923
+[2023-05-25 00:49:01,647] mean IoU: 0.850585  background: 0.972452  aeroplane: 0.956466  bicycle: 0.606514  bird: 0.943731  boat: 0.850379  bottle: 0.793927  bus: 0.931759  car: 0.873643  cat: 0.961762  chair: 0.620730  cow: 0.837063  diningtable: 0.720181  dog: 0.921368  horse: 0.906833  motorbike: 0.915778  person: 0.918375  pottedplant: 0.728990  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 00:50:27,960] mean IoU: 0.813470  background: 0.928895  foreground: 0.698045
+[2023-05-25 00:50:27,961] mean IoU: 0.661282  background: 0.928895  aeroplane: 0.921198  bicycle: 0.439309  bird: 0.824801  boat: 0.631559  bottle: 0.663100  bus: 0.876688  car: 0.676658  cat: 0.888236  chair: 0.344092  cow: 0.796515  diningtable: 0.514539  dog: 0.833914  horse: 0.836474  motorbike: 0.856720  person: 0.858158  pottedplant: 0.413608  sheep: 0.682506  sofa: 0.325486  train: 0.303739  tvmonitor: 0.270732
+[2023-05-25 00:50:27,961] 
+
+[2023-05-25 00:50:27,972] Saving model: ckpt/n_emb_4/best.pth
+[2023-05-25 00:50:40,811] epoch [28] has the best iou: 0.698045
+[2023-05-25 00:50:40,811] epoch [29]
+[2023-05-25 00:54:02,831] mean IoU: 0.924299  background: 0.973060  foreground: 0.875538
+[2023-05-25 00:54:02,831] mean IoU: 0.856570  background: 0.973060  aeroplane: 0.953790  bicycle: 0.610269  bird: 0.942745  boat: 0.848946  bottle: 0.812499  bus: 0.885589  car: 0.833577  cat: 0.956870  chair: 0.625474  cow: 0.889819  diningtable: 0.775692  dog: 0.923950  horse: 0.943392  motorbike: 0.913054  person: 0.916533  pottedplant: 0.756439  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 00:55:29,027] mean IoU: 0.796607  background: 0.923353  foreground: 0.669862
+[2023-05-25 00:55:29,028] mean IoU: 0.641244  background: 0.923353  aeroplane: 0.928162  bicycle: 0.412172  bird: 0.790644  boat: 0.629768  bottle: 0.621705  bus: 0.858626  car: 0.645988  cat: 0.858327  chair: 0.282009  cow: 0.826078  diningtable: 0.548377  dog: 0.833010  horse: 0.841901  motorbike: 0.840964  person: 0.770070  pottedplant: 0.406799  sheep: 0.541644  sofa: 0.292855  train: 0.389079  tvmonitor: 0.224595
+[2023-05-25 00:55:29,029] 
+
+[2023-05-25 00:55:29,029] epoch [30]
+[2023-05-25 00:58:52,400] mean IoU: 0.922217  background: 0.972233  foreground: 0.872200
+[2023-05-25 00:58:52,400] mean IoU: 0.855878  background: 0.972233  aeroplane: 0.953190  bicycle: 0.613072  bird: 0.944424  boat: 0.868530  bottle: 0.777886  bus: 0.937995  car: 0.862886  cat: 0.953181  chair: 0.624884  cow: 0.895358  diningtable: 0.786539  dog: 0.896627  horse: 0.939411  motorbike: 0.868671  person: 0.896380  pottedplant: 0.758659  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 01:00:18,663] mean IoU: 0.809111  background: 0.926485  foreground: 0.691736
+[2023-05-25 01:00:18,663] mean IoU: 0.662008  background: 0.926485  aeroplane: 0.932564  bicycle: 0.438793  bird: 0.823551  boat: 0.693368  bottle: 0.710798  bus: 0.899547  car: 0.638458  cat: 0.899531  chair: 0.380009  cow: 0.848101  diningtable: 0.542687  dog: 0.837614  horse: 0.833439  motorbike: 0.868634  person: 0.840338  pottedplant: 0.447865  sheep: 0.660225  sofa: 0.319602  train: 0.153671  tvmonitor: 0.206879
+[2023-05-25 01:00:18,664] 
+
+[2023-05-25 01:00:18,665] epoch [31]
+[2023-05-25 01:03:41,591] mean IoU: 0.935083  background: 0.976959  foreground: 0.893207
+[2023-05-25 01:03:41,592] mean IoU: 0.874749  background: 0.976959  aeroplane: 0.960185  bicycle: 0.611643  bird: 0.962767  boat: 0.890447  bottle: 0.815414  bus: 0.941812  car: 0.881075  cat: 0.959055  chair: 0.683202  cow: 0.923020  diningtable: 0.786042  dog: 0.923944  horse: 0.950565  motorbike: 0.919534  person: 0.924551  pottedplant: 0.760517  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 01:05:08,264] mean IoU: 0.804583  background: 0.926010  foreground: 0.683155
+[2023-05-25 01:05:08,265] mean IoU: 0.644585  background: 0.926010  aeroplane: 0.933521  bicycle: 0.459160  bird: 0.815170  boat: 0.649486  bottle: 0.674316  bus: 0.888512  car: 0.641017  cat: 0.886026  chair: 0.356976  cow: 0.841018  diningtable: 0.536278  dog: 0.854472  horse: 0.857624  motorbike: 0.873616  person: 0.853251  pottedplant: 0.432536  sheep: 0.439130  sofa: 0.273293  train: 0.112594  tvmonitor: 0.232273
+[2023-05-25 01:05:08,265] 
+
+[2023-05-25 01:05:08,266] epoch [32]
+[2023-05-25 01:08:32,514] mean IoU: 0.936695  background: 0.977535  foreground: 0.895856
+[2023-05-25 01:08:32,515] mean IoU: 0.877443  background: 0.977535  aeroplane: 0.961971  bicycle: 0.627426  bird: 0.960365  boat: 0.906442  bottle: 0.811540  bus: 0.940312  car: 0.876945  cat: 0.964889  chair: 0.679067  cow: 0.917093  diningtable: 0.783711  dog: 0.939558  horse: 0.955214  motorbike: 0.927742  person: 0.928028  pottedplant: 0.758699  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 01:09:58,624] mean IoU: 0.808543  background: 0.927225  foreground: 0.689861
+[2023-05-25 01:09:58,625] mean IoU: 0.656488  background: 0.927225  aeroplane: 0.933158  bicycle: 0.453064  bird: 0.802535  boat: 0.689546  bottle: 0.686219  bus: 0.862716  car: 0.628299  cat: 0.896145  chair: 0.366865  cow: 0.859829  diningtable: 0.489961  dog: 0.847575  horse: 0.847407  motorbike: 0.862860  person: 0.859328  pottedplant: 0.451627  sheep: 0.561712  sofa: 0.321815  train: 0.202602  tvmonitor: 0.235756
+[2023-05-25 01:09:58,625] 
+
+[2023-05-25 01:09:58,626] epoch [33]
+[2023-05-25 01:13:21,129] mean IoU: 0.929715  background: 0.975058  foreground: 0.884371
+[2023-05-25 01:13:21,130] mean IoU: 0.860787  background: 0.975058  aeroplane: 0.961680  bicycle: 0.623707  bird: 0.959358  boat: 0.808977  bottle: 0.755433  bus: 0.949499  car: 0.877769  cat: 0.967650  chair: 0.658665  cow: 0.904856  diningtable: 0.720749  dog: 0.939141  horse: 0.949143  motorbike: 0.928104  person: 0.926505  pottedplant: 0.727093  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 01:14:46,744] mean IoU: 0.803587  background: 0.926748  foreground: 0.680425
+[2023-05-25 01:14:46,744] mean IoU: 0.636788  background: 0.926748  aeroplane: 0.933805  bicycle: 0.405214  bird: 0.847405  boat: 0.628857  bottle: 0.715570  bus: 0.853659  car: 0.646550  cat: 0.896984  chair: 0.339897  cow: 0.870368  diningtable: 0.523739  dog: 0.860409  horse: 0.833475  motorbike: 0.856123  person: 0.862888  pottedplant: 0.455774  sheep: 0.357726  sofa: 0.283297  train: 0.070556  tvmonitor: 0.203500
+[2023-05-25 01:14:46,745] 
+
+[2023-05-25 01:14:46,745] epoch [34]
+[2023-05-25 01:18:09,060] mean IoU: 0.928869  background: 0.974749  foreground: 0.882988
+[2023-05-25 01:18:09,061] mean IoU: 0.861463  background: 0.974749  aeroplane: 0.954416  bicycle: 0.611126  bird: 0.903347  boat: 0.869752  bottle: 0.754931  bus: 0.944918  car: 0.885088  cat: 0.935549  chair: 0.685351  cow: 0.913657  diningtable: 0.750239  dog: 0.927556  horse: 0.925637  motorbike: 0.924275  person: 0.925352  pottedplant: 0.758934  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 01:19:35,282] mean IoU: 0.781129  background: 0.916983  foreground: 0.645274
+[2023-05-25 01:19:35,283] mean IoU: 0.611849  background: 0.916983  aeroplane: 0.899592  bicycle: 0.474229  bird: 0.816517  boat: 0.624338  bottle: 0.710397  bus: 0.749292  car: 0.643086  cat: 0.845911  chair: 0.386717  cow: 0.868283  diningtable: 0.513335  dog: 0.868333  horse: 0.728153  motorbike: 0.878667  person: 0.837773  pottedplant: 0.412076  sheep: 0.308352  sofa: 0.197791  train: 0.006963  tvmonitor: 0.162050
+[2023-05-25 01:19:35,283] 
+
+[2023-05-25 01:19:35,284] epoch [35]
+[2023-05-25 01:22:57,009] mean IoU: 0.927613  background: 0.974234  foreground: 0.880992
+[2023-05-25 01:22:57,010] mean IoU: 0.862281  background: 0.974234  aeroplane: 0.956346  bicycle: 0.627483  bird: 0.935753  boat: 0.856855  bottle: 0.794836  bus: 0.941865  car: 0.878588  cat: 0.931629  chair: 0.696616  cow: 0.920841  diningtable: 0.772340  dog: 0.927307  horse: 0.928739  motorbike: 0.929864  person: 0.910265  pottedplant: 0.675212  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 01:24:23,035] mean IoU: 0.794083  background: 0.921818  foreground: 0.666348
+[2023-05-25 01:24:23,035] mean IoU: 0.630573  background: 0.921818  aeroplane: 0.935635  bicycle: 0.470226  bird: 0.782018  boat: 0.633943  bottle: 0.682875  bus: 0.809069  car: 0.629062  cat: 0.878044  chair: 0.355242  cow: 0.897109  diningtable: 0.511271  dog: 0.872462  horse: 0.844487  motorbike: 0.857471  person: 0.839041  pottedplant: 0.437284  sheep: 0.303250  sofa: 0.254604  train: 0.085193  tvmonitor: 0.241922
+[2023-05-25 01:24:23,036] 
+
+[2023-05-25 01:24:23,036] epoch [36]
+[2023-05-25 01:27:45,426] mean IoU: 0.934269  background: 0.976742  foreground: 0.891797
+[2023-05-25 01:27:45,426] mean IoU: 0.873998  background: 0.976742  aeroplane: 0.944451  bicycle: 0.617982  bird: 0.937338  boat: 0.871900  bottle: 0.831265  bus: 0.953562  car: 0.885845  cat: 0.950824  chair: 0.707458  cow: 0.920294  diningtable: 0.783027  dog: 0.933999  horse: 0.950067  motorbike: 0.932394  person: 0.913023  pottedplant: 0.747801  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 01:29:11,137] mean IoU: 0.806673  background: 0.924319  foreground: 0.689027
+[2023-05-25 01:29:11,138] mean IoU: 0.664229  background: 0.924319  aeroplane: 0.936835  bicycle: 0.468745  bird: 0.777345  boat: 0.697469  bottle: 0.665048  bus: 0.886742  car: 0.630236  cat: 0.888998  chair: 0.339330  cow: 0.875054  diningtable: 0.553102  dog: 0.847873  horse: 0.847290  motorbike: 0.872031  person: 0.826311  pottedplant: 0.453311  sheep: 0.582733  sofa: 0.346474  train: 0.261153  tvmonitor: 0.268406
+[2023-05-25 01:29:11,138] 
+
+[2023-05-25 01:29:11,139] epoch [37]
+[2023-05-25 01:32:33,387] mean IoU: 0.902432  background: 0.965079  foreground: 0.839786
+[2023-05-25 01:32:33,388] mean IoU: 0.823674  background: 0.965079  aeroplane: 0.941976  bicycle: 0.528196  bird: 0.930343  boat: 0.874866  bottle: 0.738719  bus: 0.944975  car: 0.865311  cat: 0.837426  chair: 0.420762  cow: 0.909317  diningtable: 0.768808  dog: 0.858618  horse: 0.911814  motorbike: 0.919128  person: 0.896057  pottedplant: 0.691062  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 01:33:59,010] mean IoU: 0.782651  background: 0.918054  foreground: 0.647248
+[2023-05-25 01:33:59,010] mean IoU: 0.603781  background: 0.918054  aeroplane: 0.935002  bicycle: 0.424127  bird: 0.808348  boat: 0.718852  bottle: 0.646859  bus: 0.813117  car: 0.642515  cat: 0.872005  chair: 0.275334  cow: 0.833077  diningtable: 0.555186  dog: 0.841748  horse: 0.812721  motorbike: 0.850184  person: 0.833531  pottedplant: 0.418417  sheep: 0.187463  sofa: 0.177315  train: 0.028391  tvmonitor: 0.087155
+[2023-05-25 01:33:59,011] 
+
+[2023-05-25 01:33:59,011] epoch [38]
+[2023-05-25 01:37:19,928] mean IoU: 0.910777  background: 0.967906  foreground: 0.853648
+[2023-05-25 01:37:19,929] mean IoU: 0.835054  background: 0.967906  aeroplane: 0.942618  bicycle: 0.561570  bird: 0.898171  boat: 0.845658  bottle: 0.714657  bus: 0.953394  car: 0.859241  cat: 0.874767  chair: 0.591689  cow: 0.909122  diningtable: 0.758533  dog: 0.872216  horse: 0.939699  motorbike: 0.923999  person: 0.897318  pottedplant: 0.685363  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 01:38:45,435] mean IoU: 0.800294  background: 0.924072  foreground: 0.676517
+[2023-05-25 01:38:45,436] mean IoU: 0.641626  background: 0.924072  aeroplane: 0.928558  bicycle: 0.454840  bird: 0.815428  boat: 0.709838  bottle: 0.691379  bus: 0.898011  car: 0.661488  cat: 0.874177  chair: 0.357016  cow: 0.868156  diningtable: 0.558391  dog: 0.878001  horse: 0.840378  motorbike: 0.871955  person: 0.856873  pottedplant: 0.474220  sheep: 0.259857  sofa: 0.222905  train: 0.105711  tvmonitor: 0.222899
+[2023-05-25 01:38:45,436] 
+
+[2023-05-25 01:38:45,436] epoch [39]
+[2023-05-25 01:42:08,091] mean IoU: 0.934092  background: 0.976624  foreground: 0.891560
+[2023-05-25 01:42:08,092] mean IoU: 0.870728  background: 0.976624  aeroplane: 0.941671  bicycle: 0.621294  bird: 0.956750  boat: 0.884331  bottle: 0.748818  bus: 0.960256  car: 0.888309  cat: 0.949366  chair: 0.694825  cow: 0.922287  diningtable: 0.807707  dog: 0.933129  horse: 0.944585  motorbike: 0.926077  person: 0.917841  pottedplant: 0.728508  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 01:43:33,422] mean IoU: 0.794283  background: 0.921059  foreground: 0.667506
+[2023-05-25 01:43:33,423] mean IoU: 0.636952  background: 0.921059  aeroplane: 0.924686  bicycle: 0.442506  bird: 0.782577  boat: 0.735225  bottle: 0.665236  bus: 0.856395  car: 0.663380  cat: 0.871446  chair: 0.277130  cow: 0.894091  diningtable: 0.542876  dog: 0.828585  horse: 0.833183  motorbike: 0.880192  person: 0.839602  pottedplant: 0.454999  sheep: 0.455887  sofa: 0.228582  train: 0.073136  tvmonitor: 0.205211
+[2023-05-25 01:43:33,423] 
+
+[2023-05-25 01:43:33,423] epoch [40]
+[2023-05-25 01:46:55,910] mean IoU: 0.935503  background: 0.977144  foreground: 0.893862
+[2023-05-25 01:46:55,910] mean IoU: 0.875813  background: 0.977144  aeroplane: 0.960226  bicycle: 0.654489  bird: 0.958282  boat: 0.890051  bottle: 0.777249  bus: 0.961015  car: 0.878087  cat: 0.949401  chair: 0.679573  cow: 0.913555  diningtable: 0.801954  dog: 0.908542  horse: 0.950427  motorbike: 0.931453  person: 0.927831  pottedplant: 0.769550  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 01:48:21,393] mean IoU: 0.795247  background: 0.919709  foreground: 0.670784
+[2023-05-25 01:48:21,393] mean IoU: 0.639894  background: 0.919709  aeroplane: 0.931322  bicycle: 0.453105  bird: 0.799278  boat: 0.687263  bottle: 0.660208  bus: 0.869622  car: 0.658698  cat: 0.881979  chair: 0.367270  cow: 0.857395  diningtable: 0.539254  dog: 0.794591  horse: 0.841845  motorbike: 0.871026  person: 0.831468  pottedplant: 0.450511  sheep: 0.392966  sofa: 0.277387  train: 0.126088  tvmonitor: 0.226794
+[2023-05-25 01:48:21,394] 
+
+[2023-05-25 01:48:21,394] epoch [41]
+[2023-05-25 01:51:43,651] mean IoU: 0.940549  background: 0.978941  foreground: 0.902158
+[2023-05-25 01:51:43,651] mean IoU: 0.886264  background: 0.978941  aeroplane: 0.959558  bicycle: 0.653471  bird: 0.954316  boat: 0.892214  bottle: 0.822591  bus: 0.960257  car: 0.891021  cat: 0.936025  chair: 0.720519  cow: 0.937719  diningtable: 0.817423  dog: 0.938576  horse: 0.954600  motorbike: 0.936088  person: 0.930037  pottedplant: 0.783132  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 01:53:08,892] mean IoU: 0.790711  background: 0.919137  foreground: 0.662286
+[2023-05-25 01:53:08,893] mean IoU: 0.624649  background: 0.919137  aeroplane: 0.922321  bicycle: 0.463612  bird: 0.822771  boat: 0.671323  bottle: 0.711833  bus: 0.851247  car: 0.649699  cat: 0.890835  chair: 0.339491  cow: 0.871330  diningtable: 0.510105  dog: 0.773405  horse: 0.825201  motorbike: 0.869859  person: 0.842429  pottedplant: 0.455675  sheep: 0.323546  sofa: 0.240055  train: 0.027371  tvmonitor: 0.136376
+[2023-05-25 01:53:08,893] 
+
+[2023-05-25 01:53:08,894] epoch [42]
+[2023-05-25 01:56:31,538] mean IoU: 0.945779  background: 0.980915  foreground: 0.910643
+[2023-05-25 01:56:31,539] mean IoU: 0.892990  background: 0.980915  aeroplane: 0.957144  bicycle: 0.651383  bird: 0.962444  boat: 0.908430  bottle: 0.846052  bus: 0.958964  car: 0.889630  cat: 0.962731  chair: 0.715408  cow: 0.939095  diningtable: 0.830830  dog: 0.945549  horse: 0.957584  motorbike: 0.938100  person: 0.937257  pottedplant: 0.799316  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 01:57:57,576] mean IoU: 0.799810  background: 0.922836  foreground: 0.676784
+[2023-05-25 01:57:57,576] mean IoU: 0.638644  background: 0.922836  aeroplane: 0.932231  bicycle: 0.446070  bird: 0.822388  boat: 0.715277  bottle: 0.704791  bus: 0.900997  car: 0.650897  cat: 0.895648  chair: 0.312731  cow: 0.876577  diningtable: 0.550008  dog: 0.793331  horse: 0.853256  motorbike: 0.881761  person: 0.851372  pottedplant: 0.437436  sheep: 0.270274  sofa: 0.248294  train: 0.127761  tvmonitor: 0.217593
+[2023-05-25 01:57:57,577] 
+
+[2023-05-25 01:57:57,577] epoch [43]
+[2023-05-25 02:01:20,523] mean IoU: 0.946600  background: 0.981153  foreground: 0.912047
+[2023-05-25 02:01:20,523] mean IoU: 0.894431  background: 0.981153  aeroplane: 0.957395  bicycle: 0.650654  bird: 0.941148  boat: 0.905245  bottle: 0.851913  bus: 0.961771  car: 0.894624  cat: 0.963523  chair: 0.711594  cow: 0.948128  diningtable: 0.843723  dog: 0.940388  horse: 0.962679  motorbike: 0.941263  person: 0.937534  pottedplant: 0.812586  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 02:02:46,031] mean IoU: 0.800840  background: 0.923827  foreground: 0.677854
+[2023-05-25 02:02:46,031] mean IoU: 0.638862  background: 0.923827  aeroplane: 0.926221  bicycle: 0.455601  bird: 0.825954  boat: 0.668898  bottle: 0.700163  bus: 0.861979  car: 0.662557  cat: 0.894345  chair: 0.351729  cow: 0.881082  diningtable: 0.556605  dog: 0.814989  horse: 0.823155  motorbike: 0.880367  person: 0.842320  pottedplant: 0.448319  sheep: 0.319070  sofa: 0.303489  train: 0.093097  tvmonitor: 0.182334
+[2023-05-25 02:02:46,032] 
+
+[2023-05-25 02:02:46,032] epoch [44]
+[2023-05-25 02:06:08,379] mean IoU: 0.947548  background: 0.981537  foreground: 0.913560
+[2023-05-25 02:06:08,380] mean IoU: 0.896168  background: 0.981537  aeroplane: 0.963637  bicycle: 0.658315  bird: 0.965218  boat: 0.907262  bottle: 0.853224  bus: 0.964333  car: 0.894750  cat: 0.967055  chair: 0.722884  cow: 0.943519  diningtable: 0.846331  dog: 0.938942  horse: 0.932280  motorbike: 0.938352  person: 0.938058  pottedplant: 0.819167  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 02:07:33,823] mean IoU: 0.805553  background: 0.924810  foreground: 0.686296
+[2023-05-25 02:07:33,824] mean IoU: 0.651669  background: 0.924810  aeroplane: 0.922987  bicycle: 0.465760  bird: 0.828088  boat: 0.675984  bottle: 0.713777  bus: 0.892779  car: 0.659293  cat: 0.898736  chair: 0.372362  cow: 0.883505  diningtable: 0.554019  dog: 0.845250  horse: 0.845466  motorbike: 0.878815  person: 0.853664  pottedplant: 0.439449  sheep: 0.336040  sofa: 0.278646  train: 0.162927  tvmonitor: 0.252692
+[2023-05-25 02:07:33,824] 
+
+[2023-05-25 02:07:33,825] epoch [45]
+[2023-05-25 02:10:56,468] mean IoU: 0.950950  background: 0.982749  foreground: 0.919151
+[2023-05-25 02:10:56,468] mean IoU: 0.902012  background: 0.982749  aeroplane: 0.960851  bicycle: 0.651638  bird: 0.965128  boat: 0.899144  bottle: 0.857247  bus: 0.960871  car: 0.900222  cat: 0.969365  chair: 0.748284  cow: 0.948070  diningtable: 0.849614  dog: 0.951514  horse: 0.963305  motorbike: 0.941911  person: 0.940714  pottedplant: 0.843578  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 02:12:22,143] mean IoU: 0.801453  background: 0.922748  foreground: 0.680158
+[2023-05-25 02:12:22,144] mean IoU: 0.651173  background: 0.922748  aeroplane: 0.923245  bicycle: 0.432244  bird: 0.804212  boat: 0.676386  bottle: 0.718482  bus: 0.867827  car: 0.637826  cat: 0.883287  chair: 0.369799  cow: 0.857599  diningtable: 0.563172  dog: 0.804757  horse: 0.834785  motorbike: 0.872526  person: 0.839454  pottedplant: 0.477148  sheep: 0.552304  sofa: 0.309839  train: 0.066363  tvmonitor: 0.260623
+[2023-05-25 02:12:22,144] 
+
+[2023-05-25 02:12:22,144] epoch [46]
+[2023-05-25 02:15:43,654] mean IoU: 0.952755  background: 0.983376  foreground: 0.922133
+[2023-05-25 02:15:43,654] mean IoU: 0.905297  background: 0.983376  aeroplane: 0.960031  bicycle: 0.673055  bird: 0.967022  boat: 0.911674  bottle: 0.863209  bus: 0.960769  car: 0.903874  cat: 0.971860  chair: 0.758944  cow: 0.953918  diningtable: 0.862992  dog: 0.949771  horse: 0.956517  motorbike: 0.943193  person: 0.944224  pottedplant: 0.825616  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 02:17:08,594] mean IoU: 0.800811  background: 0.922606  foreground: 0.679017
+[2023-05-25 02:17:08,595] mean IoU: 0.648146  background: 0.922606  aeroplane: 0.919321  bicycle: 0.457692  bird: 0.776741  boat: 0.707087  bottle: 0.706263  bus: 0.872545  car: 0.633879  cat: 0.894201  chair: 0.379448  cow: 0.872914  diningtable: 0.546470  dog: 0.829285  horse: 0.837536  motorbike: 0.879599  person: 0.839408  pottedplant: 0.447176  sheep: 0.467155  sofa: 0.292453  train: 0.084218  tvmonitor: 0.245069
+[2023-05-25 02:17:08,595] 
+
+[2023-05-25 02:17:08,596] epoch [47]
+[2023-05-25 02:20:29,981] mean IoU: 0.945869  background: 0.980850  foreground: 0.910889
+[2023-05-25 02:20:29,982] mean IoU: 0.890869  background: 0.980850  aeroplane: 0.944889  bicycle: 0.627066  bird: 0.949773  boat: 0.900494  bottle: 0.841000  bus: 0.958682  car: 0.893531  cat: 0.969399  chair: 0.713655  cow: 0.943697  diningtable: 0.854715  dog: 0.955014  horse: 0.935162  motorbike: 0.910317  person: 0.938566  pottedplant: 0.827963  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 02:21:55,352] mean IoU: 0.778545  background: 0.917851  foreground: 0.639238
+[2023-05-25 02:21:55,352] mean IoU: 0.591633  background: 0.917851  aeroplane: 0.882858  bicycle: 0.420361  bird: 0.778664  boat: 0.755761  bottle: 0.701576  bus: 0.762867  car: 0.644323  cat: 0.871482  chair: 0.292870  cow: 0.774757  diningtable: 0.479804  dog: 0.841095  horse: 0.491184  motorbike: 0.861623  person: 0.822781  pottedplant: 0.413161  sheep: 0.082291  sofa: 0.282769  train: 0.176271  tvmonitor: 0.169939
+[2023-05-25 02:21:55,353] 
+
+[2023-05-25 02:21:55,353] epoch [48]
+[2023-05-25 02:25:16,864] mean IoU: 0.927839  background: 0.974328  foreground: 0.881349
+[2023-05-25 02:25:16,865] mean IoU: 0.856598  background: 0.974328  aeroplane: 0.937858  bicycle: 0.612171  bird: 0.870361  boat: 0.832752  bottle: 0.781508  bus: 0.958507  car: 0.868077  cat: 0.956885  chair: 0.691514  cow: 0.778310  diningtable: 0.818845  dog: 0.940200  horse: 0.912977  motorbike: 0.918820  person: 0.908947  pottedplant: 0.800100  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 02:26:41,990] mean IoU: 0.805590  background: 0.925294  foreground: 0.685885
+[2023-05-25 02:26:41,991] mean IoU: 0.651570  background: 0.925294  aeroplane: 0.912819  bicycle: 0.448459  bird: 0.839275  boat: 0.644441  bottle: 0.752783  bus: 0.882177  car: 0.638976  cat: 0.892892  chair: 0.361123  cow: 0.828950  diningtable: 0.522614  dog: 0.854461  horse: 0.827515  motorbike: 0.863885  person: 0.845885  pottedplant: 0.465783  sheep: 0.386331  sofa: 0.314954  train: 0.215616  tvmonitor: 0.258730
+[2023-05-25 02:26:41,991] 
+
+[2023-05-25 02:26:41,991] epoch [49]
+[2023-05-25 02:30:02,948] mean IoU: 0.937042  background: 0.977714  foreground: 0.896370
+[2023-05-25 02:30:02,949] mean IoU: 0.874757  background: 0.977714  aeroplane: 0.947069  bicycle: 0.632844  bird: 0.926393  boat: 0.881518  bottle: 0.812689  bus: 0.956762  car: 0.882789  cat: 0.963404  chair: 0.702339  cow: 0.844841  diningtable: 0.832435  dog: 0.940278  horse: 0.906699  motorbike: 0.918876  person: 0.927304  pottedplant: 0.816919  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 02:31:28,800] mean IoU: 0.806551  background: 0.925252  foreground: 0.687849
+[2023-05-25 02:31:28,801] mean IoU: 0.656877  background: 0.925252  aeroplane: 0.919367  bicycle: 0.424568  bird: 0.826328  boat: 0.685100  bottle: 0.704421  bus: 0.820601  car: 0.653169  cat: 0.901050  chair: 0.372395  cow: 0.819153  diningtable: 0.511331  dog: 0.856242  horse: 0.821048  motorbike: 0.878453  person: 0.835857  pottedplant: 0.429659  sheep: 0.645564  sofa: 0.276154  train: 0.276346  tvmonitor: 0.212351
+[2023-05-25 02:31:28,801] 
+
+[2023-05-25 02:31:28,801] epoch [50]
+[2023-05-25 02:34:50,958] mean IoU: 0.939616  background: 0.978609  foreground: 0.900622
+[2023-05-25 02:34:50,958] mean IoU: 0.879018  background: 0.978609  aeroplane: 0.950740  bicycle: 0.631290  bird: 0.953659  boat: 0.864589  bottle: 0.809801  bus: 0.957020  car: 0.865668  cat: 0.964624  chair: 0.707969  cow: 0.864180  diningtable: 0.839560  dog: 0.948282  horse: 0.939911  motorbike: 0.927515  person: 0.930597  pottedplant: 0.809296  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 02:36:16,277] mean IoU: 0.810879  background: 0.927202  foreground: 0.694556
+[2023-05-25 02:36:16,277] mean IoU: 0.663528  background: 0.927202  aeroplane: 0.925167  bicycle: 0.462542  bird: 0.817437  boat: 0.656025  bottle: 0.702898  bus: 0.888169  car: 0.648937  cat: 0.895799  chair: 0.365945  cow: 0.842680  diningtable: 0.544657  dog: 0.859581  horse: 0.844481  motorbike: 0.878010  person: 0.839188  pottedplant: 0.465312  sheep: 0.559109  sofa: 0.319939  train: 0.237588  tvmonitor: 0.253427
+[2023-05-25 02:36:16,278] 
+
+[2023-05-25 02:36:16,278] epoch [51]
+[2023-05-25 02:39:37,388] mean IoU: 0.944177  background: 0.980276  foreground: 0.908077
+[2023-05-25 02:39:37,389] mean IoU: 0.887478  background: 0.980276  aeroplane: 0.951169  bicycle: 0.650287  bird: 0.952865  boat: 0.893100  bottle: 0.826642  bus: 0.959857  car: 0.888845  cat: 0.967750  chair: 0.714339  cow: 0.888322  diningtable: 0.841469  dog: 0.953426  horse: 0.940609  motorbike: 0.934159  person: 0.937045  pottedplant: 0.806963  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 02:41:02,927] mean IoU: 0.807566  background: 0.926356  foreground: 0.688776
+[2023-05-25 02:41:02,927] mean IoU: 0.654640  background: 0.926356  aeroplane: 0.934138  bicycle: 0.476539  bird: 0.784275  boat: 0.680746  bottle: 0.648082  bus: 0.890519  car: 0.653595  cat: 0.889871  chair: 0.375775  cow: 0.849291  diningtable: 0.534578  dog: 0.832754  horse: 0.835334  motorbike: 0.877592  person: 0.841291  pottedplant: 0.424597  sheep: 0.517363  sofa: 0.332534  train: 0.193155  tvmonitor: 0.249062
+[2023-05-25 02:41:02,927] 
+
+[2023-05-25 02:41:02,928] epoch [52]
+[2023-05-25 02:44:24,281] mean IoU: 0.948139  background: 0.981710  foreground: 0.914568
+[2023-05-25 02:44:24,281] mean IoU: 0.894383  background: 0.981710  aeroplane: 0.957844  bicycle: 0.667709  bird: 0.962875  boat: 0.881446  bottle: 0.798293  bus: 0.963288  car: 0.893346  cat: 0.972838  chair: 0.747228  cow: 0.907919  diningtable: 0.853370  dog: 0.955592  horse: 0.949088  motorbike: 0.941034  person: 0.938299  pottedplant: 0.832631  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 02:45:49,975] mean IoU: 0.803400  background: 0.923628  foreground: 0.683172
+[2023-05-25 02:45:49,976] mean IoU: 0.650639  background: 0.923628  aeroplane: 0.933531  bicycle: 0.448897  bird: 0.810826  boat: 0.617211  bottle: 0.719697  bus: 0.891432  car: 0.644728  cat: 0.895060  chair: 0.365603  cow: 0.837341  diningtable: 0.491236  dog: 0.836377  horse: 0.832573  motorbike: 0.866951  person: 0.843986  pottedplant: 0.469535  sheep: 0.514206  sofa: 0.339124  train: 0.117938  tvmonitor: 0.263528
+[2023-05-25 02:45:49,976] 
+
+[2023-05-25 02:45:49,977] epoch [53]
+[2023-05-25 02:49:11,791] mean IoU: 0.948465  background: 0.981820  foreground: 0.915111
+[2023-05-25 02:49:11,792] mean IoU: 0.896355  background: 0.981820  aeroplane: 0.963551  bicycle: 0.659652  bird: 0.966495  boat: 0.853299  bottle: 0.858720  bus: 0.963707  car: 0.884215  cat: 0.972623  chair: 0.727765  cow: 0.925084  diningtable: 0.850019  dog: 0.955276  horse: 0.952263  motorbike: 0.939261  person: 0.939837  pottedplant: 0.844450  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 02:50:36,904] mean IoU: 0.802207  background: 0.924335  foreground: 0.680079
+[2023-05-25 02:50:36,904] mean IoU: 0.649349  background: 0.924335  aeroplane: 0.929123  bicycle: 0.462160  bird: 0.811342  boat: 0.718393  bottle: 0.716318  bus: 0.839187  car: 0.645057  cat: 0.894101  chair: 0.366241  cow: 0.855801  diningtable: 0.511285  dog: 0.837938  horse: 0.833883  motorbike: 0.884129  person: 0.849597  pottedplant: 0.436841  sheep: 0.530604  sofa: 0.304802  train: 0.055201  tvmonitor: 0.229980
+[2023-05-25 02:50:36,904] 
+
+[2023-05-25 02:50:36,905] epoch [54]
+[2023-05-25 02:53:58,372] mean IoU: 0.950516  background: 0.982573  foreground: 0.918460
+[2023-05-25 02:53:58,373] mean IoU: 0.899798  background: 0.982573  aeroplane: 0.963107  bicycle: 0.664680  bird: 0.965271  boat: 0.894165  bottle: 0.868508  bus: 0.965394  car: 0.910134  cat: 0.972560  chair: 0.738791  cow: 0.907390  diningtable: 0.864222  dog: 0.952305  horse: 0.948532  motorbike: 0.939368  person: 0.941823  pottedplant: 0.817738  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 02:55:23,525] mean IoU: 0.808731  background: 0.925937  foreground: 0.691526
+[2023-05-25 02:55:23,526] mean IoU: 0.663035  background: 0.925937  aeroplane: 0.936262  bicycle: 0.478135  bird: 0.819773  boat: 0.668712  bottle: 0.728018  bus: 0.902656  car: 0.650997  cat: 0.895248  chair: 0.371900  cow: 0.868223  diningtable: 0.531431  dog: 0.842016  horse: 0.827787  motorbike: 0.872309  person: 0.842818  pottedplant: 0.430174  sheep: 0.512045  sofa: 0.337256  train: 0.192049  tvmonitor: 0.289984
+[2023-05-25 02:55:23,526] 
+
+[2023-05-25 02:55:23,527] epoch [55]
+[2023-05-25 02:58:44,772] mean IoU: 0.949978  background: 0.982354  foreground: 0.917601
+[2023-05-25 02:58:44,772] mean IoU: 0.901336  background: 0.982354  aeroplane: 0.964467  bicycle: 0.669353  bird: 0.970364  boat: 0.907033  bottle: 0.863084  bus: 0.936125  car: 0.908626  cat: 0.972931  chair: 0.734353  cow: 0.931056  diningtable: 0.855800  dog: 0.956426  horse: 0.954974  motorbike: 0.937081  person: 0.941146  pottedplant: 0.837532  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 03:00:10,509] mean IoU: 0.796661  background: 0.920113  foreground: 0.673209
+[2023-05-25 03:00:10,510] mean IoU: 0.647019  background: 0.920113  aeroplane: 0.917378  bicycle: 0.469937  bird: 0.801552  boat: 0.653781  bottle: 0.716918  bus: 0.872948  car: 0.631901  cat: 0.880896  chair: 0.352416  cow: 0.867796  diningtable: 0.510982  dog: 0.830670  horse: 0.844588  motorbike: 0.874777  person: 0.821087  pottedplant: 0.463857  sheep: 0.562482  sofa: 0.318586  train: 0.032498  tvmonitor: 0.242246
+[2023-05-25 03:00:10,510] 
+
+[2023-05-25 03:00:10,510] epoch [56]
+[2023-05-25 03:03:31,692] mean IoU: 0.933274  background: 0.976418  foreground: 0.890129
+[2023-05-25 03:03:31,692] mean IoU: 0.877178  background: 0.976418  aeroplane: 0.946995  bicycle: 0.652719  bird: 0.961558  boat: 0.896211  bottle: 0.840625  bus: 0.942638  car: 0.902279  cat: 0.903734  chair: 0.566453  cow: 0.920227  diningtable: 0.833182  dog: 0.937171  horse: 0.945890  motorbike: 0.936669  person: 0.926633  pottedplant: 0.822617  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 03:04:56,690] mean IoU: 0.800500  background: 0.922247  foreground: 0.678753
+[2023-05-25 03:04:56,690] mean IoU: 0.645238  background: 0.922247  aeroplane: 0.891540  bicycle: 0.490987  bird: 0.809673  boat: 0.682319  bottle: 0.721699  bus: 0.864671  car: 0.624317  cat: 0.865194  chair: 0.253694  cow: 0.858010  diningtable: 0.554119  dog: 0.816224  horse: 0.838030  motorbike: 0.868900  person: 0.849501  pottedplant: 0.439976  sheep: 0.474149  sofa: 0.248693  train: 0.244704  tvmonitor: 0.231350
+[2023-05-25 03:04:56,690] 
+
+[2023-05-25 03:04:56,691] epoch [57]
+[2023-05-25 03:08:18,082] mean IoU: 0.939405  background: 0.978574  foreground: 0.900235
+[2023-05-25 03:08:18,082] mean IoU: 0.882973  background: 0.978574  aeroplane: 0.959640  bicycle: 0.631536  bird: 0.964457  boat: 0.907792  bottle: 0.861616  bus: 0.956134  car: 0.872903  cat: 0.961290  chair: 0.596127  cow: 0.886297  diningtable: 0.831137  dog: 0.952014  horse: 0.957146  motorbike: 0.934288  person: 0.933052  pottedplant: 0.826537  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 03:09:43,514] mean IoU: 0.807370  background: 0.925968  foreground: 0.688772
+[2023-05-25 03:09:43,514] mean IoU: 0.657617  background: 0.925968  aeroplane: 0.932093  bicycle: 0.447140  bird: 0.816894  boat: 0.708815  bottle: 0.698346  bus: 0.905665  car: 0.647367  cat: 0.900910  chair: 0.295594  cow: 0.817824  diningtable: 0.558096  dog: 0.820598  horse: 0.837749  motorbike: 0.878528  person: 0.847092  pottedplant: 0.428145  sheep: 0.640130  sofa: 0.307094  train: 0.122861  tvmonitor: 0.273037
+[2023-05-25 03:09:43,515] 
+
+[2023-05-25 03:09:43,515] epoch [58]
+[2023-05-25 03:13:04,834] mean IoU: 0.948075  background: 0.981737  foreground: 0.914414
+[2023-05-25 03:13:04,835] mean IoU: 0.896882  background: 0.981737  aeroplane: 0.964623  bicycle: 0.639344  bird: 0.968576  boat: 0.912652  bottle: 0.871718  bus: 0.961808  car: 0.904588  cat: 0.969716  chair: 0.652710  cow: 0.936833  diningtable: 0.861333  dog: 0.954167  horse: 0.956218  motorbike: 0.936371  person: 0.939441  pottedplant: 0.835167  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 03:14:30,009] mean IoU: 0.789854  background: 0.920543  foreground: 0.659164
+[2023-05-25 03:14:30,010] mean IoU: 0.627191  background: 0.920543  aeroplane: 0.929387  bicycle: 0.430361  bird: 0.812161  boat: 0.697572  bottle: 0.707658  bus: 0.715254  car: 0.604840  cat: 0.880927  chair: 0.300352  cow: 0.868389  diningtable: 0.527063  dog: 0.808348  horse: 0.828881  motorbike: 0.865786  person: 0.851830  pottedplant: 0.475346  sheep: 0.528563  sofa: 0.183694  train: 0.002592  tvmonitor: 0.231461
+[2023-05-25 03:14:30,011] 
+
+[2023-05-25 03:14:30,011] epoch [59]
+[2023-05-25 03:17:51,267] mean IoU: 0.939942  background: 0.978782  foreground: 0.901102
+[2023-05-25 03:17:51,267] mean IoU: 0.884272  background: 0.978782  aeroplane: 0.960069  bicycle: 0.661297  bird: 0.947127  boat: 0.837423  bottle: 0.857716  bus: 0.888089  car: 0.888726  cat: 0.955359  chair: 0.705286  cow: 0.924280  diningtable: 0.862146  dog: 0.942573  horse: 0.952710  motorbike: 0.936368  person: 0.931154  pottedplant: 0.803527  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 03:19:16,369] mean IoU: 0.808509  background: 0.925843  foreground: 0.691175
+[2023-05-25 03:19:16,369] mean IoU: 0.669071  background: 0.925843  aeroplane: 0.934210  bicycle: 0.454300  bird: 0.821776  boat: 0.756574  bottle: 0.714892  bus: 0.883649  car: 0.663234  cat: 0.899195  chair: 0.360307  cow: 0.859107  diningtable: 0.574569  dog: 0.823627  horse: 0.826133  motorbike: 0.876108  person: 0.845884  pottedplant: 0.461100  sheep: 0.599702  sofa: 0.305922  train: 0.120358  tvmonitor: 0.344004
+[2023-05-25 03:19:16,370] 
+
+[2023-05-25 03:19:16,370] epoch [60]
+[2023-05-25 03:22:37,138] mean IoU: 0.952167  background: 0.983168  foreground: 0.921167
+[2023-05-25 03:22:37,139] mean IoU: 0.904740  background: 0.983168  aeroplane: 0.963671  bicycle: 0.678375  bird: 0.968522  boat: 0.899058  bottle: 0.876727  bus: 0.954245  car: 0.900887  cat: 0.969241  chair: 0.740608  cow: 0.934826  diningtable: 0.874935  dog: 0.959423  horse: 0.955330  motorbike: 0.941879  person: 0.943896  pottedplant: 0.835788  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 03:24:02,755] mean IoU: 0.803050  background: 0.920791  foreground: 0.685309
+[2023-05-25 03:24:02,756] mean IoU: 0.662534  background: 0.920791  aeroplane: 0.891340  bicycle: 0.477077  bird: 0.817424  boat: 0.744198  bottle: 0.716161  bus: 0.911085  car: 0.638896  cat: 0.882037  chair: 0.351124  cow: 0.846825  diningtable: 0.551282  dog: 0.815056  horse: 0.807227  motorbike: 0.867679  person: 0.817565  pottedplant: 0.417350  sheep: 0.553939  sofa: 0.331134  train: 0.196173  tvmonitor: 0.358853
+[2023-05-25 03:24:02,756] 
+
+[2023-05-25 03:24:02,757] epoch [61]
+[2023-05-25 03:27:24,068] mean IoU: 0.937582  background: 0.977876  foreground: 0.897289
+[2023-05-25 03:27:24,069] mean IoU: 0.884607  background: 0.977876  aeroplane: 0.964358  bicycle: 0.644465  bird: 0.961549  boat: 0.887134  bottle: 0.850019  bus: 0.962043  car: 0.900264  cat: 0.939563  chair: 0.681011  cow: 0.921605  diningtable: 0.844550  dog: 0.941439  horse: 0.944366  motorbike: 0.931249  person: 0.903949  pottedplant: 0.782880  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 03:28:49,932] mean IoU: 0.809300  background: 0.926007  foreground: 0.692593
+[2023-05-25 03:28:49,933] mean IoU: 0.667167  background: 0.926007  aeroplane: 0.919267  bicycle: 0.496713  bird: 0.832953  boat: 0.715264  bottle: 0.725976  bus: 0.890603  car: 0.668641  cat: 0.892265  chair: 0.358891  cow: 0.866961  diningtable: 0.567967  dog: 0.826336  horse: 0.843411  motorbike: 0.855463  person: 0.848891  pottedplant: 0.465256  sheep: 0.543093  sofa: 0.295371  train: 0.134234  tvmonitor: 0.336935
+[2023-05-25 03:28:49,934] 
+
+[2023-05-25 03:28:49,934] epoch [62]
+[2023-05-25 03:32:11,239] mean IoU: 0.946124  background: 0.980975  foreground: 0.911273
+[2023-05-25 03:32:11,239] mean IoU: 0.895069  background: 0.980975  aeroplane: 0.965098  bicycle: 0.658410  bird: 0.959758  boat: 0.914200  bottle: 0.852758  bus: 0.962178  car: 0.897597  cat: 0.953819  chair: 0.709231  cow: 0.902309  diningtable: 0.872648  dog: 0.931553  horse: 0.955136  motorbike: 0.940786  person: 0.937375  pottedplant: 0.822338  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 03:33:36,395] mean IoU: 0.814748  background: 0.929117  foreground: 0.700379
+[2023-05-25 03:33:36,395] mean IoU: 0.670880  background: 0.929117  aeroplane: 0.920941  bicycle: 0.459479  bird: 0.816920  boat: 0.707054  bottle: 0.709039  bus: 0.877819  car: 0.665453  cat: 0.881154  chair: 0.369980  cow: 0.844114  diningtable: 0.566419  dog: 0.818851  horse: 0.855423  motorbike: 0.882560  person: 0.852954  pottedplant: 0.460131  sheep: 0.644409  sofa: 0.277962  train: 0.223589  tvmonitor: 0.325116
+[2023-05-25 03:33:36,396] 
+
+[2023-05-25 03:33:36,412] Saving model: ckpt/n_emb_4/best.pth
+[2023-05-25 03:33:47,611] epoch [62] has the best iou: 0.700379
+[2023-05-25 03:33:47,612] epoch [63]
+[2023-05-25 03:37:08,966] mean IoU: 0.947089  background: 0.981344  foreground: 0.912834
+[2023-05-25 03:37:08,967] mean IoU: 0.895355  background: 0.981344  aeroplane: 0.953182  bicycle: 0.664017  bird: 0.967505  boat: 0.884590  bottle: 0.864996  bus: 0.964678  car: 0.908743  cat: 0.969048  chair: 0.733532  cow: 0.918837  diningtable: 0.781479  dog: 0.956561  horse: 0.957288  motorbike: 0.939313  person: 0.940069  pottedplant: 0.835848  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 03:38:34,340] mean IoU: 0.802517  background: 0.922748  foreground: 0.682287
+[2023-05-25 03:38:34,341] mean IoU: 0.659930  background: 0.922748  aeroplane: 0.927802  bicycle: 0.464650  bird: 0.826688  boat: 0.673465  bottle: 0.719369  bus: 0.884424  car: 0.647851  cat: 0.895552  chair: 0.383485  cow: 0.870084  diningtable: 0.548319  dog: 0.833820  horse: 0.835493  motorbike: 0.894495  person: 0.826824  pottedplant: 0.460640  sheep: 0.633774  sofa: 0.293079  train: 0.030453  tvmonitor: 0.285523
+[2023-05-25 03:38:34,345] 
+
+[2023-05-25 03:38:34,345] epoch [64]
+[2023-05-25 03:41:55,474] mean IoU: 0.950685  background: 0.982624  foreground: 0.918747
+[2023-05-25 03:41:55,475] mean IoU: 0.901121  background: 0.982624  aeroplane: 0.921086  bicycle: 0.672640  bird: 0.965834  boat: 0.913042  bottle: 0.863139  bus: 0.965134  car: 0.897981  cat: 0.970737  chair: 0.760117  cow: 0.929459  diningtable: 0.846357  dog: 0.955700  horse: 0.948472  motorbike: 0.941200  person: 0.941139  pottedplant: 0.844398  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 03:43:20,996] mean IoU: 0.803791  background: 0.924266  foreground: 0.683316
+[2023-05-25 03:43:20,996] mean IoU: 0.656894  background: 0.924266  aeroplane: 0.931075  bicycle: 0.441290  bird: 0.805567  boat: 0.698354  bottle: 0.730850  bus: 0.896117  car: 0.654518  cat: 0.885982  chair: 0.346626  cow: 0.874590  diningtable: 0.551383  dog: 0.799101  horse: 0.861487  motorbike: 0.887564  person: 0.837606  pottedplant: 0.453315  sheep: 0.583644  sofa: 0.282815  train: 0.039613  tvmonitor: 0.309012
+[2023-05-25 03:43:20,997] 
+
+[2023-05-25 03:43:20,997] epoch [65]
+[2023-05-25 03:46:42,013] mean IoU: 0.950293  background: 0.982511  foreground: 0.918074
+[2023-05-25 03:46:42,014] mean IoU: 0.901483  background: 0.982511  aeroplane: 0.966016  bicycle: 0.656764  bird: 0.968088  boat: 0.908236  bottle: 0.872850  bus: 0.963357  car: 0.878807  cat: 0.961878  chair: 0.727336  cow: 0.941214  diningtable: 0.862872  dog: 0.950316  horse: 0.956966  motorbike: 0.940052  person: 0.944753  pottedplant: 0.843187  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 03:48:07,822] mean IoU: 0.802282  background: 0.923218  foreground: 0.681345
+[2023-05-25 03:48:07,822] mean IoU: 0.663437  background: 0.923218  aeroplane: 0.935269  bicycle: 0.513275  bird: 0.849548  boat: 0.743464  bottle: 0.735570  bus: 0.885263  car: 0.633791  cat: 0.892746  chair: 0.311367  cow: 0.874917  diningtable: 0.533506  dog: 0.813651  horse: 0.860578  motorbike: 0.881163  person: 0.826901  pottedplant: 0.469596  sheep: 0.633011  sofa: 0.232847  train: 0.027925  tvmonitor: 0.354573
+[2023-05-25 03:48:07,823] 
+
+[2023-05-25 03:48:07,823] epoch [66]
+[2023-05-25 03:51:29,308] mean IoU: 0.954971  background: 0.984144  foreground: 0.925798
+[2023-05-25 03:51:29,308] mean IoU: 0.909516  background: 0.984144  aeroplane: 0.964234  bicycle: 0.686632  bird: 0.969830  boat: 0.915992  bottle: 0.865495  bus: 0.965226  car: 0.907177  cat: 0.974921  chair: 0.780367  cow: 0.949922  diningtable: 0.871398  dog: 0.949710  horse: 0.963684  motorbike: 0.940716  person: 0.946117  pottedplant: 0.826214  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 03:52:54,510] mean IoU: 0.803249  background: 0.924301  foreground: 0.682197
+[2023-05-25 03:52:54,511] mean IoU: 0.658832  background: 0.924301  aeroplane: 0.927877  bicycle: 0.475130  bird: 0.839609  boat: 0.713864  bottle: 0.729393  bus: 0.881827  car: 0.663803  cat: 0.882319  chair: 0.361062  cow: 0.871822  diningtable: 0.513361  dog: 0.818059  horse: 0.842127  motorbike: 0.866573  person: 0.823351  pottedplant: 0.468997  sheep: 0.556539  sofa: 0.273495  train: 0.070460  tvmonitor: 0.331508
+[2023-05-25 03:52:54,511] 
+
+[2023-05-25 03:52:54,511] epoch [67]
+[2023-05-25 03:56:16,107] mean IoU: 0.957536  background: 0.985080  foreground: 0.929991
+[2023-05-25 03:56:16,108] mean IoU: 0.914044  background: 0.985080  aeroplane: 0.963560  bicycle: 0.680627  bird: 0.968835  boat: 0.920925  bottle: 0.869666  bus: 0.965995  car: 0.916712  cat: 0.976106  chair: 0.801038  cow: 0.951321  diningtable: 0.879227  dog: 0.956282  horse: 0.962474  motorbike: 0.945422  person: 0.944766  pottedplant: 0.850708  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 03:57:41,057] mean IoU: 0.807269  background: 0.924677  foreground: 0.689861
+[2023-05-25 03:57:41,058] mean IoU: 0.668821  background: 0.924677  aeroplane: 0.917276  bicycle: 0.462616  bird: 0.849117  boat: 0.730064  bottle: 0.723346  bus: 0.890098  car: 0.670058  cat: 0.881756  chair: 0.375947  cow: 0.858047  diningtable: 0.537271  dog: 0.837152  horse: 0.824679  motorbike: 0.889693  person: 0.829712  pottedplant: 0.473551  sheep: 0.632827  sofa: 0.256071  train: 0.148396  tvmonitor: 0.332887
+[2023-05-25 03:57:41,058] 
+
+[2023-05-25 03:57:41,059] epoch [68]
+[2023-05-25 04:01:02,540] mean IoU: 0.959778  background: 0.985876  foreground: 0.933679
+[2023-05-25 04:01:02,541] mean IoU: 0.917611  background: 0.985876  aeroplane: 0.968907  bicycle: 0.690681  bird: 0.973171  boat: 0.917240  bottle: 0.859130  bus: 0.964992  car: 0.918767  cat: 0.977481  chair: 0.813880  cow: 0.959844  diningtable: 0.888004  dog: 0.958600  horse: 0.964952  motorbike: 0.946332  person: 0.949553  pottedplant: 0.861972  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 04:02:27,857] mean IoU: 0.803035  background: 0.923153  foreground: 0.682916
+[2023-05-25 04:02:27,858] mean IoU: 0.662505  background: 0.923153  aeroplane: 0.922222  bicycle: 0.482124  bird: 0.846070  boat: 0.721346  bottle: 0.726802  bus: 0.871825  car: 0.671912  cat: 0.877469  chair: 0.384859  cow: 0.868398  diningtable: 0.544570  dog: 0.831003  horse: 0.847095  motorbike: 0.879247  person: 0.827567  pottedplant: 0.476324  sheep: 0.570447  sofa: 0.278921  train: 0.018387  tvmonitor: 0.342861
+[2023-05-25 04:02:27,858] 
+
+[2023-05-25 04:02:27,859] epoch [69]
+[2023-05-25 04:05:49,236] mean IoU: 0.956556  background: 0.984699  foreground: 0.928413
+[2023-05-25 04:05:49,237] mean IoU: 0.911853  background: 0.984699  aeroplane: 0.967756  bicycle: 0.696881  bird: 0.901095  boat: 0.915967  bottle: 0.880438  bus: 0.964531  car: 0.921191  cat: 0.974081  chair: 0.797438  cow: 0.957692  diningtable: 0.889939  dog: 0.957260  horse: 0.958786  motorbike: 0.949015  person: 0.946197  pottedplant: 0.838532  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 04:07:14,656] mean IoU: 0.793921  background: 0.921268  foreground: 0.666574
+[2023-05-25 04:07:14,657] mean IoU: 0.640243  background: 0.921268  aeroplane: 0.928787  bicycle: 0.465399  bird: 0.800322  boat: 0.727768  bottle: 0.711336  bus: 0.874376  car: 0.654770  cat: 0.865623  chair: 0.338147  cow: 0.836664  diningtable: 0.493327  dog: 0.790486  horse: 0.853105  motorbike: 0.862304  person: 0.812536  pottedplant: 0.438870  sheep: 0.489726  sofa: 0.287381  train: 0.008179  tvmonitor: 0.284721
+[2023-05-25 04:07:14,657] 
+
+[2023-05-25 04:07:14,658] epoch [70]
+[2023-05-25 04:10:35,904] mean IoU: 0.953808  background: 0.983725  foreground: 0.923890
+[2023-05-25 04:10:35,905] mean IoU: 0.906068  background: 0.983725  aeroplane: 0.963331  bicycle: 0.681100  bird: 0.920289  boat: 0.897338  bottle: 0.861972  bus: 0.964622  car: 0.921061  cat: 0.972285  chair: 0.793148  cow: 0.939516  diningtable: 0.879250  dog: 0.950721  horse: 0.961635  motorbike: 0.943715  person: 0.941530  pottedplant: 0.827918  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 04:12:01,506] mean IoU: 0.803307  background: 0.924085  foreground: 0.682529
+[2023-05-25 04:12:01,507] mean IoU: 0.660748  background: 0.924085  aeroplane: 0.916787  bicycle: 0.510057  bird: 0.788898  boat: 0.729993  bottle: 0.699742  bus: 0.883446  car: 0.670392  cat: 0.881621  chair: 0.360765  cow: 0.850191  diningtable: 0.537926  dog: 0.836308  horse: 0.874379  motorbike: 0.867956  person: 0.811645  pottedplant: 0.500872  sheep: 0.552688  sofa: 0.298817  train: 0.025503  tvmonitor: 0.353642
+[2023-05-25 04:12:01,508] 
+
+[2023-05-25 04:12:01,508] epoch [71]
+[2023-05-25 04:15:22,801] mean IoU: 0.958586  background: 0.985457  foreground: 0.931715
+[2023-05-25 04:15:22,802] mean IoU: 0.914804  background: 0.985457  aeroplane: 0.964788  bicycle: 0.681769  bird: 0.955537  boat: 0.912537  bottle: 0.864790  bus: 0.967127  car: 0.922651  cat: 0.975229  chair: 0.801609  cow: 0.949672  diningtable: 0.897845  dog: 0.954254  horse: 0.966242  motorbike: 0.949302  person: 0.947633  pottedplant: 0.855228  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 04:16:48,187] mean IoU: 0.805303  background: 0.923425  foreground: 0.687181
+[2023-05-25 04:16:48,187] mean IoU: 0.668595  background: 0.923425  aeroplane: 0.926021  bicycle: 0.491299  bird: 0.821408  boat: 0.736124  bottle: 0.711489  bus: 0.880597  car: 0.661189  cat: 0.887616  chair: 0.375678  cow: 0.864679  diningtable: 0.564817  dog: 0.849960  horse: 0.861229  motorbike: 0.867905  person: 0.814723  pottedplant: 0.490373  sheep: 0.637929  sofa: 0.310223  train: 0.025841  tvmonitor: 0.337970
+[2023-05-25 04:16:48,188] 
+
+[2023-05-25 04:16:48,188] epoch [72]
+[2023-05-25 04:20:09,568] mean IoU: 0.956880  background: 0.984830  foreground: 0.928929
+[2023-05-25 04:20:09,568] mean IoU: 0.914151  background: 0.984830  aeroplane: 0.969906  bicycle: 0.692189  bird: 0.968207  boat: 0.916279  bottle: 0.885749  bus: 0.967380  car: 0.924846  cat: 0.975528  chair: 0.752756  cow: 0.954802  diningtable: 0.873348  dog: 0.947964  horse: 0.965724  motorbike: 0.949212  person: 0.947689  pottedplant: 0.864152  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 04:21:34,844] mean IoU: 0.807381  background: 0.923612  foreground: 0.691150
+[2023-05-25 04:21:34,844] mean IoU: 0.674007  background: 0.923612  aeroplane: 0.901974  bicycle: 0.480579  bird: 0.801224  boat: 0.750214  bottle: 0.717496  bus: 0.906010  car: 0.653721  cat: 0.878763  chair: 0.426253  cow: 0.874723  diningtable: 0.561960  dog: 0.826992  horse: 0.873380  motorbike: 0.868866  person: 0.815317  pottedplant: 0.529816  sheep: 0.638788  sofa: 0.259402  train: 0.123378  tvmonitor: 0.341670
+[2023-05-25 04:21:34,845] 
+
+[2023-05-25 04:21:34,845] epoch [73]
+[2023-05-25 04:24:56,333] mean IoU: 0.958110  background: 0.985270  foreground: 0.930950
+[2023-05-25 04:24:56,333] mean IoU: 0.915418  background: 0.985270  aeroplane: 0.966751  bicycle: 0.683177  bird: 0.965805  boat: 0.906254  bottle: 0.886521  bus: 0.967585  car: 0.917775  cat: 0.975982  chair: 0.797882  cow: 0.956611  diningtable: 0.886875  dog: 0.956579  horse: 0.968299  motorbike: 0.935594  person: 0.945777  pottedplant: 0.859369  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 04:26:21,414] mean IoU: 0.793451  background: 0.923069  foreground: 0.663833
+[2023-05-25 04:26:21,415] mean IoU: 0.637796  background: 0.923069  aeroplane: 0.931017  bicycle: 0.435524  bird: 0.804217  boat: 0.680217  bottle: 0.691691  bus: 0.873428  car: 0.630468  cat: 0.875038  chair: 0.389357  cow: 0.882669  diningtable: 0.522422  dog: 0.795724  horse: 0.848936  motorbike: 0.845351  person: 0.832534  pottedplant: 0.504781  sheep: 0.480778  sofa: 0.159107  train: 0.008354  tvmonitor: 0.279043
+[2023-05-25 04:26:21,415] 
+
+[2023-05-25 04:26:21,416] epoch [74]
+[2023-05-25 04:29:41,365] mean IoU: 0.955900  background: 0.984505  foreground: 0.927296
+[2023-05-25 04:29:41,365] mean IoU: 0.913277  background: 0.984505  aeroplane: 0.966448  bicycle: 0.680350  bird: 0.968352  boat: 0.899826  bottle: 0.878426  bus: 0.966019  car: 0.916765  cat: 0.966543  chair: 0.806992  cow: 0.959714  diningtable: 0.888054  dog: 0.955380  horse: 0.965855  motorbike: 0.944022  person: 0.934875  pottedplant: 0.843577  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 04:31:06,453] mean IoU: 0.803584  background: 0.923070  foreground: 0.684098
+[2023-05-25 04:31:06,454] mean IoU: 0.662617  background: 0.923070  aeroplane: 0.933947  bicycle: 0.481343  bird: 0.817692  boat: 0.709766  bottle: 0.712688  bus: 0.888337  car: 0.633821  cat: 0.881484  chair: 0.402281  cow: 0.863866  diningtable: 0.539092  dog: 0.814616  horse: 0.849711  motorbike: 0.868693  person: 0.829370  pottedplant: 0.489248  sheep: 0.599602  sofa: 0.312623  train: 0.036817  tvmonitor: 0.326897
+[2023-05-25 04:31:06,454] 
+
+[2023-05-25 04:31:06,454] epoch [75]
+[2023-05-25 04:34:27,595] mean IoU: 0.957051  background: 0.984908  foreground: 0.929195
+[2023-05-25 04:34:27,595] mean IoU: 0.911693  background: 0.984908  aeroplane: 0.967833  bicycle: 0.673771  bird: 0.965628  boat: 0.895167  bottle: 0.859340  bus: 0.964333  car: 0.920042  cat: 0.972107  chair: 0.807270  cow: 0.964448  diningtable: 0.890621  dog: 0.959785  horse: 0.969841  motorbike: 0.940447  person: 0.944415  pottedplant: 0.818823  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 04:35:52,774] mean IoU: 0.800693  background: 0.923421  foreground: 0.677966
+[2023-05-25 04:35:52,775] mean IoU: 0.651247  background: 0.923421  aeroplane: 0.937922  bicycle: 0.486244  bird: 0.769441  boat: 0.711195  bottle: 0.737381  bus: 0.895373  car: 0.660877  cat: 0.855744  chair: 0.370608  cow: 0.858278  diningtable: 0.532157  dog: 0.817643  horse: 0.861391  motorbike: 0.853861  person: 0.837935  pottedplant: 0.470445  sheep: 0.566099  sofa: 0.206255  train: 0.059206  tvmonitor: 0.264719
+[2023-05-25 04:35:52,775] 
+
+[2023-05-25 04:35:52,776] epoch [76]
+[2023-05-25 04:39:13,908] mean IoU: 0.955924  background: 0.984512  foreground: 0.927336
+[2023-05-25 04:39:13,909] mean IoU: 0.907603  background: 0.984512  aeroplane: 0.969831  bicycle: 0.689217  bird: 0.957384  boat: 0.909934  bottle: 0.751761  bus: 0.961290  car: 0.925144  cat: 0.978052  chair: 0.795164  cow: 0.964305  diningtable: 0.883070  dog: 0.959907  horse: 0.971285  motorbike: 0.936439  person: 0.946766  pottedplant: 0.845183  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 04:40:38,851] mean IoU: 0.800793  background: 0.923448  foreground: 0.678138
+[2023-05-25 04:40:38,852] mean IoU: 0.645740  background: 0.923448  aeroplane: 0.932944  bicycle: 0.485033  bird: 0.826248  boat: 0.737909  bottle: 0.351984  bus: 0.887994  car: 0.640986  cat: 0.879303  chair: 0.377329  cow: 0.875669  diningtable: 0.560278  dog: 0.814970  horse: 0.862875  motorbike: 0.841411  person: 0.832202  pottedplant: 0.447508  sheep: 0.608364  sofa: 0.242596  train: 0.170998  tvmonitor: 0.260481
+[2023-05-25 04:40:38,852] 
+
+[2023-05-25 04:40:38,853] epoch [77]
+[2023-05-25 04:43:59,816] mean IoU: 0.953027  background: 0.983473  foreground: 0.922581
+[2023-05-25 04:43:59,817] mean IoU: 0.903122  background: 0.983473  aeroplane: 0.969111  bicycle: 0.691878  bird: 0.964447  boat: 0.907252  bottle: 0.704442  bus: 0.963582  car: 0.911923  cat: 0.973455  chair: 0.795616  cow: 0.960797  diningtable: 0.874164  dog: 0.954636  horse: 0.956386  motorbike: 0.943135  person: 0.940281  pottedplant: 0.858488  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 04:45:25,217] mean IoU: 0.814462  background: 0.927767  foreground: 0.701157
+[2023-05-25 04:45:25,217] mean IoU: 0.673810  background: 0.927767  aeroplane: 0.917303  bicycle: 0.479560  bird: 0.815690  boat: 0.726976  bottle: 0.654418  bus: 0.885934  car: 0.665142  cat: 0.889059  chair: 0.374899  cow: 0.890587  diningtable: 0.586013  dog: 0.843312  horse: 0.854862  motorbike: 0.872052  person: 0.857374  pottedplant: 0.452445  sheep: 0.591257  sofa: 0.290727  train: 0.259934  tvmonitor: 0.314706
+[2023-05-25 04:45:25,218] 
+
+[2023-05-25 04:45:25,239] Saving model: ckpt/n_emb_4/best.pth
+[2023-05-25 04:45:36,195] epoch [77] has the best iou: 0.701157
+[2023-05-25 04:45:36,196] epoch [78]
+[2023-05-25 04:48:57,021] mean IoU: 0.956347  background: 0.984623  foreground: 0.928072
+[2023-05-25 04:48:57,022] mean IoU: 0.912149  background: 0.984623  aeroplane: 0.969391  bicycle: 0.690435  bird: 0.966138  boat: 0.901530  bottle: 0.825997  bus: 0.957219  car: 0.916232  cat: 0.977701  chair: 0.796046  cow: 0.959018  diningtable: 0.887543  dog: 0.954637  horse: 0.964069  motorbike: 0.945202  person: 0.941410  pottedplant: 0.869346  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 04:50:22,686] mean IoU: 0.795602  background: 0.922179  foreground: 0.669026
+[2023-05-25 04:50:22,687] mean IoU: 0.640882  background: 0.922179  aeroplane: 0.934653  bicycle: 0.504986  bird: 0.809835  boat: 0.682489  bottle: 0.664405  bus: 0.851884  car: 0.641369  cat: 0.881744  chair: 0.352425  cow: 0.847755  diningtable: 0.535121  dog: 0.806753  horse: 0.854768  motorbike: 0.866954  person: 0.840556  pottedplant: 0.454684  sheep: 0.543456  sofa: 0.162857  train: 0.034307  tvmonitor: 0.265352
+[2023-05-25 04:50:22,687] 
+
+[2023-05-25 04:50:22,687] epoch [79]
+[2023-05-25 04:53:43,683] mean IoU: 0.950875  background: 0.982663  foreground: 0.919087
+[2023-05-25 04:53:43,683] mean IoU: 0.900212  background: 0.982663  aeroplane: 0.967170  bicycle: 0.657589  bird: 0.957295  boat: 0.901058  bottle: 0.805378  bus: 0.954560  car: 0.867277  cat: 0.979594  chair: 0.762399  cow: 0.958707  diningtable: 0.884641  dog: 0.951592  horse: 0.960262  motorbike: 0.908698  person: 0.943821  pottedplant: 0.860899  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 04:55:09,016] mean IoU: 0.800041  background: 0.923581  foreground: 0.676500
+[2023-05-25 04:55:09,017] mean IoU: 0.647054  background: 0.923581  aeroplane: 0.920759  bicycle: 0.461605  bird: 0.808212  boat: 0.686558  bottle: 0.693348  bus: 0.867968  car: 0.651613  cat: 0.889805  chair: 0.365567  cow: 0.879398  diningtable: 0.530916  dog: 0.864046  horse: 0.862536  motorbike: 0.862563  person: 0.841165  pottedplant: 0.451628  sheep: 0.504022  sofa: 0.213497  train: 0.019624  tvmonitor: 0.289733
+[2023-05-25 04:55:09,017] 
+
+[2023-05-25 04:55:09,017] epoch [80]
+[2023-05-25 04:58:30,897] mean IoU: 0.947292  background: 0.981401  foreground: 0.913182
+[2023-05-25 04:58:30,897] mean IoU: 0.897783  background: 0.981401  aeroplane: 0.950113  bicycle: 0.680497  bird: 0.954864  boat: 0.896112  bottle: 0.838223  bus: 0.949443  car: 0.848213  cat: 0.961688  chair: 0.764584  cow: 0.941944  diningtable: 0.858964  dog: 0.953686  horse: 0.964649  motorbike: 0.926466  person: 0.936840  pottedplant: 0.854617  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 04:59:56,519] mean IoU: 0.803804  background: 0.923737  foreground: 0.683870
+[2023-05-25 04:59:56,520] mean IoU: 0.655003  background: 0.923737  aeroplane: 0.929249  bicycle: 0.476393  bird: 0.821648  boat: 0.682813  bottle: 0.660646  bus: 0.871130  car: 0.673007  cat: 0.887901  chair: 0.362783  cow: 0.871277  diningtable: 0.537072  dog: 0.835772  horse: 0.855877  motorbike: 0.869150  person: 0.831983  pottedplant: 0.448778  sheep: 0.600955  sofa: 0.213145  train: 0.165300  tvmonitor: 0.236451
+[2023-05-25 04:59:56,520] 
+
+[2023-05-25 04:59:56,521] epoch [81]
+[2023-05-25 05:03:17,554] mean IoU: 0.955956  background: 0.984479  foreground: 0.927433
+[2023-05-25 05:03:17,554] mean IoU: 0.910082  background: 0.984479  aeroplane: 0.971080  bicycle: 0.672596  bird: 0.966688  boat: 0.886688  bottle: 0.865488  bus: 0.962062  car: 0.885003  cat: 0.971654  chair: 0.811785  cow: 0.956105  diningtable: 0.879291  dog: 0.963113  horse: 0.960386  motorbike: 0.939808  person: 0.947946  pottedplant: 0.847229  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 05:04:43,078] mean IoU: 0.804365  background: 0.925730  foreground: 0.683000
+[2023-05-25 05:04:43,079] mean IoU: 0.653090  background: 0.925730  aeroplane: 0.928002  bicycle: 0.478697  bird: 0.826014  boat: 0.740023  bottle: 0.700808  bus: 0.853641  car: 0.659108  cat: 0.879300  chair: 0.359312  cow: 0.882013  diningtable: 0.554174  dog: 0.819402  horse: 0.855261  motorbike: 0.878682  person: 0.838532  pottedplant: 0.441161  sheep: 0.515716  sofa: 0.199620  train: 0.110171  tvmonitor: 0.269527
+[2023-05-25 05:04:43,080] 
+
+[2023-05-25 05:04:43,080] epoch [82]
+[2023-05-25 05:08:03,484] mean IoU: 0.960522  background: 0.986134  foreground: 0.934911
+[2023-05-25 05:08:03,485] mean IoU: 0.919474  background: 0.986134  aeroplane: 0.966046  bicycle: 0.685581  bird: 0.968617  boat: 0.906098  bottle: 0.879417  bus: 0.962121  car: 0.916378  cat: 0.973023  chair: 0.808163  cow: 0.964847  diningtable: 0.901654  dog: 0.966464  horse: 0.966631  motorbike: 0.950381  person: 0.949536  pottedplant: 0.879969  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 05:09:28,930] mean IoU: 0.810492  background: 0.926738  foreground: 0.694246
+[2023-05-25 05:09:28,931] mean IoU: 0.669495  background: 0.926738  aeroplane: 0.924231  bicycle: 0.464449  bird: 0.825158  boat: 0.753845  bottle: 0.725882  bus: 0.879029  car: 0.662886  cat: 0.897572  chair: 0.378432  cow: 0.882845  diningtable: 0.511964  dog: 0.809083  horse: 0.839974  motorbike: 0.884008  person: 0.839066  pottedplant: 0.467464  sheep: 0.652474  sofa: 0.223671  train: 0.236503  tvmonitor: 0.274118
+[2023-05-25 05:09:28,931] 
+
+[2023-05-25 05:09:28,931] epoch [83]
+[2023-05-25 05:12:50,653] mean IoU: 0.961169  background: 0.986356  foreground: 0.935983
+[2023-05-25 05:12:50,654] mean IoU: 0.920803  background: 0.986356  aeroplane: 0.961478  bicycle: 0.693251  bird: 0.971120  boat: 0.921523  bottle: 0.869822  bus: 0.947795  car: 0.919176  cat: 0.979035  chair: 0.820225  cow: 0.959097  diningtable: 0.907337  dog: 0.968151  horse: 0.965493  motorbike: 0.949853  person: 0.949759  pottedplant: 0.884187  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 05:14:15,495] mean IoU: 0.801343  background: 0.924041  foreground: 0.678644
+[2023-05-25 05:14:15,496] mean IoU: 0.653198  background: 0.924041  aeroplane: 0.922091  bicycle: 0.485324  bird: 0.803743  boat: 0.750380  bottle: 0.732145  bus: 0.835395  car: 0.664878  cat: 0.890701  chair: 0.378257  cow: 0.872033  diningtable: 0.498470  dog: 0.840748  horse: 0.865015  motorbike: 0.884695  person: 0.835436  pottedplant: 0.461330  sheep: 0.523656  sofa: 0.222786  train: 0.021567  tvmonitor: 0.304463
+[2023-05-25 05:14:15,497] 
+
+[2023-05-25 05:14:15,497] epoch [84]
+[2023-05-25 05:17:36,871] mean IoU: 0.961520  background: 0.986487  foreground: 0.936554
+[2023-05-25 05:17:36,872] mean IoU: 0.923530  background: 0.986487  aeroplane: 0.970471  bicycle: 0.697582  bird: 0.972000  boat: 0.916646  bottle: 0.892539  bus: 0.964838  car: 0.923513  cat: 0.978084  chair: 0.812683  cow: 0.961672  diningtable: 0.901795  dog: 0.968397  horse: 0.970296  motorbike: 0.950004  person: 0.942443  pottedplant: 0.890558  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 05:19:01,813] mean IoU: 0.801328  background: 0.922121  foreground: 0.680534
+[2023-05-25 05:19:01,814] mean IoU: 0.658821  background: 0.922121  aeroplane: 0.931362  bicycle: 0.516488  bird: 0.793942  boat: 0.722065  bottle: 0.671072  bus: 0.848936  car: 0.659689  cat: 0.889845  chair: 0.373183  cow: 0.877435  diningtable: 0.547046  dog: 0.833132  horse: 0.878429  motorbike: 0.866389  person: 0.838191  pottedplant: 0.444508  sheep: 0.644845  sofa: 0.234130  train: 0.028358  tvmonitor: 0.314066
+[2023-05-25 05:19:01,814] 
+
+[2023-05-25 05:19:01,815] epoch [85]
+[2023-05-25 05:22:22,905] mean IoU: 0.961441  background: 0.986443  foreground: 0.936440
+[2023-05-25 05:22:22,906] mean IoU: 0.923111  background: 0.986443  aeroplane: 0.968947  bicycle: 0.691584  bird: 0.969513  boat: 0.923622  bottle: 0.892014  bus: 0.967920  car: 0.925250  cat: 0.975985  chair: 0.809898  cow: 0.964327  diningtable: 0.898166  dog: 0.968256  horse: 0.968428  motorbike: 0.949475  person: 0.944423  pottedplant: 0.888631  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 05:23:47,966] mean IoU: 0.799920  background: 0.923562  foreground: 0.676278
+[2023-05-25 05:23:47,966] mean IoU: 0.646785  background: 0.923562  aeroplane: 0.925370  bicycle: 0.477629  bird: 0.812815  boat: 0.718071  bottle: 0.716288  bus: 0.860028  car: 0.665146  cat: 0.888290  chair: 0.371416  cow: 0.862650  diningtable: 0.505392  dog: 0.832090  horse: 0.856095  motorbike: 0.887662  person: 0.849631  pottedplant: 0.447779  sheep: 0.556665  sofa: 0.185001  train: 0.007025  tvmonitor: 0.233871
+[2023-05-25 05:23:47,967] 
+
+[2023-05-25 05:23:47,967] epoch [86]
+[2023-05-25 05:27:08,724] mean IoU: 0.961317  background: 0.986427  foreground: 0.936206
+[2023-05-25 05:27:08,725] mean IoU: 0.921448  background: 0.986427  aeroplane: 0.970271  bicycle: 0.688830  bird: 0.969680  boat: 0.912577  bottle: 0.890308  bus: 0.966894  car: 0.920066  cat: 0.978475  chair: 0.805174  cow: 0.966125  diningtable: 0.898037  dog: 0.967063  horse: 0.963664  motorbike: 0.947896  person: 0.947646  pottedplant: 0.885479  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 05:28:33,888] mean IoU: 0.797776  background: 0.919826  foreground: 0.675725
+[2023-05-25 05:28:33,888] mean IoU: 0.653944  background: 0.919826  aeroplane: 0.923748  bicycle: 0.454907  bird: 0.814039  boat: 0.747101  bottle: 0.675687  bus: 0.882623  car: 0.641330  cat: 0.884566  chair: 0.401765  cow: 0.867534  diningtable: 0.521179  dog: 0.814120  horse: 0.849939  motorbike: 0.861431  person: 0.833469  pottedplant: 0.457162  sheep: 0.642398  sofa: 0.242159  train: 0.024800  tvmonitor: 0.273035
+[2023-05-25 05:28:33,889] 
+
+[2023-05-25 05:28:33,889] epoch [87]
+[2023-05-25 05:31:55,979] mean IoU: 0.959152  background: 0.985643  foreground: 0.932661
+[2023-05-25 05:31:55,980] mean IoU: 0.918410  background: 0.985643  aeroplane: 0.971388  bicycle: 0.707579  bird: 0.969943  boat: 0.895978  bottle: 0.891705  bus: 0.967165  car: 0.923127  cat: 0.978228  chair: 0.789162  cow: 0.968323  diningtable: 0.878456  dog: 0.964500  horse: 0.967861  motorbike: 0.946322  person: 0.945692  pottedplant: 0.861896  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 05:33:21,397] mean IoU: 0.796205  background: 0.921015  foreground: 0.671395
+[2023-05-25 05:33:21,397] mean IoU: 0.639784  background: 0.921015  aeroplane: 0.923505  bicycle: 0.458347  bird: 0.824477  boat: 0.665366  bottle: 0.649676  bus: 0.870242  car: 0.636072  cat: 0.882281  chair: 0.378141  cow: 0.873748  diningtable: 0.546287  dog: 0.811582  horse: 0.856297  motorbike: 0.860992  person: 0.849890  pottedplant: 0.460167  sheep: 0.540566  sofa: 0.197991  train: 0.006790  tvmonitor: 0.222026
+[2023-05-25 05:33:21,397] 
+
+[2023-05-25 05:33:21,398] epoch [88]
+[2023-05-25 05:36:42,940] mean IoU: 0.949013  background: 0.982011  foreground: 0.916015
+[2023-05-25 05:36:42,940] mean IoU: 0.897512  background: 0.982011  aeroplane: 0.966032  bicycle: 0.685408  bird: 0.970046  boat: 0.820083  bottle: 0.817415  bus: 0.958912  car: 0.909888  cat: 0.974907  chair: 0.743224  cow: 0.965363  diningtable: 0.836498  dog: 0.939759  horse: 0.957532  motorbike: 0.945630  person: 0.940299  pottedplant: 0.844701  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 05:38:08,463] mean IoU: 0.794616  background: 0.920322  foreground: 0.668910
+[2023-05-25 05:38:08,463] mean IoU: 0.644158  background: 0.920322  aeroplane: 0.919218  bicycle: 0.454541  bird: 0.815672  boat: 0.689013  bottle: 0.718536  bus: 0.874748  car: 0.629813  cat: 0.866513  chair: 0.369587  cow: 0.878827  diningtable: 0.473511  dog: 0.766691  horse: 0.849958  motorbike: 0.870724  person: 0.831211  pottedplant: 0.447292  sheep: 0.569870  sofa: 0.233485  train: 0.026603  tvmonitor: 0.321181
+[2023-05-25 05:38:08,464] 
+
+[2023-05-25 05:38:08,464] epoch [89]
+[2023-05-25 05:41:30,345] mean IoU: 0.948635  background: 0.981825  foreground: 0.915444
+[2023-05-25 05:41:30,346] mean IoU: 0.896867  background: 0.981825  aeroplane: 0.962065  bicycle: 0.676140  bird: 0.968139  boat: 0.773639  bottle: 0.859074  bus: 0.958861  car: 0.913359  cat: 0.966800  chair: 0.786513  cow: 0.955379  diningtable: 0.836218  dog: 0.931166  horse: 0.955749  motorbike: 0.928482  person: 0.941164  pottedplant: 0.852160  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 05:42:55,305] mean IoU: 0.805959  background: 0.925320  foreground: 0.686599
+[2023-05-25 05:42:55,306] mean IoU: 0.657695  background: 0.925320  aeroplane: 0.924202  bicycle: 0.445857  bird: 0.818570  boat: 0.705227  bottle: 0.696518  bus: 0.872009  car: 0.658650  cat: 0.889777  chair: 0.369680  cow: 0.886874  diningtable: 0.548201  dog: 0.831722  horse: 0.843243  motorbike: 0.870262  person: 0.840882  pottedplant: 0.452777  sheep: 0.586877  sofa: 0.295952  train: 0.053443  tvmonitor: 0.295547
+[2023-05-25 05:42:55,306] 
+
+[2023-05-25 05:42:55,306] epoch [90]
+[2023-05-25 05:46:16,530] mean IoU: 0.958195  background: 0.985289  foreground: 0.931100
+[2023-05-25 05:46:16,530] mean IoU: 0.914148  background: 0.985289  aeroplane: 0.965959  bicycle: 0.686094  bird: 0.969172  boat: 0.872638  bottle: 0.853407  bus: 0.963833  car: 0.922583  cat: 0.977367  chair: 0.807984  cow: 0.962338  diningtable: 0.874239  dog: 0.955966  horse: 0.968002  motorbike: 0.949126  person: 0.947998  pottedplant: 0.878528  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 05:47:41,614] mean IoU: 0.800115  background: 0.922963  foreground: 0.677268
+[2023-05-25 05:47:41,614] mean IoU: 0.651770  background: 0.922963  aeroplane: 0.908018  bicycle: 0.450301  bird: 0.787835  boat: 0.691118  bottle: 0.711685  bus: 0.870625  car: 0.669160  cat: 0.883080  chair: 0.407471  cow: 0.880266  diningtable: 0.502503  dog: 0.815693  horse: 0.838777  motorbike: 0.876918  person: 0.838278  pottedplant: 0.440793  sheep: 0.681884  sofa: 0.176531  train: 0.038997  tvmonitor: 0.294277
+[2023-05-25 05:47:41,614] 
+
+[2023-05-25 05:47:41,614] epoch [91]
+[2023-05-25 05:51:03,032] mean IoU: 0.959660  background: 0.985827  foreground: 0.933494
+[2023-05-25 05:51:03,033] mean IoU: 0.917872  background: 0.985827  aeroplane: 0.963834  bicycle: 0.685521  bird: 0.973676  boat: 0.891101  bottle: 0.884832  bus: 0.961653  car: 0.921054  cat: 0.977955  chair: 0.819563  cow: 0.964413  diningtable: 0.879214  dog: 0.963704  horse: 0.963858  motorbike: 0.943486  person: 0.947708  pottedplant: 0.876434  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 05:52:28,272] mean IoU: 0.802999  background: 0.924282  foreground: 0.681716
+[2023-05-25 05:52:28,273] mean IoU: 0.658776  background: 0.924282  aeroplane: 0.938090  bicycle: 0.488150  bird: 0.791057  boat: 0.720891  bottle: 0.700989  bus: 0.864298  car: 0.657813  cat: 0.880926  chair: 0.389589  cow: 0.871050  diningtable: 0.494916  dog: 0.831798  horse: 0.865740  motorbike: 0.871837  person: 0.836013  pottedplant: 0.456277  sheep: 0.696317  sofa: 0.230652  train: 0.037662  tvmonitor: 0.285942
+[2023-05-25 05:52:28,274] 
+
+[2023-05-25 05:52:28,274] epoch [92]
+[2023-05-25 05:55:49,651] mean IoU: 0.961161  background: 0.986348  foreground: 0.935974
+[2023-05-25 05:55:49,651] mean IoU: 0.921584  background: 0.986348  aeroplane: 0.968648  bicycle: 0.706791  bird: 0.973614  boat: 0.900602  bottle: 0.879025  bus: 0.963887  car: 0.927509  cat: 0.978966  chair: 0.815188  cow: 0.965709  diningtable: 0.890536  dog: 0.963849  horse: 0.969990  motorbike: 0.950398  person: 0.947441  pottedplant: 0.878431  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 05:57:14,742] mean IoU: 0.802089  background: 0.924527  foreground: 0.679652
+[2023-05-25 05:57:14,743] mean IoU: 0.653774  background: 0.924527  aeroplane: 0.924286  bicycle: 0.492804  bird: 0.793130  boat: 0.696399  bottle: 0.723939  bus: 0.860004  car: 0.666887  cat: 0.881421  chair: 0.381551  cow: 0.877817  diningtable: 0.518216  dog: 0.833462  horse: 0.864527  motorbike: 0.874215  person: 0.832014  pottedplant: 0.441129  sheep: 0.622878  sofa: 0.221818  train: 0.007943  tvmonitor: 0.290297
+[2023-05-25 05:57:14,743] 
+
+[2023-05-25 05:57:14,743] epoch [93]
+[2023-05-25 06:00:35,871] mean IoU: 0.961373  background: 0.986432  foreground: 0.936314
+[2023-05-25 06:00:35,872] mean IoU: 0.919075  background: 0.986432  aeroplane: 0.971543  bicycle: 0.696480  bird: 0.964291  boat: 0.870976  bottle: 0.862516  bus: 0.965232  car: 0.929499  cat: 0.979180  chair: 0.826709  cow: 0.965492  diningtable: 0.897258  dog: 0.965808  horse: 0.968818  motorbike: 0.945084  person: 0.951748  pottedplant: 0.877203  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 06:02:01,276] mean IoU: 0.803445  background: 0.925082  foreground: 0.681808
+[2023-05-25 06:02:01,276] mean IoU: 0.650724  background: 0.925082  aeroplane: 0.938697  bicycle: 0.492596  bird: 0.818201  boat: 0.701462  bottle: 0.718052  bus: 0.883552  car: 0.691240  cat: 0.888065  chair: 0.405231  cow: 0.864231  diningtable: 0.535659  dog: 0.828195  horse: 0.868986  motorbike: 0.873861  person: 0.848561  pottedplant: 0.491775  sheep: 0.327859  sofa: 0.229909  train: 0.036105  tvmonitor: 0.297895
+[2023-05-25 06:02:01,277] 
+
+[2023-05-25 06:02:01,277] epoch [94]
+[2023-05-25 06:05:22,633] mean IoU: 0.962686  background: 0.986887  foreground: 0.938485
+[2023-05-25 06:05:22,634] mean IoU: 0.923493  background: 0.986887  aeroplane: 0.971847  bicycle: 0.716760  bird: 0.971868  boat: 0.905367  bottle: 0.856122  bus: 0.965655  car: 0.930413  cat: 0.976589  chair: 0.833829  cow: 0.965783  diningtable: 0.903427  dog: 0.960609  horse: 0.969932  motorbike: 0.948545  person: 0.952625  pottedplant: 0.883131  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 06:06:48,021] mean IoU: 0.800500  background: 0.922236  foreground: 0.678764
+[2023-05-25 06:06:48,021] mean IoU: 0.654511  background: 0.922236  aeroplane: 0.932630  bicycle: 0.510915  bird: 0.823878  boat: 0.693233  bottle: 0.714303  bus: 0.853662  car: 0.670358  cat: 0.882379  chair: 0.376072  cow: 0.889256  diningtable: 0.545657  dog: 0.825828  horse: 0.855861  motorbike: 0.869977  person: 0.826014  pottedplant: 0.464063  sheep: 0.470994  sofa: 0.300393  train: 0.019731  tvmonitor: 0.297295
+[2023-05-25 06:06:48,022] 
+
+[2023-05-25 06:06:48,022] epoch [95]
+[2023-05-25 06:10:09,248] mean IoU: 0.964223  background: 0.987445  foreground: 0.941001
+[2023-05-25 06:10:09,249] mean IoU: 0.926933  background: 0.987445  aeroplane: 0.971423  bicycle: 0.723655  bird: 0.972973  boat: 0.898422  bottle: 0.889982  bus: 0.964241  car: 0.936265  cat: 0.979513  chair: 0.830245  cow: 0.969160  diningtable: 0.902999  dog: 0.964853  horse: 0.972439  motorbike: 0.947126  person: 0.953602  pottedplant: 0.893515  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 06:11:34,433] mean IoU: 0.798805  background: 0.923181  foreground: 0.674430
+[2023-05-25 06:11:34,434] mean IoU: 0.644639  background: 0.923181  aeroplane: 0.933093  bicycle: 0.516818  bird: 0.788933  boat: 0.636204  bottle: 0.702166  bus: 0.864501  car: 0.672243  cat: 0.878434  chair: 0.393949  cow: 0.898624  diningtable: 0.497063  dog: 0.832477  horse: 0.876970  motorbike: 0.873020  person: 0.835139  pottedplant: 0.445623  sheep: 0.416678  sofa: 0.236897  train: 0.016052  tvmonitor: 0.299351
+[2023-05-25 06:11:34,434] 
+
+[2023-05-25 06:11:34,434] epoch [96]
+[2023-05-25 06:14:56,014] mean IoU: 0.962292  background: 0.986747  foreground: 0.937837
+[2023-05-25 06:14:56,014] mean IoU: 0.921831  background: 0.986747  aeroplane: 0.968664  bicycle: 0.704986  bird: 0.959250  boat: 0.886872  bottle: 0.871796  bus: 0.965452  car: 0.933035  cat: 0.977712  chair: 0.824729  cow: 0.964885  diningtable: 0.898054  dog: 0.966870  horse: 0.969207  motorbike: 0.953433  person: 0.951992  pottedplant: 0.887445  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 06:16:21,535] mean IoU: 0.799676  background: 0.921854  foreground: 0.677498
+[2023-05-25 06:16:21,536] mean IoU: 0.652497  background: 0.921854  aeroplane: 0.930430  bicycle: 0.486016  bird: 0.828372  boat: 0.672699  bottle: 0.714350  bus: 0.866301  car: 0.654374  cat: 0.882590  chair: 0.386605  cow: 0.886829  diningtable: 0.530139  dog: 0.855242  horse: 0.877468  motorbike: 0.877965  person: 0.823296  pottedplant: 0.475009  sheep: 0.426182  sofa: 0.283037  train: 0.029599  tvmonitor: 0.294078
+[2023-05-25 06:16:21,536] 
+
+[2023-05-25 06:16:21,536] epoch [97]
+[2023-05-25 06:19:42,731] mean IoU: 0.964592  background: 0.987575  foreground: 0.941609
+[2023-05-25 06:19:42,731] mean IoU: 0.927262  background: 0.987575  aeroplane: 0.972731  bicycle: 0.713115  bird: 0.968408  boat: 0.911909  bottle: 0.893064  bus: 0.968746  car: 0.931704  cat: 0.977528  chair: 0.827049  cow: 0.968603  diningtable: 0.911972  dog: 0.966798  horse: 0.969920  motorbike: 0.953080  person: 0.954327  pottedplant: 0.886923  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 06:21:08,153] mean IoU: 0.803442  background: 0.922176  foreground: 0.684709
+[2023-05-25 06:21:08,154] mean IoU: 0.662373  background: 0.922176  aeroplane: 0.926792  bicycle: 0.485116  bird: 0.810743  boat: 0.723999  bottle: 0.677753  bus: 0.908270  car: 0.642638  cat: 0.875264  chair: 0.369453  cow: 0.890828  diningtable: 0.562734  dog: 0.826878  horse: 0.860686  motorbike: 0.863396  person: 0.829945  pottedplant: 0.467552  sheep: 0.583903  sofa: 0.285467  train: 0.078237  tvmonitor: 0.318003
+[2023-05-25 06:21:08,154] 
+
+[2023-05-25 06:21:08,154] epoch [98]
+[2023-05-25 06:24:29,525] mean IoU: 0.965689  background: 0.987957  foreground: 0.943420
+[2023-05-25 06:24:29,525] mean IoU: 0.929069  background: 0.987957  aeroplane: 0.972995  bicycle: 0.733269  bird: 0.969536  boat: 0.924569  bottle: 0.873645  bus: 0.970412  car: 0.940687  cat: 0.974690  chair: 0.844245  cow: 0.970568  diningtable: 0.919218  dog: 0.965572  horse: 0.971358  motorbike: 0.957306  person: 0.955492  pottedplant: 0.862646  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 06:25:54,713] mean IoU: 0.804322  background: 0.924934  foreground: 0.683711
+[2023-05-25 06:25:54,714] mean IoU: 0.659406  background: 0.924934  aeroplane: 0.933125  bicycle: 0.474315  bird: 0.807829  boat: 0.740681  bottle: 0.713425  bus: 0.899567  car: 0.654651  cat: 0.879420  chair: 0.410595  cow: 0.882367  diningtable: 0.532392  dog: 0.843184  horse: 0.877968  motorbike: 0.884192  person: 0.821416  pottedplant: 0.456101  sheep: 0.522750  sofa: 0.260093  train: 0.031125  tvmonitor: 0.297405
+[2023-05-25 06:25:54,714] 
+
+[2023-05-25 06:25:54,714] epoch [99]
+[2023-05-25 06:29:15,950] mean IoU: 0.958009  background: 0.985232  foreground: 0.930787
+[2023-05-25 06:29:15,950] mean IoU: 0.914341  background: 0.985232  aeroplane: 0.921763  bicycle: 0.696767  bird: 0.970617  boat: 0.902430  bottle: 0.889183  bus: 0.964035  car: 0.936624  cat: 0.964860  chair: 0.790765  cow: 0.953314  diningtable: 0.883052  dog: 0.956989  horse: 0.965778  motorbike: 0.951365  person: 0.951628  pottedplant: 0.859389  sheep: nan  sofa: nan  train: nan  tvmonitor: nan
+[2023-05-25 06:30:41,160] mean IoU: 0.799068  background: 0.921436  foreground: 0.676701
+[2023-05-25 06:30:41,161] mean IoU: 0.648854  background: 0.921436  aeroplane: 0.822080  bicycle: 0.483271  bird: 0.811409  boat: 0.682527  bottle: 0.704827  bus: 0.914385  car: 0.643077  cat: 0.879639  chair: 0.370820  cow: 0.875796  diningtable: 0.553615  dog: 0.845004  horse: 0.867935  motorbike: 0.882056  person: 0.820638  pottedplant: 0.487116  sheep: 0.398693  sofa: 0.217144  train: 0.093325  tvmonitor: 0.351141
+[2023-05-25 06:30:41,161] 
+
+[2023-05-25 06:30:41,174] Saving model: ckpt/n_emb_4/last.pth
