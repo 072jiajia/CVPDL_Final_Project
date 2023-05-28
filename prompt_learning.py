@@ -9,7 +9,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.utils.data as data
 from os.path import join as opj
-from dataset import VOC2012Dataset, VOC_CLASSNAMES
+from dataset import VOC2012Dataset, VOC_CLASSNAMES, COCO2017Dataset, USED_COCO_CLASSES
 from metrics import IoUMetrics
 from prompter import CLIPPrompter, load_clip_to_cpu
 
@@ -160,6 +160,8 @@ def parse_args():
     parser.add_argument("--model-type", type=str, default="vit_h")
     parser.add_argument("--device", type=str, default="cuda")
     parser.add_argument("--voc2012-path", type=str, default="./VOC2012")
+    parser.add_argument("--coco_path", type=str, default="./COCO2017")
+    parser.add_argument("--dataset", type=str, default="VOC")
     parser.add_argument("--n-emb", type=int, required=True)
     parser.add_argument("--lr", type=float, default=5e-3)
 
@@ -177,23 +179,43 @@ def parse_args():
 
 
 def get_dataloader(args):
-    embeddings_folder = opj(args.voc2012_path, f"Embeddings_{args.model_type}")
-    split_folder = opj(args.voc2012_path, "ImageSets", "Segmentation")
+    if args.dataset == 'VOC':
+        embeddings_folder = opj(args.voc2012_path, f"Embeddings_{args.model_type}")
+        split_folder = opj(args.voc2012_path, "ImageSets", "Segmentation")
 
-    batch_size = args.batch_size
-    num_workers = args.num_workers
+        batch_size = args.batch_size
+        num_workers = args.num_workers
 
-    train_ds = VOC2012Dataset(args.voc2012_path,
-                              opj(split_folder, "train.txt"),
-                              embeddings_folder)
-    val_ds = VOC2012Dataset(args.voc2012_path,
-                            opj(split_folder, "val.txt"),
-                            embeddings_folder)
+        train_ds = VOC2012Dataset(args.voc2012_path,
+                                opj(split_folder, "train.txt"),
+                                embeddings_folder)
+        val_ds = VOC2012Dataset(args.voc2012_path,
+                                opj(split_folder, "val.txt"),
+                                embeddings_folder)
 
-    train_dl = data.DataLoader(train_ds, batch_size=batch_size, shuffle=True,
-                               drop_last=True, num_workers=num_workers)
-    val_dl = data.DataLoader(val_ds, batch_size=batch_size, shuffle=False,
-                             drop_last=False, num_workers=num_workers)
+        train_dl = data.DataLoader(train_ds, batch_size=batch_size, shuffle=True,
+                                drop_last=True, num_workers=num_workers)
+        val_dl = data.DataLoader(val_ds, batch_size=batch_size, shuffle=False,
+                                drop_last=False, num_workers=num_workers)
+    elif args.dataset == 'COCO':
+        embeddings_folder = opj(args.coco_path, f"Embeddings_{args.model_type}")
+
+        batch_size = args.batch_size
+        num_workers = args.num_workers
+
+        train_ds = COCO2017Dataset(opj(args.coco_path, "images", "train2017"),
+                                opj(args.coco_path, "annotations", "instances_train2017.json"),
+                                opj(embeddings_folder, "train"))
+        val_ds = COCO2017Dataset(opj(args.coco_path, "images", "val2017"),
+                                opj(args.coco_path, "annotations", "instances_val2017.json"),
+                                opj(embeddings_folder, "val"))
+
+        train_dl = data.DataLoader(train_ds, batch_size=batch_size, shuffle=True,
+                                drop_last=True, num_workers=num_workers)
+        val_dl = data.DataLoader(val_ds, batch_size=batch_size, shuffle=False,
+                                drop_last=False, num_workers=num_workers)
+    else:
+        raise NotImplementedError
 
     return train_dl, val_dl
 

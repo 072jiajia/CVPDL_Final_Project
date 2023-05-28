@@ -4,3 +4,6 @@ pretrain-weights
 run-log
 VOC2012
 VOCtrainval_11-May-2012.tar
+
+COCO2017
+models

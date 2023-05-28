@@ -16,14 +16,25 @@
     rm -r VOCdevkit/
 ```
 
+COCO
+```
+wget http://images.cocodataset.org/zips/train2017.zip
+wget http://images.cocodataset.org/zips/val2017.zip
+wget http://images.cocodataset.org/annotations/annotations_trainval2017.zip
+```
+
 ## Prepare Images' Embedding
 It takes about 30 and 60 minutes for vit_b and vit_h
 ```
     CUDA_VISIBLE_DEVICES={GPU_ID} sh scripts/preprocess.sh vit_h
 ```
+COCO:
+```
+    sh scripts/preprocess_coco.sh vit_h
+```
 
 ## Do Experiments
-To do an experiment on the naive prompt learning method
+To do an experiment on the naive prompt learning method, use `--dataset` to specify the type of dataset (`VOC` or `COCO`). 
 ```
     CUDA_VISIBLE_DEVICES={GPU_ID} python prompt_learning.py --n-emb 1
 ```

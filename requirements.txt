@@ -6,3 +6,4 @@ torch
 segment_anything
 pillow
 torchvision
+pycocotools

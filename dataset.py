@@ -11,6 +11,8 @@ from tqdm import tqdm
 
 from prompter import load_clip_to_cpu
 
+from pathlib import Path
+from pycocotools.coco import COCO
 
 VOC_CLASSNAMES = [
     # excluding "background"
@@ -34,6 +36,11 @@ VOC_CLASSNAMES = [
     "sofa",
     "train",
     "tvmonitor"
+]
+
+USED_COCO_CLASSES = [
+    "person",
+    "bicycle"
 ]
 
 
@@ -121,6 +128,63 @@ class VOC2012Dataset(data.Dataset):
         image = self.image_transform(image)
 
         return emb, (class_index-1), torch.from_numpy(semseg).long(), image
+
+    def __len__(self):
+        return len(self.pairs)
+
+class COCO2017Dataset(data.Dataset):
+    def __init__(self, data_root, annFile, emb_folder, used_classes=USED_COCO_CLASSES) -> None:
+        super().__init__()
+        self.coco = COCO(annFile)
+        pairs = []
+        self.cocoIdxToIdx = {}
+
+        usedCatIds = self.coco.getCatIds(catNms=used_classes)
+        for i, catId in enumerate(usedCatIds):
+            self.cocoIdxToIdx[catId] = i
+            
+        for imgId in self.coco.getImgIds(catIds=usedCatIds):
+            img_config = self.coco.loadImgs(imgId)[0]
+            file = img_config['file_name'][:-4]
+
+            for catId in usedCatIds:
+                annIds = self.coco.getAnnIds(imgIds=imgId, catIds=catId)
+                if len(annIds) > 0:
+                    pairs.append((file, self.cocoIdxToIdx[catId], img_config, catId))
+
+        self.data_root = data_root
+        self.pairs = pairs
+        self.emb_folder = emb_folder
+
+        self.image_transform = _transform(load_clip_to_cpu("RN50").visual.input_resolution)
+
+        print(len(self))
+
+    def __getitem__(self, index):
+        name, class_index, img_config, class_coco_id = self.pairs[index]
+        emb_name = os.path.join(self.emb_folder, name + ".npy")
+
+        annIds = self.coco.getAnnIds(imgIds=img_config['id'], catIds=class_coco_id)
+        anns = self.coco.loadAnns(annIds)
+        gt_mask = np.zeros((img_config['height'],img_config['width']), dtype=bool)
+        for ann in anns:
+            one_mask = self.coco.annToMask(ann=ann).astype(bool)
+            gt_mask = np.logical_or(one_mask, gt_mask) # true | false
+
+        semseg = np.array(gt_mask, dtype=int)
+
+        emb = np.load(emb_name)
+        emb = torch.from_numpy(emb)[0]
+
+        SIZE = 256
+        semseg = resize_long_edge(semseg, SIZE, ignore_index=255)
+
+        image_name = os.path.join(
+            self.data_root, name + ".jpg")
+        image = Image.open(image_name)
+        image = self.image_transform(image)
+
+        return emb, class_index, torch.from_numpy(semseg).long(), image
 
     def __len__(self):
         return len(self.pairs)
