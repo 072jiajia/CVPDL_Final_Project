@@ -50,15 +50,21 @@ CoCoOp
 ```
 
 # Experimental Results
-Fully supervised method
+Fully supervised method (CoOp, epoch 200)
+
+| number of tokens | 1 | 2 | 3 | 4 | 5 | 6 |
+|:-: |:-: |:-: |:-: |:-: |:-: |:-: |
+|mIoU| 0.645413| 0.667269| 0.694688| 0.709082|  0.720209| 0.719938|
 
 
-epoch 200
-| number of tokens | 1 | 2 | 3 | 4 | 5 | 6 | ... |
-|:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |
-|mIoU| 0.645413| 0.667269| 0.694688| 0.709082|  0.720209| 0.719938| ...|
+Fully supervised method (CoCoOp, epoch 200)
 
-Zero Shot method
+| number of tokens | 1 | 2 | 3 | 4 | 5 | 6 |
+|:-: |:-: |:-: |:-: |:-: |:-: |:-: |
+|mIoU| 0.743866| | 0.773365| 0.760778| 0.767652| 0.777974|
+
+
+Zero Shot method (CoOp)
 ||mIoU| aeroplane | bicycle| bird| boat| bottle| bus| car| cat| chair| cow| diningtable | dog| horse| motorbike| person|pottedplant| sheep| sofa| train| tvmonitor |
 |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |
 |Training | | v| v| v| v| v| v| v| v| v| v| v| v| v| v| v| v| | | | |
@@ -84,12 +90,12 @@ n-emb = 6| 0.7144| 0.9141| 0.4752| 0.8379| 0.7197| 0.6670| 0.9090| 0.6820| 0.869
 
 # To Do
 
-- [ ] Add Seen/Unseen splits to VOC2012Dataset
-    - [ ] Train on class -[1~16] ("aeroplane" ~ "pottedplant")
-    - [ ] Test on class -[17~20] ("sheep", "sofa", "train", "tvmonitor")
+- [x] Add Seen/Unseen splits to VOC2012Dataset
+    - [x] Train on class -[1~16] ("aeroplane" ~ "pottedplant")
+    - [x] Test on class -[17~20] ("sheep", "sofa", "train", "tvmonitor")
 - [x] Add checkpoint saver
 - [x] Add logger 
-- [ ] Record experimental results
+- [x] Record experimental results
 - [ ] Rewrite the code according to your familiar coding style
 - [ ] Add explicit data types to the arguments of functions
 - [ ] Add MSCOCO

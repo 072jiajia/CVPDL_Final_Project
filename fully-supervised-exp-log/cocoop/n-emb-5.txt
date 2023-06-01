@@ -1,0 +1,1251 @@
+[2023-05-31 18:02:23,827] Namespace(checkpoint_path='./pretrain-weights/sam_vit_h_4b8939.pth', model_type='vit_h', device='cuda', voc2012_path='./VOC2012', coco_path='./COCO2017', dataset='VOC', n_emb=5, lr=0.005, trainer='cocoop', batch_size=8, num_workers=16, epoch=200, save_dir='ckpt/n_emb_5', load_model_path='./models/best.pth', resume=False)
+[2023-05-31 18:02:46,869] epoch [0]
+[2023-05-31 18:04:50,035] mean IoU: 0.593128  background: 0.840063  foreground: 0.346194
+[2023-05-31 18:05:32,061] mean IoU: 0.677694  background: 0.859508  foreground: 0.495879
+[2023-05-31 18:05:32,061] 
+
+[2023-05-31 18:05:32,120] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 18:05:35,491] epoch [0] has the best iou: 0.495879
+[2023-05-31 18:05:35,499] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 18:05:39,068] epoch [1]
+[2023-05-31 18:09:04,194] mean IoU: 0.697244  background: 0.881683  foreground: 0.512805
+[2023-05-31 18:10:16,518] mean IoU: 0.685793  background: 0.877332  foreground: 0.494253
+[2023-05-31 18:10:16,519] 
+
+[2023-05-31 18:10:16,530] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 18:10:26,541] epoch [2]
+[2023-05-31 18:13:51,906] mean IoU: 0.723067  background: 0.893296  foreground: 0.552839
+[2023-05-31 18:15:02,760] mean IoU: 0.703187  background: 0.869856  foreground: 0.536519
+[2023-05-31 18:15:02,760] 
+
+[2023-05-31 18:15:02,772] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 18:15:15,536] epoch [2] has the best iou: 0.536519
+[2023-05-31 18:15:15,542] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 18:15:28,752] epoch [3]
+[2023-05-31 18:18:55,118] mean IoU: 0.761558  background: 0.908183  foreground: 0.614934
+[2023-05-31 18:20:08,603] mean IoU: 0.787945  background: 0.917301  foreground: 0.658589
+[2023-05-31 18:20:08,604] 
+
+[2023-05-31 18:20:08,618] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 18:20:22,865] epoch [3] has the best iou: 0.658589
+[2023-05-31 18:20:22,871] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 18:20:42,342] epoch [4]
+[2023-05-31 18:24:09,617] mean IoU: 0.793284  background: 0.921243  foreground: 0.665325
+[2023-05-31 18:25:24,670] mean IoU: 0.801595  background: 0.922773  foreground: 0.680417
+[2023-05-31 18:25:24,671] 
+
+[2023-05-31 18:25:24,679] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 18:25:44,449] epoch [4] has the best iou: 0.680417
+[2023-05-31 18:25:44,457] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 18:25:59,367] epoch [5]
+[2023-05-31 18:29:26,657] mean IoU: 0.810867  background: 0.927772  foreground: 0.693961
+[2023-05-31 18:30:42,339] mean IoU: 0.788911  background: 0.917311  foreground: 0.660511
+[2023-05-31 18:30:42,339] 
+
+[2023-05-31 18:30:42,348] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 18:30:57,163] epoch [6]
+[2023-05-31 18:34:17,425] mean IoU: 0.819329  background: 0.931402  foreground: 0.707256
+[2023-05-31 18:35:31,380] mean IoU: 0.818215  background: 0.929087  foreground: 0.707343
+[2023-05-31 18:35:31,381] 
+
+[2023-05-31 18:35:31,391] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 18:35:42,729] epoch [6] has the best iou: 0.707343
+[2023-05-31 18:35:42,739] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 18:35:57,181] epoch [7]
+[2023-05-31 18:39:18,509] mean IoU: 0.829181  background: 0.934773  foreground: 0.723588
+[2023-05-31 18:40:33,284] mean IoU: 0.821074  background: 0.929113  foreground: 0.713034
+[2023-05-31 18:40:33,285] 
+
+[2023-05-31 18:40:33,291] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 18:40:44,566] epoch [7] has the best iou: 0.713034
+[2023-05-31 18:40:44,572] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 18:40:58,211] epoch [8]
+[2023-05-31 18:44:20,739] mean IoU: 0.828196  background: 0.934664  foreground: 0.721728
+[2023-05-31 18:45:35,505] mean IoU: 0.824268  background: 0.930529  foreground: 0.718007
+[2023-05-31 18:45:35,506] 
+
+[2023-05-31 18:45:35,515] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 18:45:46,686] epoch [8] has the best iou: 0.718007
+[2023-05-31 18:45:46,691] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 18:45:59,711] epoch [9]
+[2023-05-31 18:49:23,853] mean IoU: 0.842969  background: 0.940558  foreground: 0.745380
+[2023-05-31 18:50:38,626] mean IoU: 0.825016  background: 0.932137  foreground: 0.717895
+[2023-05-31 18:50:38,626] 
+
+[2023-05-31 18:50:38,636] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 18:50:50,131] epoch [10]
+[2023-05-31 18:54:19,831] mean IoU: 0.843901  background: 0.940967  foreground: 0.746834
+[2023-05-31 18:55:33,918] mean IoU: 0.827349  background: 0.932035  foreground: 0.722662
+[2023-05-31 18:55:33,918] 
+
+[2023-05-31 18:55:33,928] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 18:55:46,962] epoch [10] has the best iou: 0.722662
+[2023-05-31 18:55:46,968] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 18:56:05,098] epoch [11]
+[2023-05-31 18:59:30,222] mean IoU: 0.859325  background: 0.947284  foreground: 0.771367
+[2023-05-31 19:00:44,551] mean IoU: 0.824320  background: 0.933683  foreground: 0.714956
+[2023-05-31 19:00:44,551] 
+
+[2023-05-31 19:00:44,559] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 19:00:56,025] epoch [12]
+[2023-05-31 19:04:24,667] mean IoU: 0.856625  background: 0.945961  foreground: 0.767289
+[2023-05-31 19:05:39,766] mean IoU: 0.821023  background: 0.932973  foreground: 0.709072
+[2023-05-31 19:05:39,767] 
+
+[2023-05-31 19:05:39,775] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 19:05:51,733] epoch [13]
+[2023-05-31 19:09:12,741] mean IoU: 0.865421  background: 0.949578  foreground: 0.781263
+[2023-05-31 19:10:28,918] mean IoU: 0.833779  background: 0.935066  foreground: 0.732492
+[2023-05-31 19:10:28,919] 
+
+[2023-05-31 19:10:28,926] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 19:10:39,852] epoch [13] has the best iou: 0.732492
+[2023-05-31 19:10:39,859] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 19:10:52,318] epoch [14]
+[2023-05-31 19:14:16,059] mean IoU: 0.870350  background: 0.951406  foreground: 0.789293
+[2023-05-31 19:15:30,253] mean IoU: 0.827778  background: 0.933075  foreground: 0.722482
+[2023-05-31 19:15:30,253] 
+
+[2023-05-31 19:15:30,264] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 19:15:40,946] epoch [15]
+[2023-05-31 19:18:59,963] mean IoU: 0.875582  background: 0.953405  foreground: 0.797759
+[2023-05-31 19:20:15,612] mean IoU: 0.836691  background: 0.935506  foreground: 0.737876
+[2023-05-31 19:20:15,698] 
+
+[2023-05-31 19:20:15,706] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 19:20:27,045] epoch [15] has the best iou: 0.737876
+[2023-05-31 19:20:27,051] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 19:20:39,319] epoch [16]
+[2023-05-31 19:24:09,620] mean IoU: 0.876974  background: 0.954005  foreground: 0.799942
+[2023-05-31 19:25:24,196] mean IoU: 0.840741  background: 0.938630  foreground: 0.742852
+[2023-05-31 19:25:24,196] 
+
+[2023-05-31 19:25:24,205] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 19:25:37,004] epoch [16] has the best iou: 0.742852
+[2023-05-31 19:25:37,014] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 19:25:50,011] epoch [17]
+[2023-05-31 19:29:19,833] mean IoU: 0.876723  background: 0.953778  foreground: 0.799668
+[2023-05-31 19:30:33,019] mean IoU: 0.824101  background: 0.933042  foreground: 0.715160
+[2023-05-31 19:30:33,020] 
+
+[2023-05-31 19:30:33,032] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 19:30:46,493] epoch [18]
+[2023-05-31 19:34:17,004] mean IoU: 0.879512  background: 0.954886  foreground: 0.804138
+[2023-05-31 19:35:31,012] mean IoU: 0.837727  background: 0.935828  foreground: 0.739626
+[2023-05-31 19:35:31,012] 
+
+[2023-05-31 19:35:31,020] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 19:35:43,766] epoch [19]
+[2023-05-31 19:39:08,937] mean IoU: 0.879711  background: 0.955181  foreground: 0.804240
+[2023-05-31 19:40:23,706] mean IoU: 0.836900  background: 0.934889  foreground: 0.738912
+[2023-05-31 19:40:23,707] 
+
+[2023-05-31 19:40:23,716] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 19:40:35,892] epoch [20]
+[2023-05-31 19:43:54,934] mean IoU: 0.884771  background: 0.956867  foreground: 0.812676
+[2023-05-31 19:45:10,522] mean IoU: 0.825384  background: 0.932884  foreground: 0.717884
+[2023-05-31 19:45:10,523] 
+
+[2023-05-31 19:45:10,533] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 19:45:20,725] epoch [21]
+[2023-05-31 19:48:40,948] mean IoU: 0.877478  background: 0.953998  foreground: 0.800959
+[2023-05-31 19:49:55,528] mean IoU: 0.842964  background: 0.938897  foreground: 0.747031
+[2023-05-31 19:49:55,528] 
+
+[2023-05-31 19:49:55,538] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 19:50:05,445] epoch [21] has the best iou: 0.747031
+[2023-05-31 19:50:05,452] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 19:50:19,968] epoch [22]
+[2023-05-31 19:53:42,436] mean IoU: 0.889721  background: 0.959137  foreground: 0.820305
+[2023-05-31 19:54:56,905] mean IoU: 0.834798  background: 0.936594  foreground: 0.733001
+[2023-05-31 19:54:56,905] 
+
+[2023-05-31 19:54:56,916] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 19:55:06,685] epoch [23]
+[2023-05-31 19:58:27,374] mean IoU: 0.881860  background: 0.955933  foreground: 0.807787
+[2023-05-31 19:59:41,810] mean IoU: 0.837202  background: 0.934996  foreground: 0.739408
+[2023-05-31 19:59:41,810] 
+
+[2023-05-31 19:59:41,818] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 19:59:52,843] epoch [24]
+[2023-05-31 20:03:12,075] mean IoU: 0.891399  background: 0.959436  foreground: 0.823361
+[2023-05-31 20:04:26,367] mean IoU: 0.838973  background: 0.936444  foreground: 0.741502
+[2023-05-31 20:04:26,368] 
+
+[2023-05-31 20:04:26,375] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 20:04:37,856] epoch [25]
+[2023-05-31 20:07:58,125] mean IoU: 0.884444  background: 0.957047  foreground: 0.811841
+[2023-05-31 20:09:12,523] mean IoU: 0.836230  background: 0.937184  foreground: 0.735276
+[2023-05-31 20:09:12,523] 
+
+[2023-05-31 20:09:12,530] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 20:09:23,282] epoch [26]
+[2023-05-31 20:12:36,984] mean IoU: 0.898299  background: 0.962296  foreground: 0.834301
+[2023-05-31 20:13:52,550] mean IoU: 0.842801  background: 0.936667  foreground: 0.748934
+[2023-05-31 20:13:52,551] 
+
+[2023-05-31 20:13:52,560] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 20:14:04,397] epoch [26] has the best iou: 0.748934
+[2023-05-31 20:14:04,405] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 20:14:16,561] epoch [27]
+[2023-05-31 20:17:31,989] mean IoU: 0.896647  background: 0.961567  foreground: 0.831727
+[2023-05-31 20:18:46,654] mean IoU: 0.843091  background: 0.938134  foreground: 0.748048
+[2023-05-31 20:18:46,655] 
+
+[2023-05-31 20:18:46,666] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 20:18:58,103] epoch [28]
+[2023-05-31 20:22:08,412] mean IoU: 0.893274  background: 0.960492  foreground: 0.826056
+[2023-05-31 20:23:24,470] mean IoU: 0.842457  background: 0.939463  foreground: 0.745451
+[2023-05-31 20:23:24,470] 
+
+[2023-05-31 20:23:24,478] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 20:23:35,675] epoch [29]
+[2023-05-31 20:26:55,470] mean IoU: 0.903313  background: 0.964230  foreground: 0.842397
+[2023-05-31 20:28:11,924] mean IoU: 0.844909  background: 0.938725  foreground: 0.751094
+[2023-05-31 20:28:11,924] 
+
+[2023-05-31 20:28:11,932] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 20:28:22,134] epoch [29] has the best iou: 0.751094
+[2023-05-31 20:28:22,143] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 20:28:33,861] epoch [30]
+[2023-05-31 20:31:52,419] mean IoU: 0.905625  background: 0.965197  foreground: 0.846053
+[2023-05-31 20:33:08,510] mean IoU: 0.845553  background: 0.940732  foreground: 0.750374
+[2023-05-31 20:33:08,511] 
+
+[2023-05-31 20:33:08,520] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 20:33:20,213] epoch [31]
+[2023-05-31 20:36:38,243] mean IoU: 0.900148  background: 0.963220  foreground: 0.837075
+[2023-05-31 20:37:53,732] mean IoU: 0.839713  background: 0.937534  foreground: 0.741893
+[2023-05-31 20:37:53,732] 
+
+[2023-05-31 20:37:53,742] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 20:38:06,084] epoch [32]
+[2023-05-31 20:41:18,747] mean IoU: 0.909177  background: 0.966638  foreground: 0.851715
+[2023-05-31 20:42:34,363] mean IoU: 0.841313  background: 0.937045  foreground: 0.745580
+[2023-05-31 20:42:34,364] 
+
+[2023-05-31 20:42:34,374] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 20:42:45,718] epoch [33]
+[2023-05-31 20:46:05,167] mean IoU: 0.907756  background: 0.965888  foreground: 0.849625
+[2023-05-31 20:47:20,718] mean IoU: 0.847855  background: 0.942181  foreground: 0.753529
+[2023-05-31 20:47:20,719] 
+
+[2023-05-31 20:47:20,725] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 20:47:31,834] epoch [33] has the best iou: 0.753529
+[2023-05-31 20:47:31,843] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 20:47:43,764] epoch [34]
+[2023-05-31 20:51:06,467] mean IoU: 0.908844  background: 0.966376  foreground: 0.851312
+[2023-05-31 20:52:20,866] mean IoU: 0.843301  background: 0.938236  foreground: 0.748366
+[2023-05-31 20:52:20,866] 
+
+[2023-05-31 20:52:20,876] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 20:52:31,815] epoch [35]
+[2023-05-31 20:55:46,371] mean IoU: 0.897871  background: 0.962164  foreground: 0.833578
+[2023-05-31 20:57:01,670] mean IoU: 0.836368  background: 0.936245  foreground: 0.736492
+[2023-05-31 20:57:01,670] 
+
+[2023-05-31 20:57:01,679] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 20:57:12,561] epoch [36]
+[2023-05-31 21:00:29,405] mean IoU: 0.899725  background: 0.962874  foreground: 0.836576
+[2023-05-31 21:01:44,757] mean IoU: 0.844371  background: 0.940353  foreground: 0.748390
+[2023-05-31 21:01:44,758] 
+
+[2023-05-31 21:01:44,767] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 21:01:56,112] epoch [37]
+[2023-05-31 21:05:16,396] mean IoU: 0.904611  background: 0.964777  foreground: 0.844445
+[2023-05-31 21:06:31,102] mean IoU: 0.845243  background: 0.940017  foreground: 0.750469
+[2023-05-31 21:06:31,102] 
+
+[2023-05-31 21:06:31,113] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 21:06:42,349] epoch [38]
+[2023-05-31 21:09:59,944] mean IoU: 0.906253  background: 0.965491  foreground: 0.847015
+[2023-05-31 21:11:14,774] mean IoU: 0.844532  background: 0.940088  foreground: 0.748976
+[2023-05-31 21:11:14,774] 
+
+[2023-05-31 21:11:14,787] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 21:11:25,205] epoch [39]
+[2023-05-31 21:14:45,542] mean IoU: 0.916064  background: 0.969135  foreground: 0.862992
+[2023-05-31 21:16:00,707] mean IoU: 0.851045  background: 0.943088  foreground: 0.759002
+[2023-05-31 21:16:00,707] 
+
+[2023-05-31 21:16:00,716] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 21:16:11,754] epoch [39] has the best iou: 0.759002
+[2023-05-31 21:16:11,761] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 21:16:26,076] epoch [40]
+[2023-05-31 21:19:47,944] mean IoU: 0.918563  background: 0.970018  foreground: 0.867109
+[2023-05-31 21:21:03,437] mean IoU: 0.844452  background: 0.937091  foreground: 0.751812
+[2023-05-31 21:21:03,437] 
+
+[2023-05-31 21:21:03,445] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 21:21:13,959] epoch [41]
+[2023-05-31 21:24:32,023] mean IoU: 0.915164  background: 0.968625  foreground: 0.861704
+[2023-05-31 21:25:46,896] mean IoU: 0.848050  background: 0.940052  foreground: 0.756048
+[2023-05-31 21:25:46,896] 
+
+[2023-05-31 21:25:46,905] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 21:25:58,041] epoch [42]
+[2023-05-31 21:29:10,442] mean IoU: 0.916128  background: 0.969062  foreground: 0.863194
+[2023-05-31 21:30:26,605] mean IoU: 0.847254  background: 0.941135  foreground: 0.753372
+[2023-05-31 21:30:26,605] 
+
+[2023-05-31 21:30:26,614] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 21:30:37,594] epoch [43]
+[2023-05-31 21:33:58,202] mean IoU: 0.920706  background: 0.970830  foreground: 0.870581
+[2023-05-31 21:35:13,375] mean IoU: 0.842181  background: 0.939027  foreground: 0.745335
+[2023-05-31 21:35:13,375] 
+
+[2023-05-31 21:35:13,383] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 21:35:24,722] epoch [44]
+[2023-05-31 21:38:40,649] mean IoU: 0.920488  background: 0.970721  foreground: 0.870255
+[2023-05-31 21:39:55,746] mean IoU: 0.842059  background: 0.940322  foreground: 0.743797
+[2023-05-31 21:39:55,746] 
+
+[2023-05-31 21:39:55,755] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 21:40:06,698] epoch [45]
+[2023-05-31 21:43:25,502] mean IoU: 0.917781  background: 0.969867  foreground: 0.865694
+[2023-05-31 21:44:40,772] mean IoU: 0.844349  background: 0.940163  foreground: 0.748534
+[2023-05-31 21:44:40,772] 
+
+[2023-05-31 21:44:40,779] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 21:44:52,484] epoch [46]
+[2023-05-31 21:48:11,734] mean IoU: 0.906258  background: 0.965428  foreground: 0.847089
+[2023-05-31 21:49:28,617] mean IoU: 0.839071  background: 0.936699  foreground: 0.741444
+[2023-05-31 21:49:28,618] 
+
+[2023-05-31 21:49:28,663] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 21:49:40,914] epoch [47]
+[2023-05-31 21:53:02,611] mean IoU: 0.914569  background: 0.968563  foreground: 0.860576
+[2023-05-31 21:54:18,785] mean IoU: 0.851244  background: 0.942192  foreground: 0.760297
+[2023-05-31 21:54:18,786] 
+
+[2023-05-31 21:54:18,795] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 21:54:29,279] epoch [47] has the best iou: 0.760297
+[2023-05-31 21:54:29,287] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 21:54:43,117] epoch [48]
+[2023-05-31 21:58:12,226] mean IoU: 0.922526  background: 0.971469  foreground: 0.873583
+[2023-05-31 21:59:28,049] mean IoU: 0.849858  background: 0.941223  foreground: 0.758493
+[2023-05-31 21:59:28,050] 
+
+[2023-05-31 21:59:28,061] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 21:59:43,725] epoch [49]
+[2023-05-31 22:03:15,630] mean IoU: 0.918552  background: 0.969905  foreground: 0.867199
+[2023-05-31 22:04:29,439] mean IoU: 0.845355  background: 0.940110  foreground: 0.750600
+[2023-05-31 22:04:29,440] 
+
+[2023-05-31 22:04:29,452] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 22:04:44,877] epoch [50]
+[2023-05-31 22:08:16,236] mean IoU: 0.915153  background: 0.968638  foreground: 0.861669
+[2023-05-31 22:09:29,416] mean IoU: 0.849544  background: 0.942345  foreground: 0.756743
+[2023-05-31 22:09:29,417] 
+
+[2023-05-31 22:09:29,426] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 22:09:42,103] epoch [51]
+[2023-05-31 22:13:07,795] mean IoU: 0.920841  background: 0.970867  foreground: 0.870814
+[2023-05-31 22:14:22,620] mean IoU: 0.849926  background: 0.942249  foreground: 0.757603
+[2023-05-31 22:14:22,620] 
+
+[2023-05-31 22:14:22,630] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 22:14:34,595] epoch [52]
+[2023-05-31 22:18:04,686] mean IoU: 0.924805  background: 0.972421  foreground: 0.877189
+[2023-05-31 22:19:19,505] mean IoU: 0.848938  background: 0.940901  foreground: 0.756975
+[2023-05-31 22:19:19,505] 
+
+[2023-05-31 22:19:19,514] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 22:19:31,462] epoch [53]
+[2023-05-31 22:23:00,887] mean IoU: 0.923509  background: 0.971866  foreground: 0.875153
+[2023-05-31 22:24:15,660] mean IoU: 0.847822  background: 0.942341  foreground: 0.753303
+[2023-05-31 22:24:15,660] 
+
+[2023-05-31 22:24:15,670] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 22:24:27,769] epoch [54]
+[2023-05-31 22:27:58,703] mean IoU: 0.925063  background: 0.972520  foreground: 0.877606
+[2023-05-31 22:29:13,594] mean IoU: 0.850484  background: 0.942197  foreground: 0.758770
+[2023-05-31 22:29:13,595] 
+
+[2023-05-31 22:29:13,601] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 22:29:25,799] epoch [55]
+[2023-05-31 22:32:54,815] mean IoU: 0.928071  background: 0.973630  foreground: 0.882511
+[2023-05-31 22:34:10,240] mean IoU: 0.846316  background: 0.940210  foreground: 0.752422
+[2023-05-31 22:34:10,240] 
+
+[2023-05-31 22:34:10,249] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 22:34:22,386] epoch [56]
+[2023-05-31 22:37:54,306] mean IoU: 0.921896  background: 0.971266  foreground: 0.872525
+[2023-05-31 22:39:09,652] mean IoU: 0.848659  background: 0.942823  foreground: 0.754495
+[2023-05-31 22:39:09,652] 
+
+[2023-05-31 22:39:09,660] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 22:39:20,367] epoch [57]
+[2023-05-31 22:42:45,594] mean IoU: 0.919138  background: 0.970271  foreground: 0.868005
+[2023-05-31 22:44:01,868] mean IoU: 0.845603  background: 0.940081  foreground: 0.751125
+[2023-05-31 22:44:01,869] 
+
+[2023-05-31 22:44:01,876] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 22:44:12,859] epoch [58]
+[2023-05-31 22:47:34,781] mean IoU: 0.923798  background: 0.971954  foreground: 0.875642
+[2023-05-31 22:48:48,949] mean IoU: 0.838880  background: 0.939998  foreground: 0.737761
+[2023-05-31 22:48:48,949] 
+
+[2023-05-31 22:48:48,958] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 22:48:58,835] epoch [59]
+[2023-05-31 22:52:19,931] mean IoU: 0.917629  background: 0.969788  foreground: 0.865469
+[2023-05-31 22:53:34,091] mean IoU: 0.844057  background: 0.940180  foreground: 0.747934
+[2023-05-31 22:53:34,091] 
+
+[2023-05-31 22:53:34,098] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 22:53:43,969] epoch [60]
+[2023-05-31 22:57:09,888] mean IoU: 0.916379  background: 0.969095  foreground: 0.863663
+[2023-05-31 22:58:23,752] mean IoU: 0.837888  background: 0.937765  foreground: 0.738011
+[2023-05-31 22:58:23,753] 
+
+[2023-05-31 22:58:23,763] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 22:58:34,861] epoch [61]
+[2023-05-31 23:02:02,501] mean IoU: 0.916882  background: 0.969389  foreground: 0.864375
+[2023-05-31 23:03:16,709] mean IoU: 0.849913  background: 0.941648  foreground: 0.758179
+[2023-05-31 23:03:16,710] 
+
+[2023-05-31 23:03:16,719] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 23:03:28,299] epoch [62]
+[2023-05-31 23:06:56,096] mean IoU: 0.923528  background: 0.971833  foreground: 0.875223
+[2023-05-31 23:08:09,421] mean IoU: 0.848016  background: 0.941602  foreground: 0.754429
+[2023-05-31 23:08:09,421] 
+
+[2023-05-31 23:08:09,431] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 23:08:20,914] epoch [63]
+[2023-05-31 23:11:44,045] mean IoU: 0.928837  background: 0.973878  foreground: 0.883797
+[2023-05-31 23:12:57,772] mean IoU: 0.849530  background: 0.942064  foreground: 0.756996
+[2023-05-31 23:12:57,772] 
+
+[2023-05-31 23:12:57,780] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 23:13:07,892] epoch [64]
+[2023-05-31 23:16:36,661] mean IoU: 0.931988  background: 0.975041  foreground: 0.888936
+[2023-05-31 23:17:52,109] mean IoU: 0.851524  background: 0.942210  foreground: 0.760837
+[2023-05-31 23:17:52,110] 
+
+[2023-05-31 23:17:52,120] saving model: ckpt/n_emb_5/best.pth
+[2023-05-31 23:18:03,711] epoch [64] has the best iou: 0.760837
+[2023-05-31 23:18:03,719] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 23:18:16,633] epoch [65]
+[2023-05-31 23:21:45,027] mean IoU: 0.933416  background: 0.975681  foreground: 0.891151
+[2023-05-31 23:23:00,644] mean IoU: 0.850206  background: 0.941096  foreground: 0.759316
+[2023-05-31 23:23:00,644] 
+
+[2023-05-31 23:23:00,653] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 23:23:15,268] epoch [66]
+[2023-05-31 23:26:43,537] mean IoU: 0.926022  background: 0.972870  foreground: 0.879174
+[2023-05-31 23:27:58,271] mean IoU: 0.843785  background: 0.938993  foreground: 0.748578
+[2023-05-31 23:27:58,272] 
+
+[2023-05-31 23:27:58,284] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 23:28:13,511] epoch [67]
+[2023-05-31 23:31:44,434] mean IoU: 0.928744  background: 0.973834  foreground: 0.883654
+[2023-05-31 23:32:59,733] mean IoU: 0.847325  background: 0.940961  foreground: 0.753688
+[2023-05-31 23:32:59,734] 
+
+[2023-05-31 23:32:59,741] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 23:33:15,883] epoch [68]
+[2023-05-31 23:36:36,489] mean IoU: 0.931788  background: 0.974955  foreground: 0.888621
+[2023-05-31 23:37:50,712] mean IoU: 0.850224  background: 0.942401  foreground: 0.758047
+[2023-05-31 23:37:50,712] 
+
+[2023-05-31 23:37:50,720] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 23:38:02,020] epoch [69]
+[2023-05-31 23:41:27,350] mean IoU: 0.932440  background: 0.975269  foreground: 0.889610
+[2023-05-31 23:42:41,640] mean IoU: 0.850271  background: 0.941915  foreground: 0.758626
+[2023-05-31 23:42:41,640] 
+
+[2023-05-31 23:42:41,650] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 23:42:52,650] epoch [70]
+[2023-05-31 23:46:15,073] mean IoU: 0.926133  background: 0.972886  foreground: 0.879380
+[2023-05-31 23:47:28,901] mean IoU: 0.848241  background: 0.941054  foreground: 0.755429
+[2023-05-31 23:47:28,901] 
+
+[2023-05-31 23:47:28,909] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 23:47:39,303] epoch [71]
+[2023-05-31 23:51:01,587] mean IoU: 0.925936  background: 0.972747  foreground: 0.879125
+[2023-05-31 23:52:17,075] mean IoU: 0.844111  background: 0.941016  foreground: 0.747207
+[2023-05-31 23:52:17,077] 
+
+[2023-05-31 23:52:17,086] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 23:52:28,878] epoch [72]
+[2023-05-31 23:55:44,494] mean IoU: 0.932569  background: 0.975346  foreground: 0.889792
+[2023-05-31 23:57:01,003] mean IoU: 0.847686  background: 0.942016  foreground: 0.753356
+[2023-05-31 23:57:01,004] 
+
+[2023-05-31 23:57:01,014] saving model: ckpt/n_emb_5/last.pth
+[2023-05-31 23:57:13,032] epoch [73]
+[2023-06-01 00:00:37,540] mean IoU: 0.932773  background: 0.975393  foreground: 0.890153
+[2023-06-01 00:01:53,545] mean IoU: 0.849267  background: 0.942028  foreground: 0.756505
+[2023-06-01 00:01:53,545] 
+
+[2023-06-01 00:01:53,555] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 00:02:05,956] epoch [74]
+[2023-06-01 00:05:29,441] mean IoU: 0.930577  background: 0.974513  foreground: 0.886640
+[2023-06-01 00:06:45,216] mean IoU: 0.852062  background: 0.942855  foreground: 0.761268
+[2023-06-01 00:06:45,216] 
+
+[2023-06-01 00:06:45,224] saving model: ckpt/n_emb_5/best.pth
+[2023-06-01 00:06:56,426] epoch [74] has the best iou: 0.761268
+[2023-06-01 00:06:56,433] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 00:07:11,156] epoch [75]
+[2023-06-01 00:10:41,486] mean IoU: 0.935760  background: 0.976493  foreground: 0.895028
+[2023-06-01 00:11:57,828] mean IoU: 0.852297  background: 0.943188  foreground: 0.761407
+[2023-06-01 00:11:57,829] 
+
+[2023-06-01 00:11:57,838] saving model: ckpt/n_emb_5/best.pth
+[2023-06-01 00:12:13,179] epoch [75] has the best iou: 0.761407
+[2023-06-01 00:12:13,186] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 00:12:25,183] epoch [76]
+[2023-06-01 00:15:56,317] mean IoU: 0.935462  background: 0.976407  foreground: 0.894517
+[2023-06-01 00:17:06,761] mean IoU: 0.851688  background: 0.942955  foreground: 0.760422
+[2023-06-01 00:17:06,762] 
+
+[2023-06-01 00:17:06,770] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 00:17:17,831] epoch [77]
+[2023-06-01 00:20:44,411] mean IoU: 0.934818  background: 0.976141  foreground: 0.893496
+[2023-06-01 00:21:57,596] mean IoU: 0.847781  background: 0.941727  foreground: 0.753835
+[2023-06-01 00:21:57,596] 
+
+[2023-06-01 00:21:57,604] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 00:22:10,857] epoch [78]
+[2023-06-01 00:25:37,978] mean IoU: 0.934680  background: 0.976074  foreground: 0.893286
+[2023-06-01 00:26:51,656] mean IoU: 0.846585  background: 0.939477  foreground: 0.753693
+[2023-06-01 00:26:51,656] 
+
+[2023-06-01 00:26:51,666] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 00:27:05,367] epoch [79]
+[2023-06-01 00:30:33,380] mean IoU: 0.934723  background: 0.976145  foreground: 0.893300
+[2023-06-01 00:31:46,618] mean IoU: 0.848493  background: 0.940376  foreground: 0.756611
+[2023-06-01 00:31:46,619] 
+
+[2023-06-01 00:31:46,628] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 00:31:59,546] epoch [80]
+[2023-06-01 00:35:25,770] mean IoU: 0.935499  background: 0.976349  foreground: 0.894649
+[2023-06-01 00:36:39,491] mean IoU: 0.850556  background: 0.940319  foreground: 0.760793
+[2023-06-01 00:36:39,491] 
+
+[2023-06-01 00:36:39,501] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 00:36:52,489] epoch [81]
+[2023-06-01 00:40:20,469] mean IoU: 0.934742  background: 0.976046  foreground: 0.893437
+[2023-06-01 00:41:34,957] mean IoU: 0.851900  background: 0.943166  foreground: 0.760635
+[2023-06-01 00:41:34,958] 
+
+[2023-06-01 00:41:34,965] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 00:41:48,799] epoch [82]
+[2023-06-01 00:45:23,187] mean IoU: 0.939289  background: 0.977764  foreground: 0.900814
+[2023-06-01 00:46:37,501] mean IoU: 0.852645  background: 0.942961  foreground: 0.762328
+[2023-06-01 00:46:37,501] 
+
+[2023-06-01 00:46:37,510] saving model: ckpt/n_emb_5/best.pth
+[2023-06-01 00:46:53,840] epoch [82] has the best iou: 0.762328
+[2023-06-01 00:46:53,848] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 00:47:05,062] epoch [83]
+[2023-06-01 00:50:35,358] mean IoU: 0.935623  background: 0.976410  foreground: 0.894836
+[2023-06-01 00:51:45,275] mean IoU: 0.827839  background: 0.934757  foreground: 0.720922
+[2023-06-01 00:51:45,276] 
+
+[2023-06-01 00:51:45,287] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 00:51:57,266] epoch [84]
+[2023-06-01 00:55:24,972] mean IoU: 0.919945  background: 0.970479  foreground: 0.869410
+[2023-06-01 00:56:35,536] mean IoU: 0.845497  background: 0.940669  foreground: 0.750325
+[2023-06-01 00:56:35,537] 
+
+[2023-06-01 00:56:35,548] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 00:56:48,755] epoch [85]
+[2023-06-01 01:00:16,357] mean IoU: 0.930306  background: 0.974365  foreground: 0.886247
+[2023-06-01 01:01:27,796] mean IoU: 0.851330  background: 0.942767  foreground: 0.759893
+[2023-06-01 01:01:27,796] 
+
+[2023-06-01 01:01:27,804] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 01:01:39,464] epoch [86]
+[2023-06-01 01:05:06,011] mean IoU: 0.934481  background: 0.975962  foreground: 0.893000
+[2023-06-01 01:06:17,346] mean IoU: 0.845059  background: 0.939194  foreground: 0.750924
+[2023-06-01 01:06:17,346] 
+
+[2023-06-01 01:06:17,356] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 01:06:28,885] epoch [87]
+[2023-06-01 01:09:55,277] mean IoU: 0.936305  background: 0.976670  foreground: 0.895940
+[2023-06-01 01:11:05,791] mean IoU: 0.851357  background: 0.942640  foreground: 0.760075
+[2023-06-01 01:11:05,792] 
+
+[2023-06-01 01:11:05,805] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 01:11:17,522] epoch [88]
+[2023-06-01 01:14:42,479] mean IoU: 0.937947  background: 0.977327  foreground: 0.898568
+[2023-06-01 01:15:53,545] mean IoU: 0.850391  background: 0.941362  foreground: 0.759420
+[2023-06-01 01:15:53,546] 
+
+[2023-06-01 01:15:53,554] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 01:16:05,262] epoch [89]
+[2023-06-01 01:19:30,855] mean IoU: 0.940024  background: 0.978059  foreground: 0.901988
+[2023-06-01 01:20:43,998] mean IoU: 0.846562  background: 0.939929  foreground: 0.753194
+[2023-06-01 01:20:43,998] 
+
+[2023-06-01 01:20:44,012] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 01:20:55,870] epoch [90]
+[2023-06-01 01:24:22,442] mean IoU: 0.940134  background: 0.978063  foreground: 0.902206
+[2023-06-01 01:25:36,696] mean IoU: 0.853937  background: 0.943898  foreground: 0.763975
+[2023-06-01 01:25:36,696] 
+
+[2023-06-01 01:25:36,705] saving model: ckpt/n_emb_5/best.pth
+[2023-06-01 01:25:51,389] epoch [90] has the best iou: 0.763975
+[2023-06-01 01:25:51,398] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 01:26:03,301] epoch [91]
+[2023-06-01 01:29:27,457] mean IoU: 0.940912  background: 0.978421  foreground: 0.903403
+[2023-06-01 01:30:33,863] mean IoU: 0.853490  background: 0.942390  foreground: 0.764590
+[2023-06-01 01:30:33,864] 
+
+[2023-06-01 01:30:33,872] saving model: ckpt/n_emb_5/best.pth
+[2023-06-01 01:30:45,816] epoch [91] has the best iou: 0.764590
+[2023-06-01 01:30:45,826] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 01:30:57,925] epoch [92]
+[2023-06-01 01:34:18,942] mean IoU: 0.934805  background: 0.976044  foreground: 0.893567
+[2023-06-01 01:35:25,326] mean IoU: 0.849688  background: 0.942110  foreground: 0.757266
+[2023-06-01 01:35:25,327] 
+
+[2023-06-01 01:35:25,335] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 01:35:37,105] epoch [93]
+[2023-06-01 01:38:59,682] mean IoU: 0.942287  background: 0.978859  foreground: 0.905715
+[2023-06-01 01:40:05,171] mean IoU: 0.851114  background: 0.942635  foreground: 0.759592
+[2023-06-01 01:40:05,171] 
+
+[2023-06-01 01:40:05,179] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 01:40:17,305] epoch [94]
+[2023-06-01 01:43:41,525] mean IoU: 0.944336  background: 0.979645  foreground: 0.909027
+[2023-06-01 01:44:48,527] mean IoU: 0.851028  background: 0.941600  foreground: 0.760455
+[2023-06-01 01:44:48,528] 
+
+[2023-06-01 01:44:48,544] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 01:45:00,563] epoch [95]
+[2023-06-01 01:48:24,345] mean IoU: 0.937776  background: 0.977217  foreground: 0.898335
+[2023-06-01 01:49:30,857] mean IoU: 0.847468  background: 0.940091  foreground: 0.754846
+[2023-06-01 01:49:30,858] 
+
+[2023-06-01 01:49:30,865] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 01:49:42,640] epoch [96]
+[2023-06-01 01:53:06,971] mean IoU: 0.937469  background: 0.977101  foreground: 0.897837
+[2023-06-01 01:54:15,610] mean IoU: 0.840650  background: 0.938936  foreground: 0.742363
+[2023-06-01 01:54:15,611] 
+
+[2023-06-01 01:54:15,621] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 01:54:27,594] epoch [97]
+[2023-06-01 01:57:51,879] mean IoU: 0.936717  background: 0.976840  foreground: 0.896593
+[2023-06-01 01:59:02,032] mean IoU: 0.846698  background: 0.939675  foreground: 0.753720
+[2023-06-01 01:59:02,032] 
+
+[2023-06-01 01:59:02,039] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 01:59:13,834] epoch [98]
+[2023-06-01 02:02:38,934] mean IoU: 0.941849  background: 0.978701  foreground: 0.904996
+[2023-06-01 02:03:49,275] mean IoU: 0.846210  background: 0.940135  foreground: 0.752285
+[2023-06-01 02:03:49,276] 
+
+[2023-06-01 02:03:49,283] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 02:04:00,841] epoch [99]
+[2023-06-01 02:07:27,297] mean IoU: 0.943900  background: 0.979460  foreground: 0.908341
+[2023-06-01 02:08:37,922] mean IoU: 0.849482  background: 0.941301  foreground: 0.757664
+[2023-06-01 02:08:37,922] 
+
+[2023-06-01 02:08:37,934] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 02:08:49,729] epoch [100]
+[2023-06-01 02:12:16,193] mean IoU: 0.943049  background: 0.979127  foreground: 0.906970
+[2023-06-01 02:13:26,027] mean IoU: 0.848619  background: 0.940620  foreground: 0.756618
+[2023-06-01 02:13:26,028] 
+
+[2023-06-01 02:13:26,043] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 02:13:38,534] epoch [101]
+[2023-06-01 02:17:03,786] mean IoU: 0.940630  background: 0.978218  foreground: 0.903042
+[2023-06-01 02:18:15,093] mean IoU: 0.848910  background: 0.942232  foreground: 0.755588
+[2023-06-01 02:18:15,094] 
+
+[2023-06-01 02:18:15,103] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 02:18:26,601] epoch [102]
+[2023-06-01 02:21:55,872] mean IoU: 0.943289  background: 0.979204  foreground: 0.907375
+[2023-06-01 02:23:07,181] mean IoU: 0.849982  background: 0.941745  foreground: 0.758220
+[2023-06-01 02:23:07,181] 
+
+[2023-06-01 02:23:07,189] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 02:23:18,299] epoch [103]
+[2023-06-01 02:26:43,868] mean IoU: 0.943780  background: 0.979401  foreground: 0.908159
+[2023-06-01 02:27:56,974] mean IoU: 0.848861  background: 0.941780  foreground: 0.755941
+[2023-06-01 02:27:56,974] 
+
+[2023-06-01 02:27:56,982] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 02:28:11,192] epoch [104]
+[2023-06-01 02:31:36,288] mean IoU: 0.945708  background: 0.980147  foreground: 0.911269
+[2023-06-01 02:32:47,875] mean IoU: 0.847949  background: 0.940545  foreground: 0.755354
+[2023-06-01 02:32:47,876] 
+
+[2023-06-01 02:32:47,885] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 02:33:00,531] epoch [105]
+[2023-06-01 02:36:27,180] mean IoU: 0.941571  background: 0.978588  foreground: 0.904553
+[2023-06-01 02:37:39,469] mean IoU: 0.846347  background: 0.939034  foreground: 0.753659
+[2023-06-01 02:37:39,469] 
+
+[2023-06-01 02:37:39,480] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 02:37:53,812] epoch [106]
+[2023-06-01 02:41:20,745] mean IoU: 0.946170  background: 0.980342  foreground: 0.911998
+[2023-06-01 02:42:35,868] mean IoU: 0.847880  background: 0.939938  foreground: 0.755823
+[2023-06-01 02:42:35,869] 
+
+[2023-06-01 02:42:35,877] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 02:42:50,157] epoch [107]
+[2023-06-01 02:46:18,133] mean IoU: 0.941414  background: 0.978535  foreground: 0.904293
+[2023-06-01 02:47:32,855] mean IoU: 0.847595  background: 0.941395  foreground: 0.753794
+[2023-06-01 02:47:32,856] 
+
+[2023-06-01 02:47:32,867] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 02:47:48,713] epoch [108]
+[2023-06-01 02:51:18,741] mean IoU: 0.942404  background: 0.978952  foreground: 0.905856
+[2023-06-01 02:52:35,649] mean IoU: 0.853591  background: 0.942934  foreground: 0.764247
+[2023-06-01 02:52:35,650] 
+
+[2023-06-01 02:52:35,661] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 02:52:49,501] epoch [109]
+[2023-06-01 02:56:19,780] mean IoU: 0.932242  background: 0.975139  foreground: 0.889345
+[2023-06-01 02:57:34,678] mean IoU: 0.851110  background: 0.942012  foreground: 0.760209
+[2023-06-01 02:57:34,679] 
+
+[2023-06-01 02:57:34,688] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 02:57:47,380] epoch [110]
+[2023-06-01 03:01:14,273] mean IoU: 0.944974  background: 0.979861  foreground: 0.910087
+[2023-06-01 03:02:27,991] mean IoU: 0.854434  background: 0.943589  foreground: 0.765280
+[2023-06-01 03:02:27,991] 
+
+[2023-06-01 03:02:28,002] saving model: ckpt/n_emb_5/best.pth
+[2023-06-01 03:02:38,804] epoch [110] has the best iou: 0.765280
+[2023-06-01 03:02:38,820] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 03:02:51,257] epoch [111]
+[2023-06-01 03:06:17,980] mean IoU: 0.945787  background: 0.980158  foreground: 0.911416
+[2023-06-01 03:07:30,715] mean IoU: 0.855591  background: 0.943530  foreground: 0.767652
+[2023-06-01 03:07:30,716] 
+
+[2023-06-01 03:07:30,724] saving model: ckpt/n_emb_5/best.pth
+[2023-06-01 03:07:43,686] epoch [111] has the best iou: 0.767652
+[2023-06-01 03:07:43,692] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 03:07:56,207] epoch [112]
+[2023-06-01 03:11:23,236] mean IoU: 0.945959  background: 0.980244  foreground: 0.911675
+[2023-06-01 03:12:29,885] mean IoU: 0.845787  background: 0.939000  foreground: 0.752574
+[2023-06-01 03:12:29,885] 
+
+[2023-06-01 03:12:29,894] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 03:12:40,680] epoch [113]
+[2023-06-01 03:16:06,378] mean IoU: 0.943127  background: 0.979138  foreground: 0.907116
+[2023-06-01 03:17:15,724] mean IoU: 0.845363  background: 0.939874  foreground: 0.750852
+[2023-06-01 03:17:15,724] 
+
+[2023-06-01 03:17:15,732] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 03:17:26,996] epoch [114]
+[2023-06-01 03:20:52,054] mean IoU: 0.934943  background: 0.976027  foreground: 0.893860
+[2023-06-01 03:22:01,242] mean IoU: 0.849092  background: 0.941966  foreground: 0.756217
+[2023-06-01 03:22:01,242] 
+
+[2023-06-01 03:22:01,251] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 03:22:12,389] epoch [115]
+[2023-06-01 03:25:37,150] mean IoU: 0.941907  background: 0.978772  foreground: 0.905041
+[2023-06-01 03:26:47,159] mean IoU: 0.850529  background: 0.942215  foreground: 0.758843
+[2023-06-01 03:26:47,159] 
+
+[2023-06-01 03:26:47,166] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 03:26:58,208] epoch [116]
+[2023-06-01 03:30:25,209] mean IoU: 0.946012  background: 0.980258  foreground: 0.911765
+[2023-06-01 03:31:37,172] mean IoU: 0.848313  background: 0.941259  foreground: 0.755368
+[2023-06-01 03:31:37,173] 
+
+[2023-06-01 03:31:37,184] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 03:31:49,896] epoch [117]
+[2023-06-01 03:35:16,716] mean IoU: 0.944527  background: 0.979713  foreground: 0.909341
+[2023-06-01 03:36:27,468] mean IoU: 0.848153  background: 0.940658  foreground: 0.755648
+[2023-06-01 03:36:27,469] 
+
+[2023-06-01 03:36:27,482] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 03:36:39,468] epoch [118]
+[2023-06-01 03:40:04,129] mean IoU: 0.943537  background: 0.979300  foreground: 0.907774
+[2023-06-01 03:41:14,988] mean IoU: 0.837866  background: 0.938156  foreground: 0.737575
+[2023-06-01 03:41:14,988] 
+
+[2023-06-01 03:41:14,996] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 03:41:27,167] epoch [119]
+[2023-06-01 03:44:53,836] mean IoU: 0.938251  background: 0.977340  foreground: 0.899162
+[2023-06-01 03:46:06,506] mean IoU: 0.849331  background: 0.940121  foreground: 0.758541
+[2023-06-01 03:46:06,507] 
+
+[2023-06-01 03:46:06,514] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 03:46:19,724] epoch [120]
+[2023-06-01 03:49:46,992] mean IoU: 0.947766  background: 0.980890  foreground: 0.914643
+[2023-06-01 03:51:00,601] mean IoU: 0.850442  background: 0.941479  foreground: 0.759405
+[2023-06-01 03:51:00,602] 
+
+[2023-06-01 03:51:00,612] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 03:51:13,021] epoch [121]
+[2023-06-01 03:54:41,145] mean IoU: 0.949072  background: 0.981378  foreground: 0.916766
+[2023-06-01 03:55:54,773] mean IoU: 0.845944  background: 0.939585  foreground: 0.752302
+[2023-06-01 03:55:54,773] 
+
+[2023-06-01 03:55:54,784] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 03:56:09,512] epoch [122]
+[2023-06-01 03:59:36,567] mean IoU: 0.946462  background: 0.980395  foreground: 0.912530
+[2023-06-01 04:00:50,621] mean IoU: 0.846059  background: 0.938995  foreground: 0.753123
+[2023-06-01 04:00:50,621] 
+
+[2023-06-01 04:00:50,633] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 04:01:05,009] epoch [123]
+[2023-06-01 04:04:38,185] mean IoU: 0.946330  background: 0.980362  foreground: 0.912299
+[2023-06-01 04:05:52,034] mean IoU: 0.852296  background: 0.942046  foreground: 0.762545
+[2023-06-01 04:05:52,034] 
+
+[2023-06-01 04:05:52,043] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 04:06:07,438] epoch [124]
+[2023-06-01 04:09:38,776] mean IoU: 0.949027  background: 0.981357  foreground: 0.916697
+[2023-06-01 04:10:53,336] mean IoU: 0.843703  background: 0.937754  foreground: 0.749653
+[2023-06-01 04:10:53,337] 
+
+[2023-06-01 04:10:53,346] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 04:11:07,769] epoch [125]
+[2023-06-01 04:14:35,917] mean IoU: 0.950704  background: 0.981972  foreground: 0.919437
+[2023-06-01 04:15:51,611] mean IoU: 0.849686  background: 0.942125  foreground: 0.757248
+[2023-06-01 04:15:51,612] 
+
+[2023-06-01 04:15:51,622] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 04:16:07,045] epoch [126]
+[2023-06-01 04:19:34,797] mean IoU: 0.947930  background: 0.980977  foreground: 0.914883
+[2023-06-01 04:20:49,618] mean IoU: 0.848971  background: 0.940646  foreground: 0.757296
+[2023-06-01 04:20:49,619] 
+
+[2023-06-01 04:20:49,627] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 04:21:03,527] epoch [127]
+[2023-06-01 04:24:35,458] mean IoU: 0.945767  background: 0.980160  foreground: 0.911375
+[2023-06-01 04:25:49,149] mean IoU: 0.850791  background: 0.941728  foreground: 0.759855
+[2023-06-01 04:25:49,150] 
+
+[2023-06-01 04:25:49,157] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 04:26:03,704] epoch [128]
+[2023-06-01 04:29:29,287] mean IoU: 0.948304  background: 0.981097  foreground: 0.915511
+[2023-06-01 04:30:43,275] mean IoU: 0.848200  background: 0.940477  foreground: 0.755924
+[2023-06-01 04:30:43,276] 
+
+[2023-06-01 04:30:43,282] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 04:30:57,797] epoch [129]
+[2023-06-01 04:34:24,957] mean IoU: 0.950905  background: 0.982071  foreground: 0.919739
+[2023-06-01 04:35:38,282] mean IoU: 0.851445  background: 0.942072  foreground: 0.760818
+[2023-06-01 04:35:38,282] 
+
+[2023-06-01 04:35:38,290] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 04:35:50,302] epoch [130]
+[2023-06-01 04:39:16,575] mean IoU: 0.951579  background: 0.982355  foreground: 0.920804
+[2023-06-01 04:40:29,951] mean IoU: 0.850870  background: 0.941627  foreground: 0.760112
+[2023-06-01 04:40:29,952] 
+
+[2023-06-01 04:40:29,960] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 04:40:42,210] epoch [131]
+[2023-06-01 04:44:06,256] mean IoU: 0.953267  background: 0.982941  foreground: 0.923594
+[2023-06-01 04:45:19,775] mean IoU: 0.850067  background: 0.941657  foreground: 0.758477
+[2023-06-01 04:45:19,775] 
+
+[2023-06-01 04:45:19,834] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 04:45:33,016] epoch [132]
+[2023-06-01 04:48:57,212] mean IoU: 0.953465  background: 0.983008  foreground: 0.923922
+[2023-06-01 04:50:10,132] mean IoU: 0.846822  background: 0.939342  foreground: 0.754301
+[2023-06-01 04:50:10,132] 
+
+[2023-06-01 04:50:10,142] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 04:50:22,577] epoch [133]
+[2023-06-01 04:53:47,059] mean IoU: 0.952191  background: 0.982540  foreground: 0.921842
+[2023-06-01 04:54:59,934] mean IoU: 0.845323  background: 0.940967  foreground: 0.749680
+[2023-06-01 04:54:59,935] 
+
+[2023-06-01 04:54:59,942] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 04:55:13,510] epoch [134]
+[2023-06-01 04:58:36,382] mean IoU: 0.944091  background: 0.979508  foreground: 0.908673
+[2023-06-01 04:59:50,208] mean IoU: 0.848706  background: 0.940843  foreground: 0.756570
+[2023-06-01 04:59:50,208] 
+
+[2023-06-01 04:59:50,217] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 05:00:01,870] epoch [135]
+[2023-06-01 05:03:26,630] mean IoU: 0.948093  background: 0.980994  foreground: 0.915192
+[2023-06-01 05:04:39,907] mean IoU: 0.846460  background: 0.939771  foreground: 0.753149
+[2023-06-01 05:04:39,908] 
+
+[2023-06-01 05:04:39,918] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 05:04:51,834] epoch [136]
+[2023-06-01 05:08:15,136] mean IoU: 0.949440  background: 0.981515  foreground: 0.917364
+[2023-06-01 05:09:29,090] mean IoU: 0.843838  background: 0.938705  foreground: 0.748971
+[2023-06-01 05:09:29,091] 
+
+[2023-06-01 05:09:29,101] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 05:09:41,190] epoch [137]
+[2023-06-01 05:13:05,007] mean IoU: 0.951413  background: 0.982242  foreground: 0.920584
+[2023-06-01 05:14:18,344] mean IoU: 0.844039  background: 0.938904  foreground: 0.749174
+[2023-06-01 05:14:18,345] 
+
+[2023-06-01 05:14:18,358] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 05:14:29,849] epoch [138]
+[2023-06-01 05:17:55,455] mean IoU: 0.952949  background: 0.982820  foreground: 0.923078
+[2023-06-01 05:19:08,594] mean IoU: 0.846473  background: 0.940115  foreground: 0.752831
+[2023-06-01 05:19:08,595] 
+
+[2023-06-01 05:19:08,605] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 05:19:18,600] epoch [139]
+[2023-06-01 05:22:42,076] mean IoU: 0.946676  background: 0.980455  foreground: 0.912897
+[2023-06-01 05:23:55,726] mean IoU: 0.842403  background: 0.937379  foreground: 0.747426
+[2023-06-01 05:23:55,726] 
+
+[2023-06-01 05:23:55,734] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 05:24:06,371] epoch [140]
+[2023-06-01 05:27:30,519] mean IoU: 0.951713  background: 0.982323  foreground: 0.921104
+[2023-06-01 05:28:44,098] mean IoU: 0.850009  background: 0.941238  foreground: 0.758781
+[2023-06-01 05:28:44,098] 
+
+[2023-06-01 05:28:44,105] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 05:28:54,285] epoch [141]
+[2023-06-01 05:32:19,752] mean IoU: 0.954834  background: 0.983519  foreground: 0.926149
+[2023-06-01 05:33:33,466] mean IoU: 0.847855  background: 0.940669  foreground: 0.755041
+[2023-06-01 05:33:33,466] 
+
+[2023-06-01 05:33:33,476] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 05:33:44,291] epoch [142]
+[2023-06-01 05:37:06,902] mean IoU: 0.951899  background: 0.982423  foreground: 0.921376
+[2023-06-01 05:38:22,459] mean IoU: 0.848913  background: 0.940410  foreground: 0.757416
+[2023-06-01 05:38:22,459] 
+
+[2023-06-01 05:38:22,467] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 05:38:33,300] epoch [143]
+[2023-06-01 05:41:57,714] mean IoU: 0.952076  background: 0.982481  foreground: 0.921670
+[2023-06-01 05:43:11,873] mean IoU: 0.846390  background: 0.939139  foreground: 0.753641
+[2023-06-01 05:43:11,873] 
+
+[2023-06-01 05:43:11,881] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 05:43:22,717] epoch [144]
+[2023-06-01 05:46:47,431] mean IoU: 0.955682  background: 0.983836  foreground: 0.927528
+[2023-06-01 05:48:01,271] mean IoU: 0.847972  background: 0.940134  foreground: 0.755810
+[2023-06-01 05:48:01,271] 
+
+[2023-06-01 05:48:01,279] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 05:48:12,803] epoch [145]
+[2023-06-01 05:51:36,663] mean IoU: 0.955423  background: 0.983731  foreground: 0.927114
+[2023-06-01 05:52:50,062] mean IoU: 0.849757  background: 0.940860  foreground: 0.758655
+[2023-06-01 05:52:50,063] 
+
+[2023-06-01 05:52:50,071] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 05:53:02,545] epoch [146]
+[2023-06-01 05:56:29,649] mean IoU: 0.953549  background: 0.983037  foreground: 0.924062
+[2023-06-01 05:57:44,654] mean IoU: 0.844511  background: 0.938742  foreground: 0.750280
+[2023-06-01 05:57:44,655] 
+
+[2023-06-01 05:57:44,667] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 05:57:55,590] epoch [147]
+[2023-06-01 06:01:18,128] mean IoU: 0.955363  background: 0.983720  foreground: 0.927006
+[2023-06-01 06:02:31,096] mean IoU: 0.848004  background: 0.939792  foreground: 0.756215
+[2023-06-01 06:02:31,097] 
+
+[2023-06-01 06:02:31,103] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 06:02:50,558] epoch [148]
+[2023-06-01 06:06:16,261] mean IoU: 0.956375  background: 0.984069  foreground: 0.928681
+[2023-06-01 06:07:28,758] mean IoU: 0.847499  background: 0.939096  foreground: 0.755902
+[2023-06-01 06:07:28,759] 
+
+[2023-06-01 06:07:28,765] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 06:07:54,371] epoch [149]
+[2023-06-01 06:11:21,591] mean IoU: 0.955506  background: 0.983750  foreground: 0.927261
+[2023-06-01 06:12:36,358] mean IoU: 0.849319  background: 0.940643  foreground: 0.757995
+[2023-06-01 06:12:36,359] 
+
+[2023-06-01 06:12:36,366] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 06:12:58,711] epoch [150]
+[2023-06-01 06:16:22,128] mean IoU: 0.953371  background: 0.982986  foreground: 0.923757
+[2023-06-01 06:17:34,949] mean IoU: 0.836661  background: 0.935886  foreground: 0.737435
+[2023-06-01 06:17:34,949] 
+
+[2023-06-01 06:17:34,959] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 06:17:47,267] epoch [151]
+[2023-06-01 06:21:11,498] mean IoU: 0.953316  background: 0.982947  foreground: 0.923686
+[2023-06-01 06:22:26,046] mean IoU: 0.845450  background: 0.939558  foreground: 0.751342
+[2023-06-01 06:22:26,047] 
+
+[2023-06-01 06:22:26,060] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 06:22:39,347] epoch [152]
+[2023-06-01 06:26:02,891] mean IoU: 0.951573  background: 0.982338  foreground: 0.920808
+[2023-06-01 06:27:16,193] mean IoU: 0.843079  background: 0.938806  foreground: 0.747352
+[2023-06-01 06:27:16,194] 
+
+[2023-06-01 06:27:16,200] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 06:27:27,924] epoch [153]
+[2023-06-01 06:30:53,455] mean IoU: 0.947564  background: 0.980807  foreground: 0.914321
+[2023-06-01 06:32:06,970] mean IoU: 0.842665  background: 0.937218  foreground: 0.748111
+[2023-06-01 06:32:06,970] 
+
+[2023-06-01 06:32:06,980] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 06:32:16,672] epoch [154]
+[2023-06-01 06:35:41,609] mean IoU: 0.949263  background: 0.981457  foreground: 0.917068
+[2023-06-01 06:36:54,758] mean IoU: 0.847820  background: 0.941051  foreground: 0.754588
+[2023-06-01 06:36:54,758] 
+
+[2023-06-01 06:36:54,768] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 06:37:04,308] epoch [155]
+[2023-06-01 06:40:31,050] mean IoU: 0.952970  background: 0.982829  foreground: 0.923111
+[2023-06-01 06:41:43,585] mean IoU: 0.848120  background: 0.939753  foreground: 0.756487
+[2023-06-01 06:41:43,585] 
+
+[2023-06-01 06:41:43,592] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 06:41:53,955] epoch [156]
+[2023-06-01 06:45:14,885] mean IoU: 0.953423  background: 0.982991  foreground: 0.923855
+[2023-06-01 06:46:28,025] mean IoU: 0.847630  background: 0.939890  foreground: 0.755370
+[2023-06-01 06:46:28,025] 
+
+[2023-06-01 06:46:28,033] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 06:46:39,205] epoch [157]
+[2023-06-01 06:50:03,831] mean IoU: 0.952837  background: 0.982794  foreground: 0.922880
+[2023-06-01 06:51:17,314] mean IoU: 0.845694  background: 0.938813  foreground: 0.752575
+[2023-06-01 06:51:17,315] 
+
+[2023-06-01 06:51:17,325] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 06:51:27,816] epoch [158]
+[2023-06-01 06:54:51,287] mean IoU: 0.952140  background: 0.982502  foreground: 0.921779
+[2023-06-01 06:56:04,550] mean IoU: 0.846550  background: 0.940294  foreground: 0.752807
+[2023-06-01 06:56:04,550] 
+
+[2023-06-01 06:56:04,559] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 06:56:16,211] epoch [159]
+[2023-06-01 06:59:39,383] mean IoU: 0.950232  background: 0.981827  foreground: 0.918637
+[2023-06-01 07:00:53,566] mean IoU: 0.846091  background: 0.939813  foreground: 0.752369
+[2023-06-01 07:00:53,566] 
+
+[2023-06-01 07:00:53,577] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 07:01:03,992] epoch [160]
+[2023-06-01 07:04:27,842] mean IoU: 0.952952  background: 0.982822  foreground: 0.923082
+[2023-06-01 07:05:41,979] mean IoU: 0.849340  background: 0.941831  foreground: 0.756850
+[2023-06-01 07:05:41,979] 
+
+[2023-06-01 07:05:41,986] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 07:05:52,712] epoch [161]
+[2023-06-01 07:09:14,674] mean IoU: 0.955381  background: 0.983716  foreground: 0.927047
+[2023-06-01 07:10:28,545] mean IoU: 0.845004  background: 0.938619  foreground: 0.751389
+[2023-06-01 07:10:28,545] 
+
+[2023-06-01 07:10:28,554] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 07:10:38,409] epoch [162]
+[2023-06-01 07:14:00,481] mean IoU: 0.951707  background: 0.982349  foreground: 0.921065
+[2023-06-01 07:15:14,018] mean IoU: 0.853798  background: 0.942467  foreground: 0.765128
+[2023-06-01 07:15:14,019] 
+
+[2023-06-01 07:15:14,031] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 07:15:23,575] epoch [163]
+[2023-06-01 07:18:47,775] mean IoU: 0.952764  background: 0.982723  foreground: 0.922805
+[2023-06-01 07:20:00,552] mean IoU: 0.849067  background: 0.940409  foreground: 0.757725
+[2023-06-01 07:20:00,552] 
+
+[2023-06-01 07:20:00,561] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 07:20:11,685] epoch [164]
+[2023-06-01 07:23:33,265] mean IoU: 0.951660  background: 0.982352  foreground: 0.920969
+[2023-06-01 07:24:46,565] mean IoU: 0.854580  background: 0.943362  foreground: 0.765799
+[2023-06-01 07:24:46,565] 
+
+[2023-06-01 07:24:46,576] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 07:24:58,161] epoch [165]
+[2023-06-01 07:28:21,079] mean IoU: 0.955286  background: 0.983665  foreground: 0.926907
+[2023-06-01 07:29:34,007] mean IoU: 0.851230  background: 0.941597  foreground: 0.760863
+[2023-06-01 07:29:34,008] 
+
+[2023-06-01 07:29:34,016] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 07:29:45,252] epoch [166]
+[2023-06-01 07:33:07,613] mean IoU: 0.955396  background: 0.983720  foreground: 0.927073
+[2023-06-01 07:34:20,416] mean IoU: 0.849663  background: 0.940830  foreground: 0.758496
+[2023-06-01 07:34:20,417] 
+
+[2023-06-01 07:34:20,426] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 07:34:31,743] epoch [167]
+[2023-06-01 07:37:56,859] mean IoU: 0.958059  background: 0.984706  foreground: 0.931411
+[2023-06-01 07:39:10,537] mean IoU: 0.848949  background: 0.940040  foreground: 0.757858
+[2023-06-01 07:39:10,537] 
+
+[2023-06-01 07:39:10,544] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 07:39:20,228] epoch [168]
+[2023-06-01 07:42:41,381] mean IoU: 0.957167  background: 0.984362  foreground: 0.929973
+[2023-06-01 07:43:55,054] mean IoU: 0.846277  background: 0.938955  foreground: 0.753600
+[2023-06-01 07:43:55,054] 
+
+[2023-06-01 07:43:55,063] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 07:44:05,164] epoch [169]
+[2023-06-01 07:47:26,604] mean IoU: 0.958622  background: 0.984909  foreground: 0.932336
+[2023-06-01 07:48:39,900] mean IoU: 0.847971  background: 0.939356  foreground: 0.756586
+[2023-06-01 07:48:39,900] 
+
+[2023-06-01 07:48:39,909] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 07:48:51,601] epoch [170]
+[2023-06-01 07:52:15,320] mean IoU: 0.957144  background: 0.984364  foreground: 0.929923
+[2023-06-01 07:53:28,747] mean IoU: 0.846528  background: 0.939880  foreground: 0.753177
+[2023-06-01 07:53:28,748] 
+
+[2023-06-01 07:53:28,758] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 07:53:39,700] epoch [171]
+[2023-06-01 07:57:01,568] mean IoU: 0.953799  background: 0.983136  foreground: 0.924462
+[2023-06-01 07:58:13,732] mean IoU: 0.845440  background: 0.939603  foreground: 0.751277
+[2023-06-01 07:58:13,732] 
+
+[2023-06-01 07:58:13,740] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 07:58:24,530] epoch [172]
+[2023-06-01 08:01:49,139] mean IoU: 0.944766  background: 0.979733  foreground: 0.909798
+[2023-06-01 08:03:01,521] mean IoU: 0.839238  background: 0.938148  foreground: 0.740329
+[2023-06-01 08:03:01,521] 
+
+[2023-06-01 08:03:01,529] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 08:03:12,415] epoch [173]
+[2023-06-01 08:06:32,729] mean IoU: 0.943243  background: 0.979167  foreground: 0.907319
+[2023-06-01 08:07:45,052] mean IoU: 0.847514  background: 0.941125  foreground: 0.753903
+[2023-06-01 08:07:45,053] 
+
+[2023-06-01 08:07:45,062] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 08:07:55,749] epoch [174]
+[2023-06-01 08:11:19,924] mean IoU: 0.950273  background: 0.981783  foreground: 0.918763
+[2023-06-01 08:12:32,106] mean IoU: 0.845844  background: 0.939869  foreground: 0.751820
+[2023-06-01 08:12:32,106] 
+
+[2023-06-01 08:12:32,113] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 08:12:43,029] epoch [175]
+[2023-06-01 08:16:03,414] mean IoU: 0.954791  background: 0.983490  foreground: 0.926092
+[2023-06-01 08:17:15,672] mean IoU: 0.849367  background: 0.941622  foreground: 0.757112
+[2023-06-01 08:17:15,673] 
+
+[2023-06-01 08:17:15,686] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 08:17:26,309] epoch [176]
+[2023-06-01 08:20:50,787] mean IoU: 0.956937  background: 0.984285  foreground: 0.929589
+[2023-06-01 08:22:02,816] mean IoU: 0.846606  background: 0.939472  foreground: 0.753739
+[2023-06-01 08:22:02,816] 
+
+[2023-06-01 08:22:02,824] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 08:22:13,541] epoch [177]
+[2023-06-01 08:25:34,815] mean IoU: 0.957635  background: 0.984565  foreground: 0.930704
+[2023-06-01 08:26:47,090] mean IoU: 0.846812  background: 0.939918  foreground: 0.753705
+[2023-06-01 08:26:47,090] 
+
+[2023-06-01 08:26:47,097] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 08:27:04,580] epoch [178]
+[2023-06-01 08:30:27,618] mean IoU: 0.960628  background: 0.985642  foreground: 0.935615
+[2023-06-01 08:31:39,959] mean IoU: 0.840499  background: 0.935791  foreground: 0.745207
+[2023-06-01 08:31:39,959] 
+
+[2023-06-01 08:31:39,967] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 08:32:01,365] epoch [179]
+[2023-06-01 08:35:28,949] mean IoU: 0.960390  background: 0.985545  foreground: 0.935235
+[2023-06-01 08:36:41,152] mean IoU: 0.848442  background: 0.941138  foreground: 0.755747
+[2023-06-01 08:36:41,153] 
+
+[2023-06-01 08:36:41,165] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 08:36:56,797] epoch [180]
+[2023-06-01 08:40:24,042] mean IoU: 0.957283  background: 0.984421  foreground: 0.930145
+[2023-06-01 08:41:35,710] mean IoU: 0.846862  background: 0.940097  foreground: 0.753627
+[2023-06-01 08:41:35,710] 
+
+[2023-06-01 08:41:35,716] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 08:41:50,067] epoch [181]
+[2023-06-01 08:45:16,235] mean IoU: 0.958541  background: 0.984871  foreground: 0.932212
+[2023-06-01 08:46:28,188] mean IoU: 0.848043  background: 0.940077  foreground: 0.756009
+[2023-06-01 08:46:28,188] 
+
+[2023-06-01 08:46:28,196] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 08:46:42,223] epoch [182]
+[2023-06-01 08:50:04,355] mean IoU: 0.959993  background: 0.985394  foreground: 0.934591
+[2023-06-01 08:51:15,980] mean IoU: 0.844987  background: 0.938753  foreground: 0.751220
+[2023-06-01 08:51:15,981] 
+
+[2023-06-01 08:51:15,993] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 08:51:27,983] epoch [183]
+[2023-06-01 08:54:51,241] mean IoU: 0.960213  background: 0.985483  foreground: 0.934944
+[2023-06-01 08:56:02,591] mean IoU: 0.851121  background: 0.941881  foreground: 0.760361
+[2023-06-01 08:56:02,596] 
+
+[2023-06-01 08:56:02,608] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 08:56:15,941] epoch [184]
+[2023-06-01 08:59:39,534] mean IoU: 0.956589  background: 0.984138  foreground: 0.929040
+[2023-06-01 09:00:51,707] mean IoU: 0.842337  background: 0.937404  foreground: 0.747271
+[2023-06-01 09:00:51,707] 
+
+[2023-06-01 09:00:51,717] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 09:01:03,343] epoch [185]
+[2023-06-01 09:04:25,078] mean IoU: 0.959627  background: 0.985278  foreground: 0.933976
+[2023-06-01 09:05:36,789] mean IoU: 0.845811  background: 0.938822  foreground: 0.752799
+[2023-06-01 09:05:36,789] 
+
+[2023-06-01 09:05:36,798] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 09:05:47,900] epoch [186]
+[2023-06-01 09:09:11,848] mean IoU: 0.960420  background: 0.985577  foreground: 0.935264
+[2023-06-01 09:10:23,875] mean IoU: 0.843088  background: 0.938171  foreground: 0.748004
+[2023-06-01 09:10:23,876] 
+
+[2023-06-01 09:10:23,885] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 09:10:33,943] epoch [187]
+[2023-06-01 09:13:58,560] mean IoU: 0.959163  background: 0.985086  foreground: 0.933239
+[2023-06-01 09:15:10,783] mean IoU: 0.844279  background: 0.938580  foreground: 0.749977
+[2023-06-01 09:15:10,783] 
+
+[2023-06-01 09:15:10,792] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 09:15:21,401] epoch [188]
+[2023-06-01 09:18:44,170] mean IoU: 0.956985  background: 0.984311  foreground: 0.929659
+[2023-06-01 09:19:56,090] mean IoU: 0.846032  background: 0.939256  foreground: 0.752808
+[2023-06-01 09:19:56,090] 
+
+[2023-06-01 09:19:56,099] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 09:20:06,418] epoch [189]
+[2023-06-01 09:23:27,350] mean IoU: 0.958758  background: 0.984968  foreground: 0.932547
+[2023-06-01 09:24:39,890] mean IoU: 0.844432  background: 0.938272  foreground: 0.750593
+[2023-06-01 09:24:39,890] 
+
+[2023-06-01 09:24:39,900] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 09:24:49,849] epoch [190]
+[2023-06-01 09:28:10,637] mean IoU: 0.957638  background: 0.984519  foreground: 0.930757
+[2023-06-01 09:29:23,240] mean IoU: 0.846437  background: 0.939064  foreground: 0.753811
+[2023-06-01 09:29:23,240] 
+
+[2023-06-01 09:29:23,249] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 09:29:33,436] epoch [191]
+[2023-06-01 09:32:53,184] mean IoU: 0.957352  background: 0.984430  foreground: 0.930275
+[2023-06-01 09:34:04,920] mean IoU: 0.849804  background: 0.941710  foreground: 0.757898
+[2023-06-01 09:34:04,921] 
+
+[2023-06-01 09:34:04,928] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 09:34:15,027] epoch [192]
+[2023-06-01 09:37:31,707] mean IoU: 0.960409  background: 0.985547  foreground: 0.935271
+[2023-06-01 09:38:44,031] mean IoU: 0.852891  background: 0.942437  foreground: 0.763344
+[2023-06-01 09:38:44,031] 
+
+[2023-06-01 09:38:44,044] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 09:38:54,982] epoch [193]
+[2023-06-01 09:42:12,730] mean IoU: 0.958531  background: 0.984854  foreground: 0.932207
+[2023-06-01 09:43:24,829] mean IoU: 0.846283  background: 0.939280  foreground: 0.753286
+[2023-06-01 09:43:24,830] 
+
+[2023-06-01 09:43:24,844] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 09:43:36,083] epoch [194]
+[2023-06-01 09:46:54,190] mean IoU: 0.960188  background: 0.985468  foreground: 0.934909
+[2023-06-01 09:48:06,898] mean IoU: 0.843512  background: 0.938300  foreground: 0.748724
+[2023-06-01 09:48:06,898] 
+
+[2023-06-01 09:48:06,905] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 09:48:17,909] epoch [195]
+[2023-06-01 09:51:36,786] mean IoU: 0.961295  background: 0.985864  foreground: 0.936727
+[2023-06-01 09:52:48,680] mean IoU: 0.844503  background: 0.939063  foreground: 0.749944
+[2023-06-01 09:52:48,681] 
+
+[2023-06-01 09:52:48,695] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 09:53:07,823] epoch [196]
+[2023-06-01 09:56:32,351] mean IoU: 0.956543  background: 0.984171  foreground: 0.928914
+[2023-06-01 09:57:44,828] mean IoU: 0.850377  background: 0.942060  foreground: 0.758694
+[2023-06-01 09:57:44,829] 
+
+[2023-06-01 09:57:44,835] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 09:58:07,617] epoch [197]
+[2023-06-01 10:01:31,265] mean IoU: 0.959730  background: 0.985307  foreground: 0.934153
+[2023-06-01 10:02:42,454] mean IoU: 0.842782  background: 0.937324  foreground: 0.748239
+[2023-06-01 10:02:42,455] 
+
+[2023-06-01 10:02:42,465] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 10:03:04,631] epoch [198]
+[2023-06-01 10:06:27,535] mean IoU: 0.957327  background: 0.984395  foreground: 0.930258
+[2023-06-01 10:07:39,250] mean IoU: 0.847781  background: 0.940779  foreground: 0.754783
+[2023-06-01 10:07:39,250] 
+
+[2023-06-01 10:07:39,259] saving model: ckpt/n_emb_5/last.pth
+[2023-06-01 10:07:55,920] epoch [199]
+[2023-06-01 10:11:22,763] mean IoU: 0.956705  background: 0.984191  foreground: 0.929220
+[2023-06-01 10:12:34,999] mean IoU: 0.847303  background: 0.940241  foreground: 0.754365
+[2023-06-01 10:12:35,000] 
+
+[2023-06-01 10:12:35,014] saving model: ckpt/n_emb_5/last.pth
