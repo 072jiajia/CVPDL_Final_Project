@@ -13,6 +13,8 @@ from dataset import VOC2012Dataset, VOC_CLASSNAMES, COCO2017Dataset, USED_COCO_C
 from metrics import IoUMetrics
 from prompter import CLIPPrompter, load_clip_to_cpu
 
+from logger import get_logger
+
 
 def train_one_epoch(train_dl, opt, models):
     sam: Sam = models["sam"]
@@ -90,7 +92,7 @@ def train_one_epoch(train_dl, opt, models):
         tqdm_loader.set_description(
             f"{seg_loss:.6f} {iou_loss:.6f} {iou_metrics}")
 
-    print(iou_metrics)
+    logger.info(iou_metrics)
     return iou_metrics.ious
 
 
@@ -148,8 +150,8 @@ def validate(val_dl, models):
 
         tqdm_loader.set_description(f"{iou_metrics}")
 
-    print(iou_metrics)
-    print()
+    logger.info(iou_metrics)
+    logger.info("\n")
     return iou_metrics.ious
 
 
@@ -169,7 +171,7 @@ def parse_args():
 
     parser.add_argument("--batch-size", type=int, default=16)
     parser.add_argument("--num-workers", type=int, default=16)
-    parser.add_argument("--epoch", type=float, default=100)
+    parser.add_argument("--epoch", type=int, default=100)
     parser.add_argument("--save_dir", type=str, default='./models')
     parser.add_argument("--load_model_path", type=str, default='./models/best.pth')
     parser.add_argument('--resume', action='store_true', default=False)
@@ -239,7 +241,7 @@ def create_models(device, args):
 def load_checkpoint(model_path, optimizer, models):
     
     # load checkopoint
-    print(model_path)
+    logger.info(model_path)
     state = torch.load(model_path)
 
     # load state dicts
@@ -261,14 +263,17 @@ def save_checkpoint(models, optimizer, epoch, best_miou, save_dir):
         "epoch": epoch,
         "best_miou": best_miou,
     }
-    print(f'saving model: {save_dir}')
+    logger.info(f'saving model: {save_dir}')
     torch.save(state, save_dir)
 
 
 if __name__ == "__main__":
     args = parse_args()
-    print(args)
+    
     os.makedirs(args.save_dir, exist_ok=True)
+    logger = get_logger(os.path.join(args.save_dir, "log.txt"))
+
+    logger.info(args)
 
     device = args.device
 
@@ -290,7 +295,7 @@ if __name__ == "__main__":
             models = models
         )
     for epoch in range(start_epoch, args.epoch):
-        print(f"epoch [{epoch}]")
+        logger.info(f"epoch [{epoch}]")
         train_ious = train_one_epoch(train_dl, opt, models)
         val_ious = validate(val_dl, models)
 
@@ -299,7 +304,7 @@ if __name__ == "__main__":
             best_epoch = epoch
             save_dir = os.path.join(args.save_dir,'best.pth')
             save_checkpoint(models, opt, epoch, best_iou, save_dir)
-            print(f"epoch [{best_epoch}] has the best iou: {best_iou:.6f}")
+            logger.info(f"epoch [{best_epoch}] has the best iou: {best_iou:.6f}")
         
         save_dir = os.path.join(args.save_dir,'last.pth')
         save_checkpoint(models, opt, epoch, val_ious[1], save_dir)
