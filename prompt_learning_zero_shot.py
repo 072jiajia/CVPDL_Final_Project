@@ -180,7 +180,7 @@ def parse_args():
 
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--num-workers", type=int, default=24)
-    parser.add_argument("--epoch", type=float, default=100)
+    parser.add_argument("--epoch", type=int, default=100)
     parser.add_argument("--unseen-classes", nargs='+',
                         type=int, default=[17, 18, 19, 20])
     
