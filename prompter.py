@@ -303,7 +303,7 @@ class CoCoOpPromptLearnerV2(nn.Module):
         vis_dim = clip_model.visual.output_dim
 
         # random initialization
-        ctx_vectors = torch.empty(n_ctx - 1, ctx_dim, dtype=dtype)
+        ctx_vectors = torch.empty(n_ctx, ctx_dim, dtype=dtype)
         nn.init.normal_(ctx_vectors, std=0.02)
         prompt_prefix = " ".join(["X"] * n_ctx)
 
@@ -318,6 +318,11 @@ class CoCoOpPromptLearnerV2(nn.Module):
             ("relu", nn.ReLU(inplace=True)),
             ("linear2", nn.Linear(vis_dim // 16, ctx_dim))
         ]))
+
+        _text_inputs = torch.cat([clip.tokenize(f"a photo of a {c}") for c in classnames[:-4]])
+        with torch.no_grad():
+            self.cls_text_features = clip_model.encode_text(_text_inputs)
+        self.cls_text_features /= self.cls_text_features.norm(dim=-1, keepdim=True)
         #####
 
         classnames = [name.replace("_", " ") for name in classnames]
@@ -363,12 +368,17 @@ class CoCoOpPromptLearnerV2(nn.Module):
     def forward(self, im_features):
         prefix = self.token_prefix
         suffix = self.token_suffix
-        ctx = self.ctx                                # (n_ctx - 1, ctx_dim)
-        bias = self.meta_net(im_features)             # (batch, ctx_dim)
-        bias = bias.unsqueeze(1)                      # (batch, 1, ctx_dim)
-        ctx = ctx.unsqueeze(0)                        # (1, n_ctx - 1, ctx_dim)
-        ctx = ctx.expand(bias.shape[0], -1, -1)       # (batch, n_ctx - 1, ctx_dim)
-        ctx_shifted = torch.cat((ctx, bias), dim=1)   # (batch, n_ctx, ctx_dim)
+        ctx = self.ctx                     # (n_ctx, ctx_dim)
+        bias = self.meta_net(im_features)  # (batch, ctx_dim)
+        bias = bias.unsqueeze(1)           # (batch, 1, ctx_dim)
+
+        sim = (100.0 * im_features @ self.cls_text_features.T.to(im_features.device)).softmax(dim=-1)
+        sim, _ = torch.max(sim, dim=-1)    # (batch,)
+        sim = 1 / (1 + torch.exp(-50 * (sim - 0.9)))
+        sim = sim.reshape(-1, 1, 1)        # (batch, 1, 1)
+
+        ctx = ctx.unsqueeze(0)             # (1, n_ctx, ctx_dim)
+        ctx_shifted = ctx + sim * bias     # (batch, n_ctx, ctx_dim)
         
         # Use instance-conditioned context tokens for all classes
         prompts = []
